@@ -1,0 +1,26 @@
+
+What is TCP IP?
+
+What is URL?
+
+What is IP address?
+- unique identified for each machine
+- Internet protocal address
+- format of ip address 192.168.8.4
+- this is v4 ip address
+- other ip address is v6
+
+introduction to networking concept:
+https://courses.engr.illinois.edu/cs241/sp2012/lectures/33-network-intro.pdf
+
+
+How does an IP address get assigned to your machine?
+- DHCP, please put in more details about how DHCP work.
+
+What is a router?
+
+What is a switch?
+
+How does a packet travel from one machine to other machine?
+
+
