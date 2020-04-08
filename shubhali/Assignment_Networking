@@ -28,6 +28,8 @@ What is router ?
 The router is a physical or virtual internetworking device that is designed to receive, analyze, and forward data packets between computer networks. A router examines a destination IP address of a given data packet.It shares information with other routers in networking.It uses the routing protocol to transfer the data across a network.A router connects multiple switches
 
 What is Switch ?
+
+
 Switches facilitate the sharing of resources by connecting together all the devices, including computers, printers, and servers, in a small business network
 
 How does packets travel from one machin to other machine ?
