@@ -8,6 +8,7 @@ datalink layer is what handles the physical parts of sending and receiving data 
 2.Internet layer-
 The internet layer (also called the network layer) controls the movement of packets around the network.
 
+
 3.Transport layer-
 The transport layer is what provides a reliable data connection between two devices.
 
