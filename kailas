@@ -1,0 +1,318 @@
+[unnati@unnati Desktop]$ ls
+ambsoft  india  Installation Steps_Unnati.txt  _ReadMe.txt
+[unnati@unnati Desktop]$ cd ambsoft
+[unnati@unnati ambsoft]$ ls
+[unnati@unnati ambsoft]$ touch test{1..10}.txt
+[unnati@unnati ambsoft]$ ls
+test10.txt  test2.txt  test4.txt  test6.txt  test8.txt
+test1.txt   test3.txt  test5.txt  test7.txt  test9.txt
+[unnati@unnati ambsoft]$ touch test{1..10}.html
+[unnati@unnati ambsoft]$ branch maste
+bash: branch: command not found...
+[unnati@unnati ambsoft]$ touch aboutme.txt
+[unnati@unnati ambsoft]$ ls
+aboutme.txt  test1.txt   test3.txt   test5.txt   test7.txt   test9.txt
+test10.html  test2.html  test4.html  test6.html  test8.html
+test10.txt   test2.txt   test4.txt   test6.txt   test8.txt
+test1.html   test3.html  test5.html  test7.html  test9.html
+[unnati@unnati ambsoft]$ touch example1
+[unnati@unnati ambsoft]$ ls
+aboutme.txt  test1.html  test3.html  test5.html  test7.html  test9.html
+example1     test1.txt   test3.txt   test5.txt   test7.txt   test9.txt
+test10.html  test2.html  test4.html  test6.html  test8.html
+test10.txt   test2.txt   test4.txt   test6.txt   test8.txt
+[unnati@unnati ambsoft]$ cat>example1
+ls
+i am hacker 
+hello kailas
+      
+
+/
+^C
+[unnati@unnati ambsoft]$ ls
+aboutme.txt  test1.html  test3.html  test5.html  test7.html  test9.html
+example1     test1.txt   test3.txt   test5.txt   test7.txt   test9.txt
+test10.html  test2.html  test4.html  test6.html  test8.html
+test10.txt   test2.txt   test4.txt   test6.txt   test8.txt
+[unnati@unnati ambsoft]$ cat example1
+ls
+i am hacker 
+hello kailas
+
+
+/
+[unnati@unnati ambsoft]$ head -2 example1
+ls
+i am hacker 
+[unnati@unnati ambsoft]$ tail -1 example1
+/
+[unnati@unnati ambsoft]$ mkdir dir2
+[unnati@unnati ambsoft]$ ls
+aboutme.txt  test10.txt  test2.txt   test4.txt   test6.txt   test8.txt
+dir2         test1.html  test3.html  test5.html  test7.html  test9.html
+example1     test1.txt   test3.txt   test5.txt   test7.txt   test9.txt
+test10.html  test2.html  test4.html  test6.html  test8.html
+[unnati@unnati ambsoft]$ cd dir2
+[unnati@unnati dir2]$ cat>dir2-file1
+ls
+hii ram 
+how are u
+^C
+[unnati@unnati dir2]$ ls
+dir2-file1
+[unnati@unnati dir2]$ cat dir2
+cat: dir2: No such file or directory
+[unnati@unnati dir2]$ cat file1
+cat: file1: No such file or directory
+[unnati@unnati dir2]$ cat dir2-file1
+ls
+hii ram 
+how are u
+[unnati@unnati dir2]$ ls
+dir2-file1
+[unnati@unnati dir2]$ cp example1 dir2
+cp: cannot stat ‘example1’: No such file or directory
+[unnati@unnati dir2]$ cp example1 .dir2
+cp: cannot stat ‘example1’: No such file or directory
+[unnati@unnati dir2]$ cp example1 /dir2
+cp: cannot stat ‘example1’: No such file or directory
+[unnati@unnati dir2]$ cp /example1 /dir2
+cp: cannot stat ‘/example1’: No such file or directory
+[unnati@unnati dir2]$ cp /example1 /dir2-file1
+cp: cannot stat ‘/example1’: No such file or directory
+[unnati@unnati dir2]$ ls
+dir2-file1
+[unnati@unnati dir2]$ cd example1
+bash: cd: example1: No such file or directory
+[unnati@unnati dir2]$ cd example
+bash: cd: example: No such file or directory
+[unnati@unnati dir2]$ cd ambsoft
+bash: cd: ambsoft: No such file or directory
+[unnati@unnati dir2]$ $
+bash: $: command not found...
+[unnati@unnati dir2]$ #
+[unnati@unnati dir2]$ /
+bash: /: Is a directory
+[unnati@unnati dir2]$ cd ambsoft
+bash: cd: ambsoft: No such file or directory
+[unnati@unnati dir2]$ ls
+dir2-file1
+[unnati@unnati dir2]$ cd ambsoft
+bash: cd: ambsoft: No such file or directory
+[unnati@unnati dir2]$ mkdir ambsoft1
+[unnati@unnati dir2]$ ls
+ambsoft1  dir2-file1
+[unnati@unnati dir2]$ cd ambsoft1
+[unnati@unnati ambsoft1]$ ls
+[unnati@unnati ambsoft1]$ touch example1
+[unnati@unnati ambsoft1]$ ls
+example1
+[unnati@unnati ambsoft1]$ touch test{1..10}.txt
+[unnati@unnati ambsoft1]$ ls
+example1    test1.txt  test3.txt  test5.txt  test7.txt  test9.txt
+test10.txt  test2.txt  test4.txt  test6.txt  test8.txt
+[unnati@unnati ambsoft1]$ touch test{1..10}.html
+[unnati@unnati ambsoft1]$ ls
+example1     test1.html  test2.txt   test4.html  test5.txt   test7.html  test8.txt
+test10.html  test1.txt   test3.html  test4.txt   test6.html  test7.txt   test9.html
+test10.txt   test2.html  test3.txt   test5.html  test6.txt   test8.html  test9.txt
+[unnati@unnati ambsoft1]$ touch test{1..10}.xml
+[unnati@unnati ambsoft1]$ ls
+example1     test1.txt   test3.html  test4.xml   test6.txt   test8.html  test9.xml
+test10.html  test1.xml   test3.txt   test5.html  test6.xml   test8.txt
+test10.txt   test2.html  test3.xml   test5.txt   test7.html  test8.xml
+test10.xml   test2.txt   test4.html  test5.xml   test7.txt   test9.html
+test1.html   test2.xml   test4.txt   test6.html  test7.xml   test9.txt
+[unnati@unnati ambsoft1]$ http:/github.com/anitapise/MI-6-MEAN.git
+bash: http:/github.com/anitapise/MI-6-MEAN.git: No such file or directory
+[unnati@unnati ambsoft1]$ haid -ambsoft
+bash: haid: command not found...
+[unnati@unnati ambsoft1]$ ls
+example1     test10.xml  test1.xml   test2.xml   test3.xml   test4.xml   test5.xml   test6.xml   test7.xml   test8.xml   test9.xml
+test10.html  test1.html  test2.html  test3.html  test4.html  test5.html  test6.html  test7.html  test8.html  test9.html
+test10.txt   test1.txt   test2.txt   test3.txt   test4.txt   test5.txt   test6.txt   test7.txt   test8.txt   test9.txt
+[unnati@unnati ambsoft1]$ head -test
+head: invalid option -- 't'
+Try 'head --help' for more information.
+[unnati@unnati ambsoft1]$ haid -2 test
+bash: haid: command not found...
+[unnati@unnati ambsoft1]$ tail -1 test
+tail: cannot open ‘test’ for reading: No such file or directory
+[unnati@unnati ambsoft1]$ cat > example2
+hello aditya 
+hello ram
+good morning
+have a nice day
+^C
+[unnati@unnati ambsoft1]$ ls
+example1     test10.txt  test1.txt   test2.txt   test3.txt   test4.txt   test5.txt   test6.txt   test7.txt   test8.txt   test9.txt
+example2     test10.xml  test1.xml   test2.xml   test3.xml   test4.xml   test5.xml   test6.xml   test7.xml   test8.xml   test9.xml
+test10.html  test1.html  test2.html  test3.html  test4.html  test5.html  test6.html  test7.html  test8.html  test9.html
+[unnati@unnati ambsoft1]$ cat example2
+hello aditya 
+hello ram
+good morning
+have a nice day
+[unnati@unnati ambsoft1]$ head -2 example2
+hello aditya 
+hello ram
+[unnati@unnati ambsoft1]$ tail -1 example2
+have a nice day
+[unnati@unnati ambsoft1]$ 
+[unnati@unnati ambsoft1]$ 
+[unnati@unnati ambsoft1]$ cd MI-6-MEAN2
+bash: cd: MI-6-MEAN2: No such file or directory
+[unnati@unnati ambsoft1]$ CD KAILAS
+bash: CD: command not found...
+Similar command is: 'cd'
+[unnati@unnati ambsoft1]$ cd kailas
+bash: cd: kailas: No such file or directory
+[unnati@unnati ambsoft1]$ mkdir kailas
+[unnati@unnati ambsoft1]$ ls
+example1  test10.html  test1.html  test2.html  test3.html  test4.html  test5.html  test6.html  test7.html  test8.html  test9.html
+example2  test10.txt   test1.txt   test2.txt   test3.txt   test4.txt   test5.txt   test6.txt   test7.txt   test8.txt   test9.txt
+kailas    test10.xml   test1.xml   test2.xml   test3.xml   test4.xml   test5.xml   test6.xml   test7.xml   test8.xml   test9.xml
+[unnati@unnati ambsoft1]$ cd kailas
+[unnati@unnati kailas]$ touch hello{1..10}.html
+[unnati@unnati kailas]$ ls
+hello10.html  hello1.html  hello2.html  hello3.html  hello4.html  hello5.html  hello6.html  hello7.html  hello8.html  hello9.html
+[unnati@unnati kailas]$ touch file1 
+[unnati@unnati kailas]$ touch file2
+[unnati@unnati kailas]$ ls
+file1  file2  hello10.html  hello1.html  hello2.html  hello3.html  hello4.html  hello5.html  hello6.html  hello7.html  hello8.html  hello9.html
+[unnati@unnati kailas]$ mkdir geca
+[unnati@unnati kailas]$ mkdir finpros
+[unnati@unnati kailas]$ ls
+file1  file2  finpros  geca  hello10.html  hello1.html  hello2.html  hello3.html  hello4.html  hello5.html  hello6.html  hello7.html  hello8.html  hello9.html
+[unnati@unnati kailas]$ cat > example1
+hello rushi
+good morning
+i am very lucky man beacuse you are a my friend.
+literally
+^C
+[unnati@unnati kailas]$ cat example1
+hello rushi
+good morning
+i am very lucky man beacuse you are a my friend.
+literally
+[unnati@unnati kailas]$ head -2 example1
+hello rushi
+good morning
+[unnati@unnati kailas]$ tail -1 example1
+literally
+[unnati@unnati kailas]$ 
+[unnati@unnati kailas]$ touch example1
+[unnati@unnati kailas]$ ls
+example1  finpros       hello1.html  hello4.html  hello7.html
+file1     geca          hello2.html  hello5.html  hello8.html
+file2     hello10.html  hello3.html  hello6.html  hello9.html
+[unnati@unnati kailas]$ cat example1
+hello rushi
+good morning
+i am very lucky man beacuse you are a my friend.
+literally
+[unnati@unnati kailas]$ head -2 example1
+hello rushi
+good morning
+[unnati@unnati kailas]$ tail -1 example1
+literally
+[unnati@unnati kailas]$ cd dir2
+bash: cd: dir2: No such file or directory
+[unnati@unnati kailas]$ mkdir dir2
+[unnati@unnati kailas]$ cd dir2
+[unnati@unnati dir2]$ 
+[unnati@unnati dir2]$ cat>dir2_file1
+this file is create within dir2 directory 
+cat command is use to create a new file 
+^C
+[unnati@unnati dir2]$ ls
+dir2_file1
+[unnati@unnati dir2]$ cd
+[unnati@unnati ~]$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[unnati@unnati ~]$ cd kailas
+bash: cd: kailas: No such file or directory
+[unnati@unnati ~]$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[unnati@unnati ~]$ cd kailas
+bash: cd: kailas: No such file or directory
+[unnati@unnati ~]$ cd dir2
+bash: cd: dir2: No such file or directory
+[unnati@unnati ~]$ mkdir dir2_file
+[unnati@unnati ~]$ cd dir2
+bash: cd: dir2: No such file or directory
+[unnati@unnati ~]$ mkdir dir2
+[unnati@unnati ~]$ mkdir dir3
+[unnati@unnati ~]$ cd dir3
+[unnati@unnati dir3]$ cat>dir3_file
+cat command is just create a new file within dir2 directory.unnati@unnati dir3]^[[D^[[D^[^C            
+[unnati@unnati dir3]$ ls
+dir3_file
+[unnati@unnati dir3]$ cat dir3_file
+[unnati@unnati dir3]$ cat
+
+
+
+
+^C
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ cat>dir3_file1
+this file is create within dir3 directory.unnati@unnati dir3]$ cd
+^C
+[unnati@unnati dir3]$ ls
+dir3_file  dir3_file1
+[unnati@unnati dir3]$ cd
+[unnati@unnati ~]$ ls
+Desktop  dir2_file  Documents  Music     Public     Videos
+dir2     dir3       Downloads  Pictures  Templates
+[unnati@unnati ~]$ cd dir3
+[unnati@unnati dir3]$ cp example1 dire3
+cp: cannot stat ‘example1’: No such file or directory
+[unnati@unnati dir3]$ touch example1
+[unnati@unnati dir3]$ ls
+dir3_file  dir3_file1  example1
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ touch myfile1
+[unnati@unnati dir3]$ ln -s myfile1 MyFileLink
+[unnati@unnati dir3]$ ls
+dir3_file  dir3_file1  example1  myfile1  MyFileLink
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ ls -ail
+total 8
+ 9372342 drwxrwxr-x.  2 unnati unnati   85 Apr  9 01:21 .
+27436265 drwx------. 17 unnati unnati 4096 Apr  9 01:14 ..
+ 9372343 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:14 dir3_file
+ 9372344 -rw-rw-r--.  1 unnati unnati   66 Apr  9 01:19 dir3_file1
+ 9372345 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:21 example1
+ 9372346 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:21 myfile1
+ 9372347 lrwxrwxrwx.  1 unnati unnati    7 Apr  9 01:21 MyFileLink -> myfile1
+[unnati@unnati dir3]$ 
+[unnati@unnati dir3]$ touch myfile
+[unnati@unnati dir3]$ ln -s myfile MyFileLink
+ln: failed to create symbolic link ‘MyFileLink’: File exists
+[unnati@unnati dir3]$ ln -s myfile2 MyFileLink
+ln: failed to create symbolic link ‘MyFileLink’: File exists
+[unnati@unnati dir3]$ ln -s myfile2 MyFileLink1
+[unnati@unnati dir3]$ ls
+dir3_file  dir3_file1  example1  myfile  myfile1  MyFileLink  MyFileLink1
+[unnati@unnati dir3]$ ln -s myfile2 MyFileLink2
+[unnati@unnati dir3]$ ls
+dir3_file  dir3_file1  example1  myfile  myfile1  MyFileLink  MyFileLink1  MyFileLink2
+[unnati@unnati dir3]$ ls -ail
+total 12
+ 9372342 drwxrwxr-x.  2 unnati unnati 4096 Apr  9 01:25 .
+27436265 drwx------. 17 unnati unnati 4096 Apr  9 01:14 ..
+ 9372343 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:14 dir3_file
+ 9372344 -rw-rw-r--.  1 unnati unnati   66 Apr  9 01:19 dir3_file1
+ 9372345 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:21 example1
+ 9372348 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:24 myfile
+ 9372346 -rw-rw-r--.  1 unnati unnati    0 Apr  9 01:21 myfile1
+ 9372347 lrwxrwxrwx.  1 unnati unnati    7 Apr  9 01:21 MyFileLink -> myfile1
+ 9372349 lrwxrwxrwx.  1 unnati unnati    7 Apr  9 01:25 MyFileLink1 -> myfile2
+ 9372350 lrwxrwxrwx.  1 unnati unnati    7 Apr  9 01:25 MyFileLink2 -> myfile2
+[unnati@unnati dir3]$ ^C
+[unnati@unnati dir3]$ ^C
+[unnati@unnati dir3]$ 
