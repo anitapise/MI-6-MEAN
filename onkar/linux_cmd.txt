@@ -1,7 +1,0 @@
-1]cat : It is generally used to concatenate the files.
-2]more : It is a filter for paging through text one screenful at a time.
-3]less: it is used to viewing the file insted of opening file.
-4]mkdir: it is used to create directory.
-5]sort: it is used to sort the content of file.
-6]ls : To get the list of all the files or folders.
-7]cd : Used to change the directory. 
