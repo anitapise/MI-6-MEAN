@@ -1,0 +1,18 @@
+1.What is TCP/IP ?
+Internet works using this protocol called as Transmission Control Protocal/Internet Protocol. It allows one computer to talk to another computer via Internet through compiling data packets and sending them to right location.
+2.What is URL?
+URL stands for Uniform Resource Locator. It is used by browsers to retrieve any published resource on the web. Each valid URL points to a unique resource on web. Such resources can be HTML page, CSS document, images, etc.  URL mainly consist of 2 parts: 1)http protocol  2) Domain Name
+For example, https://www.google.com/, here  http protocol with domain name is www.google.com is used.
+3.How network devices are connected to form a network?
+Network is formed by plugging devices into LAN ports on Internet router as well as devices connected wirelessly to the same router. Computers have network interface cards. These cards are transceivers to send and receive signals that are understood by other computers and networking devices.
+Network devices are Hub, Switch, Router, and Bridge.
+Hub: It is used to connect multiple hosts via cables. It is used to do data transfer (data forwarding). Data is transferred in terms of packets on a computer network. So when a host sends a data packet to a network hub, the hub copies the data packet to all of its ports connected to. This working method of hub makes it unsecure and unsafe to use. Hubs do not filter data, but instead retransmit incoming data packets or frames to all parts.
+Switch:  Like a hub, switch also used to connect multiple hosts. It is used to do ‘filter and data forwarding’. When a data packet is received at one of the interfaces of the switch, it filters the packet and sends only to the interface of the intended receiver. A switch is aware of addresses associated with each of its ports and forwards each incoming data frame to the correct port. Switch also maintains CAM (Content Addressable Memory) table and has its own system configuration and memory. CAM table is also called as forwarding table or forwarding information base (FIB).
+Router: It is responsible for routing traffic from one to another network. These two networks could be a private company network to a public network. It filters and forwards data based on logical address.
+Bridge: If a router connects two different types of networks, then a bridge connects two sub-networks as a part of the same network. It forwards data based on physical address.
+
+
+
+4.What is MAC Address?
+It stands for Media Access Control. It is a hardware address assigned to every computer NIC. MAC Address ensures that physical address of the computer is unique. MAC address is given to a network adapter when it is manufactured. It is hardwired or hard-coded on computer’s NIC and it is unique to it. ARP (Address Resolution Protocol) translates an IP address into a MAC address. MAC address is also known as networking hardware address or physical address.
+
