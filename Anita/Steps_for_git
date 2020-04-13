@@ -1,9 +1,43 @@
+Create Git account
+
+Sign in with github account
+
+Public repository under which we are working:- https://github.com/anitapise/MI-6-MEAN
+
+Open the terminal cmd prompt and clone the repository
+
+git clone https://github.com/anitapise/MI-6-MEAN.git:- This will create MI-6-MEAN folder under your working directory.
+
+cd MI-6-MEAN
+
+To check you are on which branch: git branch
+
 create your branch locally
 
 git checkout -b anita_demo
 
-need to push it remote
+create your branch on remote
 
 git push origin anita_demo
 
+Add the folders and files which you want on remote
 
+Need to pull master always and merge it to local branch so save the changes of your locally made
+
+git stash : will save the changes locally
+
+git checkout master: will change branch from anita_demo to master
+
+git pull origin master: will pull latest code from master branch
+
+git checkout anita_demo: will change branch from master to anita_demo
+
+git merge master: will merge anita_demo to master branch code
+
+git stash pop: will takes a stashed change, removes it from the “stash stack”, and applies it to your current working tree.
+
+git add Anita/Steps_for_git: will add the file on working tree.
+
+git commit -m "Changes to steps for git file": will commit the changes on working tree.
+
+git push origin anita_demo: will push the changes on working tree.
