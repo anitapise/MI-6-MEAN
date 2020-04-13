@@ -1,0 +1,4 @@
+network : ip layer
+	IP means the interneet protocol 
+	it has two types IPv 4 & IPv6
+	it helps to deliver from the server to the clinet 
