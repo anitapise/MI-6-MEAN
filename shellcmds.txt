@@ -1,0 +1,131 @@
+khush@khush-HP-Pavilion-g6-Notebook-PC:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+khush@khush-HP-Pavilion-g6-Notebook-PC:~$ ls -l
+total 44
+drwxr-xr-x 3 khush khush 4096 Apr 11 16:23 Desktop
+drwxr-xr-x 2 khush khush 4096 Apr 11 17:21 Documents
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Downloads
+-rw-r--r-- 1 khush khush 8980 Apr  9 18:52 examples.desktop
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Music
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Pictures
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Public
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Templates
+drwxr-xr-x 2 khush khush 4096 Apr  9 19:03 Videos
+khush@khush-HP-Pavilion-g6-Notebook-PC:~$ cd Desktop/
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ mkdir Mamta
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ touch test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cat test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ echo "Hello" >> test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ echo "Welcome to Linux" >> test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ echo "Stay tuned" >> test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cat test.txt
+hello
+Welcome to Linux
+Stay tuned
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cat -n test.txt
+     1	hello
+     2	Welcome to Linux
+     3	Stay tuned
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ wc -l test.txt
+3 test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ wc -w test.txt
+6 test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ head test.txt
+hello
+Welcome to Linux
+Stay tuned
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ tail test.txt
+hello
+Welcome to Linux
+Stay tuned
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ tail -f test.txt
+hello
+Welcome to Linux
+Stay tuned
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ pwd
+/home/khush/Desktop
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cd Mamta
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop/Mamta$ pwd
+/home/khush/Desktop/Mamta
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop/Mamta$ ls /
+bin    dev   initrd.img  media  proc  sbin  sys  var
+boot   etc   lib         mnt    root  snap  tmp  vmlinuz
+cdrom  home  lost+found  opt    run   srv   usr
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop/Mamta$ ls / | wc -w
+23
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cd Mamta
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop/Mamta$ touch hello.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop/Mamta$ rm hello.txt
+
+
+khush@khush-HP-Pavilion-g6-Notebook-PC:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+khush@khush-HP-Pavilion-g6-Notebook-PC:~$ cd Desktop/
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rmdir Mamta
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ touch test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cat test.txt
+hello
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ touch hello.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ sudo cp test.txt hello.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ls
+hello.txt  test.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ sudo mv test.txt notatest.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ls
+hello.txt  notatest.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ grep he hello.txt
+hello
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ sort hello.txt
+hello
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cut -c 2-4 hello.txt
+ell
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ man man
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ du
+12	.
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ whoami
+khush
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ id
+uid=1000(khush) gid=1000(khush) groups=1000(khush),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),121(lpadmin),131(sambashare)
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ date
+Sat Apr 11 18:30:48 IST 2020
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cal
+     April 2020       
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30       
+
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ln -s /etc/hostname name
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ls -l
+total 8
+-rw-r--r-- 1 khush khush  6 Apr 11 18:15 hello.txt
+lrwxrwxrwx 1 khush khush 13 Apr 11 18:34 name -> /etc/hostname
+-rw-r--r-- 1 khush khush  6 Apr 11 18:02 notatest.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ cat name
+khush-HP-Pavilion-g6-Notebook-PC
+
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ echo "Hello World!" > hello.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ln hello.txt bye.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ls -l
+total 12
+-rw-r--r-- 2 khush khush 13 Apr 11 18:36 bye.txt
+-rw-r--r-- 2 khush khush 13 Apr 11 18:36 hello.txt
+lrwxrwxrwx 1 khush khush 13 Apr 11 18:34 name -> /etc/hostname
+-rw-r--r-- 1 khush khush  6 Apr 11 18:02 notatest.txt
+
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ tar -czvf files.tar.gz hello.txt bye.txt
+hello.txt
+bye.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ ls
+bye.txt  files.tar.gz  hello.txt  name  notatest.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ tar -xzvf files.tar.gz
+hello.txt
+bye.txt
+hush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rm hello.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rm notatest.txt
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rm -r name
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rm -r files.tar.gz
+khush@khush-HP-Pavilion-g6-Notebook-PC:~/Desktop$ rm bye.txt
