@@ -1,0 +1,79 @@
+1)What is the TCP/IP? (Transport Control Protocol / Internet Protocol)
+
+TCP/IP model consists of five layers: Application,Transport,Network,Data link,physical layer.
+   TCP :  create a virtual circuit between the sender and receiver.
+    IP:   IP addressing, Host-to-Host communication,Formatting.
+
+
+2)What is URL? (Uniform Resource Locator)
+
+ reference of web resources on a local computer network.
+ URL is a specific type of Uniform resource identifier.
+
+
+3)What is the IP address? (Internet Protocol)
+
+ Numerical label assigned to each device connected to a computer network uses the communication purpose.
+ Host to network interface.
+ Format of IP :  IP 192.100.2:8090  port number: 8090  as well as 
+
+
+4)Introduction of Computer Networking ? 
+
+ Networking is referred connecting Computers Electronically for the purpose of sharing information .
+  Appn, printers , s/w information those files shared with the help of networking.
+  network  consists  of  h/w  component  such  as  computer( hubs, switches, routers and other devices).
+  many types of network avialable in networki like a LAN & WAN.
+
+  
+5) How does an IP address get assigned to your machine?
+
+ Basically DHCP is a network protocol
+ DHCP(Dyanamic Host Configuration Protocol)
+ DHCP is a typically Service running on the network 
+ DHCP is a automatically assign an IP address and other info each Host on Network.
+
+6)What is Routers?
+
+ Basically router is a network device that forward data packets between computer networks.
+ for exp: Home & office WiFi network using router .
+ shared much more information on a network .
+ the Router is indentify packets destination 
+ Router is a phyisical standalone devices and virtual software instances.
+ 
+
+7)What is Switch ?
+  
+  A switch is a networking h/w  that connects devices on a computer network by using packet switching to receive and forward data to the destination device.
+  Switch is a multiport network bridge that uses MAC addresses.
+  
+
+8)How does a packet travel from one machine to other machine?
+
+  Application genrates a packet to be sent on the network and send it to layer below .
+  packet travel concept of like transport layer is use to End to End communication between two machines.
+
+
+9)Problem of 2000 servers, find number of switches with each switch having 32 ports and the connectivity among those switches.
+
+
+ 10)what is MAC address?(  Media Access Control)
+
+   Media Access Control address is a unique identifier assigned  network interface controller for use as a network address in communications. 
+   This use in common in IEEE 802 networking technology ,
+   For Exp : Ethernet, WiFi , & Bluetooth.
+   MAC address is also known as  Physical address of a network device.
+   MAC is sublayer of Data Link Layer .
+
+  
+
+
+
+
+ 
+
+ 
+
+  
+
+
