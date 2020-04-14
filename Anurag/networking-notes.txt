@@ -1,0 +1,68 @@
+What are 4 important components of a computer?
+1. Processor / compute
+2. Memory
+3. Network
+4. Data / Disk (HDD/SSD)
+
+What kind of network devices are seen on a machine?
+1. Bluetooth
+2. Wifi
+3. Ethernet
+4. Serial port
+
+How network devices are connected to form a network?
+1. 
+
+What is TCP IP?
+
+What is URL?
+
+What is IP address?
+- unique identified for each machine
+- Internet protocal address
+- format of ip address 192.168.8.4
+- this is v4 ip address
+- other ip address is v6
+
+introduction to networking concept:
+https://courses.engr.illinois.edu/cs241/sp2012/lectures/33-network-intro.pdf
+
+
+How does an IP address get assigned to your machine?
+- DHCP, please put in more details about how DHCP work.
+
+What is a router?
+
+What is a switch?
+
+How does a packet travel from one machine to other machine?
+
+Resources:
+https://www.udemy.com/blog/basic-networking-concepts/
+https://www3.nd.edu/~cpoellab/teaching/cse40814_fall14/networks.pdf
+https://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/
+
+Q. Problem of 2000 servers, find number of switches with each switch having 32 ports and the connectivity among those switches.
+
+1. 2000 servers
+2. 65 switches to connect 31 servers to each switch
+3. Next level: 3 swtiches. 2 ports on one to switch to connect to 2 switches. And 31 porst from other 2 switches. 
+Total switches 68.
+
+Q. 2000 servers to get connected over wifi, please find the real wifi switches with model numbers and number of ports?
+
+Q. What is MAC address?
+
+Q. Physical layer? Wire / wifi / ethernet / FC 
+
+Q. Data link layer? Mac addr
+
+Q. Network: IP Layer
+
+Q. Transport: TCP / UDP
+
+Q. Session
+
+Q. Presenation
+
+Q. Application
