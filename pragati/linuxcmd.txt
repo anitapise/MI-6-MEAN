@@ -1,0 +1,83 @@
+pragati@pragati-VirtualBox:~$ mkdir work
+pragati@pragati-VirtualBox:~$ cd work
+pragati@pragati-VirtualBox:~/work$ cat>demo.txt
+
+pragati@pragati-VirtualBox:~/work$ pwd
+/home/pragati/work
+
+pragati@pragati-VirtualBox:~/work$ ls
+demo.txt
+pragati@pragati-VirtualBox:~/work$ ls -l
+total 0
+-rw-r--r-- 1 pragati pragati 0 Apr 14 11:13 demo.txt
+
+pragati@pragati-VirtualBox:~/work$ echo add new data in my file >>demo.txt
+pragati@pragati-VirtualBox:~/work$ cat demo.txt
+add new data in my file
+pragati@pragati-VirtualBox:~/work$ echo hello guys >>demo.txt
+pragati@pragati-VirtualBox:~/work$ cat demo.txt
+add new data in my file
+hello guys
+
+pragati@pragati-VirtualBox:~/work$ cal
+     April 2020       
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30  
+
+pragati@pragati-VirtualBox:~/work$ cal 11 1994
+   November 1994      
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30   
+
+
+pragati@pragati-VirtualBox:~/work$  cat >>new.txt
+java
+php
+angular
+node
+mongoDB
+sql
+mySql
+c     
+c++
+.net
+express
+pragati@pragati-VirtualBox:~/work$ tail new.txt
+php
+angular
+node
+mongoDB
+sql
+mySql
+c
+c++
+.net
+express
+
+pragati@pragati-VirtualBox:~/work$ tail -n 3 new.txt
+c++
+.net
+express
+pragati@pragati-VirtualBox:~/work$ head -n 3 new.txt
+java
+php
+angular
+
+        
+               
+
+
+
+
+
+
+
+
