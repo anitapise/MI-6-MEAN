@@ -1,0 +1,27 @@
+The data link layer uses a physical address to identify a machine this address is called as MAC address.MAC Address stands for "Media Access Control" Address.
+A MAC address is a hardware identification number that uniquely identifies each device on the network.MAC address is a 6 bytes(48 bites)physical address which is 
+written in Hexadecimal format.
+An Address can be three types
+1]Unicast: Refers to only one computer in the LAN
+2]Multicast:Refers to a group of address.This address can be destintion address but not a source address
+3]Broadcast:Refers to all stations in the LAN.Iff all bites in the address is 1,it is broadcast address.
+To identify the address is unicast or multicast,the LSB(least significant count)of the first byte is considered
+
+The MAC method used by Ethernet is 1-persistent CSMA/CD.Means Machine sense the carrier before transmitting.If the medium is free,the machine transmits dat,If two 
+or more machines transmit at the same time,there will be collision and abort the transmission.They retry after a random period.
+
+How to find MAC address –
+Command for UNIX/Linux -  ifconfig -a
+                          ip link list 
+                          ip address show
+
+Command forWindows OS -   ipconfig /all 
+
+MacOS -                   TCP/IP Control Panel
+
+
+What are MAC addresses used for?
+MAC addresses are the low level basics that make your ethernet based network work.
+Network cards each have a unique MAC address. Packets that are sent on the ethernet are always coming from a MAC address and sent to a MAC address. 
+If a network adapter is receiving a packet, it is comparing the packet’s destination MAC address to the adapter’s own MAC address. If the addresses match, the packet is
+processed, otherwise it is discarded.
