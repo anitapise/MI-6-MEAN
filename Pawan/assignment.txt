@@ -1,7 +1,7 @@
 network : ip layer
 	IP means the interneet protocol 
 	it has two types IPv 4 & IPv6
-	it helps to deliver from the server to the clinet 
+	it helps to deliver from the server to the client 
  What is MAC address?
 	is a unique identifier assigned to a network interface controller (NIC)	
 	it is called Media Access Control.
