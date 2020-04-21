@@ -2,7 +2,7 @@ shubhali@shubhali-VirtualBox:~$ touch example1
 
 shubhali@shubhali-VirtualBox:~$ cat>example1
 hellow this is example1 file. by using touch example1 we create an empty file.
-by using cat>example1 we insert text within that file press ctrl+d to save and exit
+by using cat>example1 we insert text within that file. press ctrl+d to save and exit.
 
 shubhali@shubhali-VirtualBox:~$ cat example1
 hellow this is example1 file. by using touch example1 we create an empty file.
@@ -19,7 +19,8 @@ shubhali@shubhali-VirtualBox:~$ mkdir dir2
 shubhali@shubhali-VirtualBox:~$ cd dir2
 
 shubhali@shubhali-VirtualBox:~/dir2$ cat>dir2_file
-this file is create within dir2 directory.shubhali@shubhali-VirtualBox:~/dir2$ cd
+this file is create within dir2 directory.
+shubhali@shubhali-VirtualBox:~/dir2$ cd
 shubhali@shubhali-VirtualBox:~$ ls
 Desktop     Downloads         HardLinks    MyLink          Templates
 dir2        example1          linuxfile    newdirectories  test.sh
@@ -74,11 +75,9 @@ total 156
 266738 drwx------ 15 shubhali shubhali  4096 Apr  5 17:14 .cache
 263978 drwx------ 15 shubhali shubhali  4096 Apr  5 17:22 .config
 266833 drwxr-xr-x  2 shubhali shubhali  4096 Apr  3 21:55 Desktop
-
 442813 drwxr-xr-x  2 shubhali shubhali  4096 Apr  7 08:38 dir2
 442808 drwxr-xr-x  2 shubhali shubhali  4096 Apr  7 08:40 dire2
 442807 drwxr-xr-x  2 shubhali shubhali  4096 Apr  5 16:58 directorys
-
 266837 drwxr-xr-x  3 shubhali shubhali  4096 Apr  3 22:08 Documents
 266834 drwxr-xr-x  2 shubhali shubhali  4096 Apr  3 21:55 Downloads
 395544 -rw-r--r--  1 shubhali shubhali   162 Apr  7 08:34 example1

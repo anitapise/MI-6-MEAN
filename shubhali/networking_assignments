@@ -1,0 +1,41 @@
+What is physical layer?
+1.Physical layer is the lowest layer of OSI model.
+2.It is responsible for the actual physical connection between the devices.
+3.The physical layer contains information in the form of bits.
+4.Hub,Modem,Cables are the physical layer devices.
+
+Functions of physical layer
+Line configuration:
+It defines the way how two or more devices can be connected phycically.
+
+Data transmission:
+It defines the transmission mode whether it is simplex,half duplex or full duplex.
+
+Topology:It define the way how network device arranged.e.g mesh,star,bus,hybrid..
+
+What is data link layer(DLL)?
+1.Data link layer is responsible for the node to node delivery of the message.
+2.It make sure data transfer is error free from one node to another,over the physical layer.
+3.The DLL contains the information in the form of packet.
+4.When packets arrives in a network,it is the responsibility of DLL to transmit it to the host using its MAC address.
+
+Functions of data link layer
+Framming:
+It provides a way for sender to transmit a set of bits that are meaningful to the receiver.this can be accomplished by attaching special bit patterns to the beginning and end of the frame.
+
+Physical addressing:
+DDL add physical addresses(MAC address) of sender and receiver in  the header of each frame.
+
+Error control:
+It provides the mechanism of error control in which it detects and retransmit damaged or lost frames.
+
+Flow control:
+The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates thet amount of data that can be sent before receivering acknowledgement.
+
+What is network layer?
+1.Network layer works for the transmission of data from one host to the other located in the different networks.
+2.It determine the best path to move data from source to destination.
+3.The sender and receiver's IP address are places in the header by network layer.
+ 
+
+
