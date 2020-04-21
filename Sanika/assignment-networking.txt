@@ -1,0 +1,79 @@
+﻿1.how ip address get assigned?
+        Every device connected to the internet is assigned an IP address when you connect. When you connect with your phone or computer or chosen device, your ISP assigns you an IP Address so you can browse, shop, and navigate the internet. PUBLIC IP is assigned by the ISP and PRIVATE IP Addresses provided by your Router.
+
+2.what is router?
+        A router is a networking device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet.Then, using information in its routing table or routing policy, it directs the packet to the next network on its journey.
+
+3.what is switch?
+        A switch is a high-speed device that receives incoming data packets and redirects them to their destination on a local area network (LAN).
+
+4.how does a packet travel from one machine to another?
+                sending a data packet from source machine
+        1.Application generates a packet to be sent on the network and send it to layer below.
+        2.The next layer is called as transport layer which manages end to end communication between two machines. The protocol used can be TCP or UDP.
+        3.Once packet is formed at transport layer, it is sent to network layer which adds source and destination IP in the packet.Most important field which is added
+          at IP or network layer is Time To Live (TTL) which is used by intermediate routers/switches to decide if packet needs to be forwarded or not.
+        4.After network layer, packet reaches data link or MAC layer, where source and destination MAC address of machines are added.
+        5.Data link layer push this packet to physical layer where it is sent as stream of “0” and “1” on physical medium available.
+
+                receiving a data packet at destination machine
+        1.Packet is received at network card, physical layer, which generates an interrupt to CPU and CPU reads packet in.
+        2.At data link layer, destination MAC address is checked to see if packet is destined to this machine, If yes, packet is sent up to network layer.
+        3.At IP layer, packet validation like checksum verification etc is done and then passed on to relevant transport layer.
+        4.Transport layer then passes it on to the appropriate port so that it reaches correct application.
+
+5.problem of 2000 servers
+        Many individual wireless routers and other access points can support up to approximately 250 connected devices.So if we want to connect 2000 servers wirelessly          we need 8 routers to fulfill our requirement. it is just theoretical.
+        if we want to connect through wired medium we can make a base router(primary) and add more secondary routers as needed. While you can use as Ethernet cable for         both LAN-to-LAN or LAN-to-WAN connections, they have slightly different uses :
+        1.LAN-to-LAN - Extends your Wi-Fi range to include the second router. You can also use a LAN-to-LAN connection to share files between network-connected
+          computers,smartphones, and so on.
+        2.LAN-to-WAN - Creates a second network inside of the main network, allowing you to place restrictions on any computers, smartphones, or other items that are
+          connected to it. LAN-to-WAN networks cannot be used to share files.
+
+6.what is physical layer?
+        Physical layer is the lowest layer of the OSI reference model. It is responsible for sending bits from one computer to another.The physical layer is responsible        for sending computer bits from one device to another along the network. It does not understand the bits; rather,its role is determining how physical connections        to the network are set up and how bits are represented into predictable signals as they are transmitted either electrically, optically or via radio waves.
+        Functions of Physical Layer:
+        * Defining bits: Determines how bits are converted from 0s and 1s to a signal.
+        * Data rate: Determines how fast the data flows, in bits per second.
+        * Synchronization: Ensures that sending and receiving devices are synchronized.
+7.what is data link layer?
+        The data link layer, or layer 2, is the second layer of the seven-layer OSI model of computer networking. This layer is the protocol layer that transfers data
+        between adjacent network nodes in a wide area network (WAN) or between nodes on the same local area network (LAN) segment.Data link layer is responsible for
+        converting data stream to signals bit by bit and to send that over the underlying hardware. At the receiving end, Data link layer picks up data from hardware
+        which are in the form of electrical signals, assembles them in a recognizable frame format, and hands over to upper layer.
+        Data link layer has two sub-layers:
+        1. Logical Link Control: It deals with protocols, flow-control,error control and some part of framing duties.
+        2. Media Access Control: It deals with actual control of media.
+        Functions of Data Link Layer
+        * Framing: Data-link layer takes packets from Network Layer and encapsulates them into Frames.Then,it sends each frame bit-by-bit on the hardware. At receiver’s                   end, data link layer picks up signals from hardware and assembles them into frames.
+        * Addressing: Data-link layer provides layer-2 hardware addressing mechanism. Hardware address is assumed to be unique on the link. It is encoded into hardware                       at the time of manufacturing.
+        * Synchronization: Ensures that sending and receiving devices are synchronized.
+        * Error Control: Sometimes signals may have encountered problem in transition and the bits are flipped.These errors are detected and attempted to recover actual                         data bits. It also provides error reporting mechanism to the sender.
+        * Flow Control: Stations on same link may have different speed or capacity. Data-link layer ensures flow control that enables both machine to exchange data on
+                        same speed.
+        * Multi-Access: When host on the shared link tries to transfer the data, it has a high probability of collision. Data-link layer provides mechanism such as
+                        CSMA/CD to equip capability of accessing a shared media among multiple Systems.
+
+8.what is network layer?
+        The Network Layer is the third layer of the OSI model.It handles the service requests from the transport layer and further forwards the service request to the          data link layer.It determines the route from the source to the destination and also manages the traffic problems such as switching, routing and controls the            congestion of data packets.The main role of the network layer is to move the packets from sending host to the receiving host.If two computers (system) are              connected on the same link, then there is no need for a network layer. It routes the signal through different channels to the other end and acts as a network           controller.
+        Functions of Netwok Layer:
+        * Routing: When a packet reaches the router's input link, the router will move the packets to the router's output link.
+        * Logical Addressing: The data link layer implements the physical addressing and network layer implements the logical addressing. Logical addressing is also
+                              used to distinguish between source and destination system. The network layer adds a header to the packet which includes the logical                                     addresses of both the sender and the receiver.
+        * Internetworking: This is the main role of the network layer that it provides the logical connection between different types of networks.
+        * Fragmentation: The fragmentation is a process of breaking the packets into the smallest individual data units that travel through different networks.
+9.what is transport layer?
+        The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts.
+        The services provided by the transport layer protocols can be divided into five categories:
+        1.End-to-end delivery  2.Addressing  3.Reliable delivery  4.Flow control  5.Multiplexing
+
+10.what is session layer?
+	In the seven-layer OSI model of computer networking, the session layer is layer 5.The Session Layer allows users on different machines to establish active 
+	communication sessions between them. It's main aim is to establish, maintain and synchronize the interaction between communicating systems. Session layer 
+	manages and synchronize the conversation between two different applications.
+
+11.what is presentation layer?
+	In the seven-layer OSI model of computer networking, the presentation layer is layer 6 and serves as the data translator for the network.The presentation layer 	acts as a translator between the application and the network, mainly addressing the syntax representation of user information, ie, providing formatted 			representations and translation data services. Data compression, decompression, encryption, decryption are completed in this layer.The presentation layer is 		responsible for the formatting and delivery of information to the application layer for further processing or display.
+
+12.what is application layer?
+	The application layer is a layer in the Open Systems Interconnection (OSI) seven-layer model and in the TCP/IP protocol suite. It consists of protocols that 		focus on process-to-process communication across an IP network and provides a firm communication interface and end-user services. The application layer 		abstraction is used in both of the standard models of computer networking: the Internet Protocol Suite (TCP/IP) and the OSI model. Although both models use the 	same term for their respective highest level layer, the detailed definitions and purposes are different.
