@@ -1,0 +1,99 @@
+vipul@vipul-desktop:~$ pwd
+/home/vipul
+vipul@vipul-desktop:~$ ls
+a.out  Desktop  Documents  Downloads  examples.desktop  f1  f1.txt  f2  fq  Music  Pictures  Public  sample1.cpp  sample.c  sample.cpp  snap  Templates  Videos
+vipul@vipul-desktop:~$ cd Documents
+vipul@vipul-desktop:~/Documents$ cd ..
+vipul@vipul-desktop:~$ who
+vipul    :0           2020-04-03 19:27 (:0)
+vipul@vipul-desktop:~$ whoami
+vipul
+vipul@vipul-desktop:~$ logname
+vipul
+vipul@vipul-desktop:~$ cal
+     April 2020       
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30        
+                      
+vipul@vipul-desktop:~$ cal -y
+                            2020
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                     1   1  2  3  4  5  6  7  
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   8  9 10 11 12 13 14  
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  15 16 17 18 19 20 21  
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  22 23 24 25 26 27 28  
+26 27 28 29 30 31     23 24 25 26 27 28 29  29 30 31              
+                                                                  
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                  1  2      1  2  3  4  5  6  
+ 5  6  7  8  9 10 11   3  4  5  6  7  8  9   7  8  9 10 11 12 13  
+12 13 14 15 16 17 18  10 11 12 13 14 15 16  14 15 16 17 18 19 20  
+19 20 21 22 23 24 25  17 18 19 20 21 22 23  21 22 23 24 25 26 27  
+26 27 28 29 30        24 25 26 27 28 29 30  28 29 30              
+                      31                                          
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                     1         1  2  3  4  5  
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+26 27 28 29 30 31     23 24 25 26 27 28 29  27 28 29 30           
+                      30 31                                       
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+             1  2  3   1  2  3  4  5  6  7         1  2  3  4  5  
+ 4  5  6  7  8  9 10   8  9 10 11 12 13 14   6  7  8  9 10 11 12  
+11 12 13 14 15 16 17  15 16 17 18 19 20 21  13 14 15 16 17 18 19  
+18 19 20 21 22 23 24  22 23 24 25 26 27 28  20 21 22 23 24 25 26  
+25 26 27 28 29 30 31  29 30                 27 28 29 30 31        
+                                                                  
+vipul@vipul-desktop:~$ date
+Fri Apr  3 20:00:52 IST 2020
+vipul@vipul-desktop:~$ ls
+a.out  Desktop  Documents  Downloads  examples.desktop  f1  f1.txt  f2  fq  Music  Pictures  Public  sample1.cpp  sample.c  sample.cpp  snap  Templates  Videos
+vipul@vipul-desktop:~$ cat > Me
+my name is gaurav
+vipul@vipul-desktop:~$ ls 
+a.out  Desktop  Documents  Downloads  examples.desktop  f1  f1.txt  f2  fq  Me  Music  Pictures  Public  sample1.cpp  sample.c  sample.cpp  snap  Templates  Videos
+vipul@vipul-desktop:~$ cat Me
+my name is gaurav
+vipul@vipul-desktop:~$ cat -n Me
+     1	my name is gaurav
+vipul@vipul-desktop:~$ cat >> Me
+First Command program 
+vipul@vipul-desktop:~$ cat Me
+my name is gaurav
+First Command program 
+vipul@vipul-desktop:~$ cd f1
+vipul@vipul-desktop:~/f1$ touch t1 t2 t3
+vipul@vipul-desktop:~/f1$ ls
+f2  f2.txt  t1  t1.txt  t2  t3
+vipul@vipul-desktop:~/f1$ cat >> t1
+File no 1
+vipul@vipul-desktop:~/f1$ ls
+f2  f2.txt  t1  t1.txt  t2  t3
+vipul@vipul-desktop:~/f1$ mkdir dir1
+vipul@vipul-desktop:~/f1$ ls
+dir1  f2  f2.txt  t1  t1.txt  t2  t3
+vipul@vipul-desktop:~/f1$ rmdir dir1
+vipul@vipul-desktop:~/f1$ ls
+f2  f2.txt  t1  t1.txt  t2  t3
+vipul@vipul-desktop:~/f1$ rm t1
+vipul@vipul-desktop:~/f1$ ls
+f2  f2.txt  t1.txt  t2  t3
+vipul@vipul-desktop:~/f1$ cat > t1
+Its a file
+vipul@vipul-desktop:~/f1$ mv t1 t2
+vipul@vipul-desktop:~/f1$ cat t2
+Its a file
+vipul@vipul-desktop:~/f1$ 
+

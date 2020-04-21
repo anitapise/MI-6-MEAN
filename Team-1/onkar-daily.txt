@@ -1,0 +1,12 @@
+Networking notes:
+Physical layer:
+ 1]The physical layer is the lowest layer of OSI refference model.
+ 2]It is responsible for sending bit for one computer to another computer in the format of 0's and 1's.
+ 3]It is responsible for the actual physical connection between two devices.
+ 4]Hub,modem,cables are physical layer devices.
+
+ Data Link Layer:
+  1]It is responsible for the node to node delivery of message.
+  2] The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer.
+  3]packets in data link layer is referred as frame.
+  4]Switches and bridges are data link layer devices.

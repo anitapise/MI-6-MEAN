@@ -1,0 +1,10 @@
+network : ip layer
+	IP means the interneet protocol 
+	it has two types IPv 4 & IPv6
+	it helps to deliver from the server to the client 
+ What is MAC address?
+	is a unique identifier assigned to a network interface controller (NIC)	
+	it is called Media Access Control.
+	MAC addresses are primarily assigned by device manufacturers	
+What is URL ?
+	a URL (Uniform Resource Locator) is a form of URI and a standardized naming convention for addressing documents accessible over the Internet and Intranet. An example of a URL is https://www.computerhope.com, which is the URL for the Computer Hope website
