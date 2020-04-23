@@ -1,0 +1,15 @@
+Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page
+	1.The lang attribute takes an ISO language code as its value. Typically this is a two letter code such as “en” for English, but it can also be an extended code such as “en-gb” for British English.
+	2.The lang attribute must also be used to identify chunks of text in a language that is different from the document’s primary language. 
+For example:
+<html lang="en">
+...
+<body>
+<p>This page is written in English.</p>
+</body>
+</html>	
+
+
+
+Q 3.2 Why should we add meta elements for description and keywords even though they do not have any impact on the way a web page is displayed?
+	Meta tags provide information about the webpage in the HTML of the document. This information is called "metadata" and while it is not displayed on the page itself, it can be read by search engines and web crawlers
