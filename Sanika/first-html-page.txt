@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>
+This is my first page</title>
+<meta name="Author" content="Sanika Gaikwad">
+<meta name="Keywords" content="HTML">
+</head>
+<body style="background-color:pink">
+<header>
+<center><h1>This is My First Page<h1></center>
+<section><h1>Sanika Gaikwad</h1>
+<p><i>sanikagaikwad1996@gmail.com</i></p></section>
+<img src="https://media1.tenor.com/images/dc4e4c324a8ceaa5b088758489673deb/tenor.gif?itemid=10359633" alt="smiley face" height="100" width="100">
+<br>
+<h2>ABOUT ME</h2>
+<p lang="en"> <b>Name -</b> Sanika Subhash Gaikwad</p>
+<section><b>MY TODO LIST</b><section><u>Stuff i need to do ASAP</u><ul><li><h3>Job</h3></li><li><h3>Career</h3></li>
+<ol><li><h4>Travelling across the world</h4><li><h4>Camping</h4></li></ol></section></section>
+<h2>WORK</h2>
+<p><b>BE Project -</b> Online Payment System Using <strong><em>Steganography</em></strong><br>
+<b>Diploma Project -</b> Library Management System</p>
+<h2>INTEREST</h2>
+<p>To learn new technologies.</p>
+<h2>EDUCATION</h2>
+<p>BE in Computer Science from MMCOE, Pune</p> <a href="https://www.mmcoe.edu.in/" target="_blank">Visit College site </a>
+
+</header>
+
+
+</body>
+</html>
+
+

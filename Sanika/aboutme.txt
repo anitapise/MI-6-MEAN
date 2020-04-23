@@ -1,2 +1,6 @@
 ﻿My name is Sanika Subhash Gaikwad.
+<<<<<<< Updated upstream
 I have completed BE in the stream of Computer  
+=======
+I have completed BE in yhe stream of Computer  
+>>>>>>> Stashed changes
