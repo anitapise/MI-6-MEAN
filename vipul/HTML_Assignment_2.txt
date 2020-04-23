@@ -1,0 +1,9 @@
+Q 2.1 Which is the tag and which is the attribute in the following line?
+	<div id=”footer”>
+-> div is a tag and id is an attribute.
+
+Q 2.2 Why is HTML called a mark-up language?
+-> A markup language is a type of language used to annotate text and which allowed users to work on standardized formatting styles for electronic documents.
+
+Q 2.3 Describe one problem you would likely face if you included presentation (styling) information with HTML instead of separating it in CSS?
+-> If I want to style same in different web pages, I have to style that every text which I want same styling. Instead of this it is better to make one css file for all text which you want same styling.

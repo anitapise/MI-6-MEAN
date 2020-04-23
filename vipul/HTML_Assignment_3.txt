@@ -1,0 +1,7 @@
+Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page.
+-> 1) Your HTML document will be indexed more effectively by search engines if its language is set.
+   2) It is useful to people with visual impairments using screen readers.
+
+Q 3.2 Why should we add meta elements for description and keywords even though they do not have any impact on the way a web page is displayed?
+-> Specifying a description that includes keywords relating to the content of your page is useful as it has the potential to make your page 
+   appear higher in relevant searches performed in search engines (such activities are termed Search Engine Optimization, or SEO.)
