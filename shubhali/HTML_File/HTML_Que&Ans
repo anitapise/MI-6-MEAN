@@ -48,3 +48,14 @@ Q1. If <span> and <div> are semantically neutral (that is, they do not confer an
 ->The <span> element shows the inline portion of a document. The <div> elements show a block-level portion of a document.
 The div should be used to wrap sections of a document, while use spans to wrap small portions of text, images, etc.
 example:<div>Demo Text, with <span>some other</span> text.</div>
+
+ACTIVITY10:
+Q1. List two inline elements and two block elements.
+->Inline elements:<span>,<b>
+Block elements:<div>,<p>.
+
+Q2 List three differences between block and inline elements.
+->1.Example of block elements:<p>, <div>, <form>, <header>, <nav>, <ul>, <li>, and <h1>.
+Example of inline elements:<a>, <span>, <b>, <em>, <i>, <cite>, <mark>, and <code>.
+2.In block elements if no width is set, will expand naturally to fill its parent container where as in inline element Flows along with text content, thus Will not clear previous content to drop to the next line like block elements
+3.Block elements ignores the vertical-align property where as inline elements ignore the width and height properties
