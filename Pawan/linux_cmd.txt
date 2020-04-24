@@ -1,95 +1,53 @@
-pawanjagtap@pawanjagtap-desktop:~$ cd MI-6-MEAN
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git status
-On branch Pawan
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 
-	deleted:    Pawan/Untitled_1.txt
-	deleted:    Pawan/aboutme.txt
-	deleted:    Pawan/assignment.txt
-	deleted:    Pawan/linux_cmd.txt
-	modified:   pawan/assignment.txt
+C:\Users\sharad jagtap>cd MI-6-MEAN]
+The system cannot find the path specified.
 
-no changes added to commit (use "git add" and/or "git commit -a")
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git branch
-* Pawan
-  master
-  pragati
-  pragit
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git checkout pawan
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git branch
-* Pawan
-  master
-  pragati
-  pragit
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git checkout Pawan
-D	Pawan/Untitled_1.txt
-D	Pawan/aboutme.txt
-D	Pawan/assignment.txt
-D	Pawan/linux_cmd.txt
+C:\Users\sharad jagtap>cd MI-6-MEAN
+
+C:\Users\sharad jagtap\MI-6-MEAN>git checkout Pawan
 Already on 'Pawan'
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git status
+M       Pawan/assignment.txt
+A       Pawan/linux_cmd.txt
+
+C:\Users\sharad jagtap\MI-6-MEAN>git status
 On branch Pawan
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Pawan/assignment.txt
+        new file:   Pawan/linux_cmd.txt
+
 Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Pawan/assignment.txt
 
-	deleted:    Pawan/Untitled_1.txt
-	deleted:    Pawan/aboutme.txt
-	deleted:    Pawan/assignment.txt
-	deleted:    Pawan/linux_cmd.txt
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pava1n.txt
 
-no changes added to commit (use "git add" and/or "git commit -a")
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git commit -m "add all file"
+
+C:\Users\sharad jagtap\MI-6-MEAN>git add Pawan/assignment.txt
+
+C:\Users\sharad jagtap\MI-6-MEAN>git status
 On branch Pawan
-Changes not staged for commit:
-	deleted:    Pawan/Untitled_1.txt
-	deleted:    Pawan/aboutme.txt
-	deleted:    Pawan/assignment.txt
-	deleted:    Pawan/linux_cmd.txt
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Pawan/assignment.txt
+        new file:   Pawan/linux_cmd.txt
 
-no changes added to commit
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git push origin Pawan
-Username for 'https://github.com': Pawan1005
-Password for 'https://Pawan1005@github.com': 
-remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/anitapise/MI-6-MEAN.git/'
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git push origin Pawan
-Username for 'https://github.com': Pawan1005
-Password for 'https://Pawan1005@github.com': 
-remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/anitapise/MI-6-MEAN.git/'
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git push origin Pawan
-Username for 'https://github.com': Pawan1005
-Password for 'https://Pawan1005@github.com': 
-To https://github.com/anitapise/MI-6-MEAN.git
- ! [rejected]        Pawan -> Pawan (non-fast-forward)
-error: failed to push some refs to 'https://github.com/anitapise/MI-6-MEAN.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git pull origin master
-From https://github.com/anitapise/MI-6-MEAN
- * branch            master     -> FETCH_HEAD
-Merge made by the 'recursive' strategy.
- Pawan/assignment.txt | 2 +-
- sourabh/aboutme.txt  | 2 ++
- swapnil/info.txt     | 1 +
- 3 files changed, 4 insertions(+), 1 deletion(-)
- create mode 100644 sourabh/aboutme.txt
- create mode 100644 swapnil/info.txt
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ git push origin Pawan
-Username for 'https://github.com': Pawan1005
-Password for 'https://Pawan1005@github.com': 
-Counting objects: 7, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 7.01 KiB | 7.01 MiB/s, done.
-Total 7 (delta 4), reused 0 (delta 0)
-remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
-To https://github.com/anitapise/MI-6-MEAN.git
-   ee5e6cb..a629a18  Pawan -> Pawan
-pawanjagtap@pawanjagtap-desktop:~/MI-6-MEAN$ 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pava1n.txt
 
+
+C:\Users\sharad jagtap\MI-6-MEAN>git status
+On branch Pawan
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Pawan/assignment.txt
+        new file:   Pawan/linux_cmd.txt
+
+
+C:\Users\sharad jagtap\MI-6-MEAN>
