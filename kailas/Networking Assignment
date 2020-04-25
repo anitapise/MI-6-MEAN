@@ -1,4 +1,4 @@
-1)What is the TCP/IP? (Transport Control Protocol / Internet Protocol)
+1)What is the TCP/IP? (Transport Control Protocol / Internet Protocol).
 
 TCP/IP model consists of five layers: Application,Transport,Network,Data link,physical layer.
    TCP :  create a virtual circuit between the sender and receiver.
