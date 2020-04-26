@@ -1,0 +1,4 @@
+Q 4.1 Is there any best practice related to how often an H1 tag should ideally appear in a single web
+page? If so, what is the best practice?
+      Best practice is only one h1 tag per page with the keyword that you are trying to optimize for and which contain the main title and you can optimized the rest of your headings on that page in H2, H3, H4. you can use any number of H2, H3, H4, H5, and H6 Tags on any page in sub Headings. But don't go overboard.
+
