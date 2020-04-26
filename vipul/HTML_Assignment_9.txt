@@ -1,0 +1,4 @@
+Q 9.1 If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could 
+      we get from using these elements in our web page?
+-> A span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line 
+   (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code. 
