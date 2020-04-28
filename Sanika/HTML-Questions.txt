@@ -1,0 +1,21 @@
+﻿1. <div id=”footer”>
+ans --> div – is a tag and id – is an attribute
+
+2. Why HTML  called a markup language?
+Ans --> HTML is called a ‘markup language’ because it allows users to organise the appearance and presentation of all the content that should go on a web page. It tells the web browser how to display the page’s words and images to the user. 
+
+3. Specify two advantages of adding the ‘lang’ attribute to a web page?
+Ans -->  1. Identifying the language of your content allows you to automatically do a number of things, from changing the look and behaviour of a page, to extracting information, to changing the way that an application works. 
+	2. It is best to add language information to your content now in order to be able to reap the benefits when new developments arises. It is simple to do when creating content, but more difficult to retrofit later.
+
+4. Why should we add meta elements for description and keywords even though they do not have any impact on the way a wen page is displayed?
+Ans --> Meta tags are key things for all search engines that appear in the HTML code of a website page and tells the first impression and point of contact for all search engines.
+
+5.1 <i> VS. <em>
+ans--> By default, the visual result is the same. However, the semantic meaning is different. The <em> element represents stress emphasis of its contents, while the <i> element represents text that is set off from the normal prose, such a foreign word, fictional character thoughts, or when the text refers to the definition of a word instead of representing its semantic meaning.
+
+5.2 As the author of a web page, when would you use <strong> as opposed to <em> ?
+Ans--> The <strong> and <em> tags are used for emphasizing parts of a text. The <strong> tag should be used to indicate strong importance, seriousness, or urgency. The <em> tag should be used to represent stress emphasis, like when you’d read the emphasized text in a different tone of voice. Both tags can be used together, where it makes sense.
+
+6.1 When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the internet?
+Ans--> The image can be anywhere on the internet.
