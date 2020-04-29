@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<title>About Me</title>
-	 <meta name="description" content="Pooja">
-  	 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>About Me</title>
+   <meta name="description" content="Pooja">
+   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+   <style>
+    table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
 
-  	 <style>
-		table, th, td {
-  						border: 1px solid black;
-  						border-collapse: collapse;
+            }
+    th, td  {
+            padding: 5px;
+            text-align: center;  
 
-					  }
-		th, td 	{
-  					padding: 5px;
-  					text-align: center;  
-
-				}
-							* {
+        }
+              * {
   box-sizing: border-box;
 }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -37,7 +35,6 @@ label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-
 input[type=submit] {
   background-color: rgb(204, 0, 0);
   color: white;
@@ -48,36 +45,30 @@ input[type=submit] {
   cursor: pointer;
   align-content: center;
 }
-
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -85,175 +76,146 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-
-
 </style>
-
 </head>
 <body style="margin-left: 25%;">
-	
-		<header style="background-color: #D3D3D3"><h1 style="padding-top:15px">POOJA KAMBLE</h1>
-		<span style="color:blue">kamblepooja24.pk@gmail.com</span></header>
-
-		<!-- for this ths 2nd sub-heading so thats here i m using the h2 tag    -->
-	<h2>ABOUT ME</h2>
-	<div>
-		<p>
-			I am Pooja from <em><span style="color:red">solapur<span style="color:red"></em><br>
-			I have completed my engineering from <b>N.K.Orchid college of engg and tech.</b><br/>
-			I have the <strong><span style="color:red">1 year of exp</span></strong> in android developer<br/>
-			I am doing the student projects in django with mysql and .net with mysql
-		</p>
-	</div>
-	<h2>WORK</h2>
-	<div>
-	   <h3><span style="color:blue">Industrial Training:</span></h3>
-	   <h5>TE:-</h5>
-	   	<p><h5>Title:<span style="color:red">Car Pooling System</span></h5>
-	   		<!-- as we know the heading tag not needed the br tag because it automatically added into it so i m using br tag here for break the line-->
-	   
-	   	   <strong><span style="color:red">Duration:</span> 15 days</strong><br>
-	   	   <strong><span style="color:red">Summary:</span></strong> Carpooling also   called    car-sharing    ride-sharing    is    the    sharing  of car journeys so that more than one person travels in car. <br>By having more people  using one vehicle, carpooling reduces each person's travel costs such as fuel costs and the stress of driving.
-	   	</p>
-	   </div>
-	 <div> 
-	 	<p> 
-	 		<h3><span style="color:blue">Final year project</span></h3>
-			<h5><em>BE:-</em></h5>
-		    <h5><span style="color:red">Title:</span>Novel Approach for Biometric Voting System<br></h5>
-		    <strong><span style="color:red">Front End:</span></strong>Java<br/>
-		    <strong><span style="color:red">Back end:</span></strong> Mysql<br/>
-			<strong><span style="color:red">Summary:</span></strong>Traditional voting system is totally depending on paper work to maintain voters and voting done records. It is time consuming <br>and duplicate voting is also a problem for present system.This approach avoids knowing physical location of the voting booth irrespective <br>of Voters booth number for voting. Also fake voting is eliminated</p>
+    <header style="background-color: #D3D3D3"><h1 style="padding-top:15px">POOJA KAMBLE</h1>
+    <span style="color:blue">kamblepooja24.pk@gmail.com</span></header>
+      <!-- for this ths 2nd sub-heading so thats here i m using the h2 tag    -->
+    <h2>ABOUT ME</h2>
+    <div>
+        <p>
+          I am Pooja from <em><span style="color:red">solapur<span style="color:red"></em><br>
+          I have completed my engineering from <b>N.K.Orchid college of engg and tech.</b><br/>
+          I have the <strong><span style="color:red">1 year of exp</span></strong> in android developer<br/>
+          I am doing the student projects in django with mysql and .net with mysql
+        </p>
     </div>
-   <h2>INTERESTS</h2>
-		<p><span style="color:red">Pencil Sketching and Cooking.</span></p>
-		<marquee><a href="https://en.wikipedia.org/wiki/Cooking" target="_blank"><img src="cooking.jpg" alt="Image is not available" height="200px" width="200px"></a>
-		<a href="https://en.wikipedia.org/wiki/Sketch_(drawing)" target="_blank"><img src="sketch.jpg" alt="Image is not available" height="200px" width="200px"></a></marquee>
-   <h2>EDUCATION</h2>
-	 
-		 <table style="width:50%">
-  			<tr>
-			    <th colspan="2">Institution</th>
-			    <th>Year of passing</th>
-			    <th>Certificate/Degree</th>
-  			</tr>
-  		    <tr>
-    			<td><a href="https://www.orchidengg.ac.in/" target="_blank">N.K. Orchid college of Engineering and technology</a></td>
-  			    <td><img src="nkocet.jpg" alt="Image not available" width="90px" height="90px"></td>
-    			<td>2017</td>
-    			<td>BE in computer science and Engineering</td>
-    			
-  		    </tr>
-  		    <tr>
-  		    	<td><a href="http://www.sespolytechnic.org.in/" target="_blank">S.E.S. Polytechnic solapur</a></td>
-  			    <td><img src="sesp.png" alt="Image not available" width="90px" height="90px"></td>
-    			<td>2014</td>
-    			<td>Diploma in computer Technology</td>
-    			
-  		    </tr>
-  		    <tr>
-  		    	<td><a href="#" target="_blank">S.H.N. HighSchool solapur</a></td>
-  			    <td><img src="shn.png" alt="Image not available" width="90px" height="90px"></td>
-    			<td>2011</td>
-    			<td>SSC</td>
-    			
-  		    </tr>
-
-
-
-        </table>
-
-	 
+    <h2>WORK</h2>
+    <div>
+       <h3><span style="color:blue">Industrial Training:</span></h3>
+       <h5>TE:-</h5>
+        <p><h5>Title:<span style="color:red">Car Pooling System</span></h5>
+           <!-- as we know the heading tag not needed the br tag because it automatically added into it so i m using br tag here for break the line-->     
+           <strong><span style="color:red">Duration:</span> 15 days</strong><br>
+           <strong><span style="color:red">Summary:</span></strong> Carpooling also   called    car-sharing    ride-sharing    is    the    sharing  of car journeys so that more than one person travels in car. <br>By having more people  using one vehicle, carpooling reduces each person's travel costs such as fuel costs and the stress of driving.
+        </p>
+    </div>
+    <div> 
+        <p><h3><span style="color:blue">Final year project</span></h3>
+          <h5><em>BE:-</em></h5>
+          <h5><span style="color:red">Title:</span>Novel Approach for Biometric Voting System<br></h5>
+          <strong><span style="color:red">Front End:</span></strong>Java<br/>
+          <strong><span style="color:red">Back end:</span></strong> Mysql<br/>
+          <strong><span style="color:red">Summary:</span></strong>Traditional voting system is totally depending on paper work to maintain voters and voting done records. It is time consuming <br>and duplicate voting is also a problem for present system.This approach avoids knowing physical location of the voting booth irrespective <br>of Voters booth number for voting. Also fake voting is eliminated
+        </p>
+    </div>
+    <h2>INTERESTS</h2>
+    <p><span style="color:red">Pencil Sketching and Cooking.</span></p>
+        <marquee>
+            <a href="https://en.wikipedia.org/wiki/Cooking" target="_blank"><img src="images/cooking.jpg" alt="Image is not available" height="200px" width="200px"></a>
+            <a href="https://en.wikipedia.org/wiki/Sketch_(drawing)" target="_blank"><img src="images/sketch.jpg" alt="Image is not available" height="200px" width="200px"></a>
+        </marquee>
+    <h2>EDUCATION</h2>
+      <table style="width:50%">
+        <tr>
+          <th colspan="2">Institution</th>
+          <th>Year of passing</th>
+          <th>Certificate/Degree</th>
+        </tr>
+        <tr>
+          <td><a href="https://www.orchidengg.ac.in/" target="_blank">N.K. Orchid college of Engineering and technology</a></td>
+          <td><img src="images/nkocet.jpg" alt="Image not available" width="90px" height="90px"></td>
+          <td>2017</td>
+          <td>BE in computer science and Engineering</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.sespolytechnic.org.in/" target="_blank">S.E.S. Polytechnic solapur</a></td>
+          <td><img src="images/sesp.png" alt="Image not available" width="90px" height="90px"></td>
+          <td>2014</td>
+          <td>Diploma in computer Technology</td>
+        </tr>
+        <tr>
+          <td><a href="#" target="_blank">S.H.N. HighSchool solapur</a></td>
+          <td><img src="images/shn.png" alt="Image not available" width="90px" height="90px"></td>
+          <td>2011</td>
+          <td>SSC</td>  
+        </tr>
+      </table>
    <h2>FIND ME ON THE WEB</h2>
    <h2>MY TODO LIST</h2>
-   		<dl style="margin-left: 15px;">
-   			<dt><img src="smile.jpg" alt="Image is not available" height="20px" width="20px" /> <b><span style="color:red">Stuff  I need to do ASAP</span></b>
-   					<dd>
-   					<ol>
-   						<li>Improve the development knowledge</li>
-   						<li>Getting the job in IT</li>
-   						<li>Send the Project to Student</li>
-   						<li>Want to meet my Mumbai friends after lockdown</li>
-   						<li>Learn angularJs and nodeJs </li>
-   					</ol>
-   				</dd>
-   			</dt>
-   		    <dt style="margin-left: 15px;"><img src="smile.jpg" alt="Image is not available" height="20px" width="20px" /><b><span style="color:red">Stuff I need to do Somedays</span></b>
-   					<dd>
-   						<ul>
-
-							<li>Traveling to the wolrd</li>
-		   					<li>Spent time with family</li>
-		   					<li>Buy new Schooty</li>
-		   					<li>Want Eat pav bhaji at chopati</li>
-		   					<li>Want to help the children who want to do study</li>
-	         		   
-	         		    </ul>
-
-   					</dd>			
-		    </dt>	
-
-
-
-   		</dl>
-   		<h3>CONTACT ME</h3>
-   			        
-                <fieldset>
-                  <legend>CONTACT</legend>
-   							<form action="/action_page.php">
- 								 <div class="row">
-  									  <div class="col-25">
-    									  <label for="fname">Name</label>
-    										</div>
-   									  <div class="col-75">
-      									<input type="text" id="fname" name="fname" placeholder="Your name..">
-    								</div>
-  								</div>
-  								<div class="row">
-    								<div class="col-25">
-      									<label for="lname">Email</label>
-    								</div>
-    							<div class="col-75">
-      								<input type="text" id="email" name="email" placeholder="Your EmailID..">
-    							</div>
-  								</div>
-  								<div class="row">
-    							<div class="col-25">
-     							 <label for="country">Purpose of contact</label>
-    							</div>
-   								 <div class="col-75">
-    								 <select id="msgtype" name="msgtype">
-        						 			<option value="Official">Official</option>
-       							 			<option value="Personal">Personal</option>
-        						 			
-   							   		</select>
-    							</div>
-  						</div>
-  						<div class="row">
-    						<div class="col-25">
-    				    	<label for="subject">Message</label>
-			    		</div>
-					    <div class="col-75">
-					      <textarea id="subject" name="subject"  placeholder="Write Message.." style="height:200px;padding-bottom: 5%;"></textarea>
-					      	<input type="checkbox" id="check1" style="padding-top: 5%;">If you want to receive Email for update please select the box	
-					    </div>
-
-			  		</div>
-			  		
-					<div class="row" style="padding-top: 5%;">
-					    <input type="submit" value="SEND YOUR MESSAGE">
-					</div>
-
-			  </form>
-        </fieldset>
-				  
-
-
-
+      <dl style="margin-left: 15px;">
+            <dt>
+                <img src="images/smile.jpg" alt="Image is not available" height="20px" width="20px" /> <b><span style="color:red">Stuff  I need to do ASAP</span></b>
+                <dd>
+                  <ol>
+                    <li>Improve the development knowledge</li>
+                    <li>Getting the job in IT</li>
+                    <li>Send the Project to Student</li>
+                    <li>Want to meet my Mumbai friends after lockdown</li>
+                    <li>Learn angularJs and nodeJs </li>
+                  </ol>
+                </dd>
+            </dt>
+            <dt style="margin-left: 15px;"><img src="images/smile.jpg" alt="Image is not available" height="20px" width="20px" /><b><span style="color:red">Stuff I need to do Somedays</span></b>
+                <dd>
+                    <ul>
+                      <li>Traveling to the wolrd</li>
+                      <li>Spent time with family</li>
+                      <li>Buy new Schooty</li>
+                      <li>Want Eat pav bhaji at chopati</li>
+                      <li>Want to help the children who want to do study</li>   
+                    </ul>
+                </dd>     
+            </dt> 
+      </dl>
+      <h3>CONTACT ME</h3>
+          <fieldset>
+              <legend>CONTACT</legend>
+               <form action="/action_page.php">
+                       <div class="row">
+                            <div class="col-25">
+                                  <label for="fname">Name</label>
+                            </div>
+                            <div class="col-75">
+                                  <input type="text" id="fname" name="fname" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-25">
+                                  <label for="lname">Email</label>
+                              </div>
+                              <div class="col-75">
+                                   <input type="text" id="email" name="email" placeholder="Your EmailID..">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-25">
+                                   <label for="country">Purpose of contact</label>
+                              </div>
+                              <div class="col-75">
+                                    <select id="msgtype" name="msgtype">
+                                           <option value="Official">Official</option>
+                                           <option value="Personal">Personal</option>
+                                    </select>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-25">
+                                    <label for="subject">Message</label>
+                               </div>
+                               <div class="col-75">
+                                     <textarea id="subject" name="subject"  placeholder="Write Message.." style="height:200px;padding-bottom: 5%;"></textarea>
+                                     <input type="checkbox" id="check1" style="padding-top: 5%;">If you want to receive Email for update please select the box
+                               </div>
+                        </div>
+                        <div class="row" style="padding-top: 5%;">
+                                    <input type="submit" value="SEND YOUR MESSAGE">
+                        </div>
+                 </form>
+          </fieldset>
 <!-- here in "Bold" is a style. <strong> is semantic - it describes the text it 
 surrounds is strong 1 year of experience-->
-
 <!--<div> tag is used for section so i am added on the perticular section and <span> is used for the inline block so i am added it to the heading tag -->
-
 </body>
 </html>
