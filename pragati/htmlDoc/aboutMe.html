@@ -2,29 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
-    <style>
-      .about-section {
-        padding: 10px;
-        text-align: center;
-        background-color: gray;
-        color: white;
-      }
-
-      .new {
-        padding: 8px;
-        text-align: left;
-
-        color: black;
-      }
-
-      table,
-      td,
-      th {
-        border: 0.5px solid black;
-        text-align: center;
-      }
-    </style>
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
   </head>
 
   <body>
@@ -50,36 +29,91 @@
       <p>I am currting doing Internship on Mean Stack</p>
     </div>
     <div>
-      <h2>Education</h2>
-      <table>
+      <h1>Education</h1>
+      <table border="1">
         <tr>
-          <th>Institution</th>
+          <th colspan="2">Institution</th>
           <th>Year of passing</th>
           <th>Certificate/Degree</th>
         </tr>
 
         <tbody>
           <tr>
-            <td>
+            <td colspan="2">
               <img src="img\download.png" width="60px" height="50px" />
               <br />IMR College Jalgaon
             </td>
             <td>2019</td>
             <td>MCA</td>
           </tr>
+          <tr>
+            <td colspan="2">
+              <img src="img/images.png" width="60px" height="50px" />
+              <br />Kamla Nehru College Nagpur
+            </td>
+            <td>2016</td>
+            <td>BCA</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <img src="img/download.jpg" width="60px" height="50px" />
+              <br />Samarth High School Ramtek
+            </td>
+            <td>2012</td>
+            <td>HSC</td>
+          </tr>
         </tbody>
       </table>
+    </div>
+    <div class="list">
+      <h1>MY TODO LIST</h1>
+      <h3>Stuffs I would like to do as soon as possible</h3>
+      <ul type="circle">
+        <li>I love My family and friend</li>
+        <li>I am all time miss my clg life</li>
+        <li>I never cross my limit</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Stuffs I would like to do someday</h3>
+      <ul type="squre">
+        <li>Confess my feelings to someone</li>
+        <li>Buy Own a Car</li>
+        <li>Spend a Night in Tree House</li>
+        <li>Want to settle down in Hyderabad</li>
+        <li>I want to tell Veryone dont touch my Mobile</li>
+      </ul>
     </div>
     <div class="new">
       <h1>Contact</h1>
       <form action="./aboutMe.html" target="_blank">
-        <input type="text" name="name" placeholder="Name" /><br />
+        <label> Choose purpose of contact:</label>
+        <select>
+          <option value="Official">Offical</option>
+          <option value="Persnal">Personal</option> </select
+        ><br />
+        <label>Name</label>
+        <input
+          type="text"
+          name="name"
+          tyle="font-size:16pt;"
+          placeholder="Name"
+        /><br />
+        <label>Email</label>
 
         <input type="text" name="email" placeholder="Email" /><br />
+        <label>Message</label>
 
-        <textarea type="text" name="msg" placeholder="Message"></textarea>
+        <textarea
+          type="text"
+          name="msg"
+          placeholder="Write Something Here..."
+        ></textarea>
+
         <br />
-
+        <label>
+          <input type="checkbox" name="subscribe" />Weekly Newsletter </label
+        ><br />
         <input type="submit" value="Submit" />
       </form>
     </div>
