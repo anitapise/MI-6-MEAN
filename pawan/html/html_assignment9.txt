@@ -1,0 +1,2 @@
+Q 9.1 If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
+	
