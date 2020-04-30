@@ -1,0 +1,191 @@
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd MI-6-MEAN
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN (master)
+$ cd kailas
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ ls
+members.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git branch
+* master
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git checkout -b kailas
+Switched to a new branch 'kailas'
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git push origin kailas
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.56 KiB | 531.00 KiB/s, done.
+Total 6 (delta 0), reused 2 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'kailas' on GitHub by visiting:
+remote:      https://github.com/anitapise/MI-6-MEAN/pull/new/kailas
+remote:
+To https://github.com/anitapise/MI-6-MEAN.git
+ * [new branch]      kailas -> kailas
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git stash:
+git: 'stash:' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git stash
+No local changes to save
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git pull origin master
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 22 (delta 0), reused 22 (delta 0), pack-reused 0
+Unpacking objects: 100% (22/22), 28.45 KiB | 53.00 KiB/s, done.
+From https://github.com/anitapise/MI-6-MEAN
+ * branch            master     -> FETCH_HEAD
+   17481d5..ea77c7c  master     -> origin/master
+Updating 17481d5..ea77c7c
+Fast-forward
+ Anita/Steps_for_git                    |  43 ++++++++++++++++
+ Anita/aboutme.txt                      |   1 +
+ Anurag/Aboutme.txt                     |   1 +
+ Anurag/networking-notes.txt            |  68 +++++++++++++++++++++++++
+ README.md                              |   2 +
+ Team-1/Ashutosh_Tcp-udptransportly.pdf | Bin 0 -> 25157 bytes
+ Team-1/members.txt                     |   4 ++
+ Team-1/onkar-daily.txt                 |   3 ++
+ aboutme.txt                            |   1 -
+ new1                                   |   1 -
+ onkar/onkar/aboutme.txt                |   2 +
+ onkar/onkar/linux_cmd.txt              |   7 +++
+ onkar/onkar/om.txt                     |   0
+ shubhali/AboutMe.txt                   |   8 +++
+ shubhali/Assignment_Networking         |  45 +++++++++++++++++
+ shubhali/LinuxCommands                 |  89 +++++++++++++++++++++++++++++++++
+ sneha_info.txt                         |   9 ----
+ 17 files changed, 273 insertions(+), 11 deletions(-)
+ create mode 100644 Anita/Steps_for_git
+ create mode 100644 Anita/aboutme.txt
+ create mode 100644 Anurag/Aboutme.txt
+ create mode 100644 Anurag/networking-notes.txt
+ create mode 100644 README.md
+ create mode 100644 Team-1/Ashutosh_Tcp-udptransportly.pdf
+ create mode 100644 Team-1/members.txt
+ create mode 100644 Team-1/onkar-daily.txt
+ delete mode 100644 aboutme.txt
+ delete mode 100644 new1
+ create mode 100644 onkar/onkar/aboutme.txt
+ create mode 100644 onkar/onkar/linux_cmd.txt
+ create mode 100644 onkar/onkar/om.txt
+ create mode 100644 shubhali/AboutMe.txt
+ create mode 100644 shubhali/Assignment_Networking
+ create mode 100644 shubhali/LinuxCommands
+ delete mode 100644 sneha_info.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (master)
+$ git checkout kailas
+Switched to branch 'kailas'
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git merge master
+Updating 17481d5..ea77c7c
+Fast-forward
+ Anita/Steps_for_git                    |  43 ++++++++++++++++
+ Anita/aboutme.txt                      |   1 +
+ Anurag/Aboutme.txt                     |   1 +
+ Anurag/networking-notes.txt            |  68 +++++++++++++++++++++++++
+ README.md                              |   2 +
+ Team-1/Ashutosh_Tcp-udptransportly.pdf | Bin 0 -> 25157 bytes
+ Team-1/members.txt                     |   4 ++
+ Team-1/onkar-daily.txt                 |   3 ++
+ aboutme.txt                            |   1 -
+ new1                                   |   1 -
+ onkar/onkar/aboutme.txt                |   2 +
+ onkar/onkar/linux_cmd.txt              |   7 +++
+ onkar/onkar/om.txt                     |   0
+ shubhali/AboutMe.txt                   |   8 +++
+ shubhali/Assignment_Networking         |  45 +++++++++++++++++
+ shubhali/LinuxCommands                 |  89 +++++++++++++++++++++++++++++++++
+ sneha_info.txt                         |   9 ----
+ 17 files changed, 273 insertions(+), 11 deletions(-)
+ create mode 100644 Anita/Steps_for_git
+ create mode 100644 Anita/aboutme.txt
+ create mode 100644 Anurag/Aboutme.txt
+ create mode 100644 Anurag/networking-notes.txt
+ create mode 100644 README.md
+ create mode 100644 Team-1/Ashutosh_Tcp-udptransportly.pdf
+ create mode 100644 Team-1/members.txt
+ create mode 100644 Team-1/onkar-daily.txt
+ delete mode 100644 aboutme.txt
+ delete mode 100644 new1
+ create mode 100644 onkar/onkar/aboutme.txt
+ create mode 100644 onkar/onkar/linux_cmd.txt
+ create mode 100644 onkar/onkar/om.txt
+ create mode 100644 shubhali/AboutMe.txt
+ create mode 100644 shubhali/Assignment_Networking
+ create mode 100644 shubhali/LinuxCommands
+ delete mode 100644 sneha_info.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git stash pop
+No stash entries found.
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git add kailas/steps_for_git
+warning: could not open directory 'kailas/kailas/': No such file or directory
+fatal: pathspec 'kailas/steps_for_git' did not match any files
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ ls
+members.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git add ram/steps_for_git
+warning: could not open directory 'kailas/ram/': No such file or directory
+fatal: pathspec 'ram/steps_for_git' did not match any files
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git commit -m
+error: switch `m' requires a value
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ ls
+members.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ git push origin kailas
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anitapise/MI-6-MEAN.git
+   17481d5..ea77c7c  kailas -> kailas
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$ ls
+members.txt
+
+Kailas Patil@SaiGanu MINGW64 ~/MI-6-MEAN/kailas (kailas)
+$
