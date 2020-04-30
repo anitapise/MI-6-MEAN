@@ -1,7 +1,100 @@
+Q:What did you find most interesting about the history of HTML?
+-Sir Tim didn’t come up with the idea of using tags consisting of words between angle brackets those kinds of tags already existed in the SGML (Standard
+ Generalized Markup Language) format. Rather than inventing a new standard, Sir Tim saw the benefit of building on top of what already existed.
+
 Q:Which is tag and which is attribute in the following line?
 <div id="Footer">
 - Tags are used to mark up start and end of the elelment.
 - Attribute defines property of an element.
 - here <div> is the tag and id is attribute where it defines property footer.
+
+Q:Why is HTML called a mark-up language?
+-Markup means to structure it in a specific format.
+-Hypertext means machine readable text.
+-Its used to annotate text and it marks the information by tagging them.
+
+Q:Describe one problem you would likely face if you included presentation
+  (styling) information with HTML instead of separating it in CSS?
+-In HTML if i want to do presentation then i have to style each and every text  of it.Instead of this its better to make one css file for all text which want  to styled.
+
+Q:Specify two advantages of adding the ‘lang’ attribute to a web page?
+-To identify the language of text content on the web which helps to search 
+ engines return language specific results.
+-Useful to people with visual impairments using screen readers.
+
+Q:Why should we add meta elements for description and keywords even though they  do not have any impact on the way a web page is displayed?
+-Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+-Metadata can be used by browsers,search engines, and other web services.
+-It makes webpage higher appear in relevant searches performed by search engine
+ 
+Q:Is there any best practice related to how often an H1 tag should ideally
+  appear in a single web page? If so, what is the best practice?
+- Best practice is only one h1 tag per page.you can't repeat it again and again  but other heading tags like H2,H3,H4,H5,H6 you can use them multiple times in  single web page as a sub-headings.
+
+Q:Sometimes developers who do not understand best practices properly may simply  use text of a larger font size to denote headings instead of using one of the  H tags. While visually both may appear identical and a casual reader would
+  not even know the difference, such a lapse might cause problems in certain
+  scenarios. Mention at least one scenario where such an incorrect design could  create a problem.
+- Visual readers can identify the headings by scanning pages.
+- Blind users cant identify it.
+- so the users not able to identify the exact heading of pages that will be
+  problem.
+
+Q:Web browsers are just one of the ways of rendering HTML pages. HTML content
+  can also be read out by speech readers instead of being displayed visually.
+  Based on what you have read in this section, what – according to you – would   be the difference in the way the following two lines of text are read out:
+    1. You need to come here <i>right now</i>.
+    2. You need to come here <em>right now</em>. 
+-1)There is no importance for word right now here and also no added emphasis.
+-2)where <em> is used when you want to put more stress on a word or phrase.
+   so on word right now here has stressed emphasis.
+
+Q:As the author of a web page, when would you use <strong> as opposed to <em>?
+-<strong> is used to show importance and indicates that is meaningful word to
+  that section.<em> is used for changing the meaning of sentence.
+
+Q:When we link to an image from an HTML document, does the image have to be in   the same directory as the HTML page or can it exist anywhere on the Internet?- Yes,We can store the image on same directory as well as can exist anywhere
+   but we have to mention the path where the image should exist.
+
+Q:If <span> and <div> are semantically neutral (that is, they do not confer any  meaning to the content they envelop), then why would you even use them? What   possible benefit could we get from using these elements in our web page?
+-<span> is used for small chunk of codes in HTML.
+-<div> is used for large chunk of codes in HTML.
+-<div> tag helps to separate out the data in the web pages.
+
+Q:List two inline elements and two block elements.
+-inline elements.
+ 1.<span>
+ 2.<script>
+ 3.<button>
+
+-block elements
+ 1.<div>
+ 2.<form>
+ 3.<fieldset>
+
+Q:List three differences between block and inline elements.
+-Block Elements
+ -block elements begin on new line.
+ -it contains inline elements.
+ -it have margins and padding.
+
+-inline Elements
+ -does not start on new line.
+ -ignore height and width properties.
+ -ignore top and bottom margin settings but apply left-right margin settings.
+
+Q:The purpose of the ‘action’ attribute of an HTML form is defined as:
+-The purpose of the HTML action attribute is to specify the URL of a form 
+ processor. HTML action attribute supports form element.
+
+Q:What is the <fieldset> element and why would you use it?
+-The fieldset tag allows you to logically group sets of fields in order that 
+ your forms be more descriptive.
+
+Q:What is ‘quirks mode’ in a browser, when is it activated, and what is the
+  implication of it being activated for a web page?
+-In computing, quirks mode refers to a technique used by some web browsers for  the sake of maintaining backward compatibility with web pages designed for old web browsers instead of strictly complying with W3C.
+-quirks mode is turned on when there is no correct DOCTYPE declaration, and 
+ turned off when there is a DOCTYPE definition.
+
 
 
