@@ -1,5 +1,5 @@
 Q 1.1 What did you find most interesting about the history of HTML?
-HTML is the unifying language of the World Wide Web. Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler
+  ANS:- HTML is the unifying language of the World Wide Web. Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler
 As with the web itself, the HyperText Markup Language was the brainchild of Sir Tim Berners-Lee.
 In 1991 he wrote a document called “HTML Tags” in which he proposed fewer than two dozen elements that could be used for writing web pages
 Sir Tim didn’t come up with the idea of using tags consisting of words between angle brackets; those kinds of tags already existed in the SGML (Standard Generalized Markup Language) format.
