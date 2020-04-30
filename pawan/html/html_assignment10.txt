@@ -1,15 +1,8 @@
 Q 10.1 List two inline elements and two block elements.
-
-
-
-
-
-
-
-
-
-
-
-
+	inline element:<span>, <strong>
+	block elements:<ul>, <ol>
 
 Q 10.2 List three differences between block and inline elements.
+	1. We can't put block elements inside inline elements.
+	2. Inline elements do not force a new line to begin in the document flow.
+	3. Block elements, on the other hand, typically cause a line break to occur

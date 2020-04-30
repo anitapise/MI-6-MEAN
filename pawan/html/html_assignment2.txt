@@ -14,4 +14,5 @@ Here its marking the word “hello” by <p> paragraph tag. So that browser will
 
 
 Q 2.3 Describe one problem you would likely face if you included presentation (styling) information with HTML instead of separating it in CSS?
-
+	Answer:
+	we have to do styling to every line after css it ia eassy to do

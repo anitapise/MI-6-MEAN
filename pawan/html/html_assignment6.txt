@@ -1,1 +1,3 @@
 Q 6.1 When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
+	answer:
+		it is always heplful if it should present in same directory. if we took an image form the enternet it is also good thing but if it gets remover it looks band on the page  
