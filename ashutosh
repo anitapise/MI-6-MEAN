@@ -1,33 +1,18 @@
-TCP (Transmission Control Protocol) :
-TCP is a layer 4 protocol which provides acknowledgement of the received packets and
-is also reliable as it resends the lost packets. It is better than UDP but due to these
-features it has an additional overhead. It is used by application protocols like HTTP and
-FTP.
-UDP (User Datagram Protocol) :
-UDP is also a layer 4 protocol but unlike TCP it doesn’t provide acknowledgement of the
-sent packets. Therefore, it isn’t reliable and depends on the higher layer protocols for
-the same.But on the other hand it is simple, scalable and comes with lesser overhead as
-compared to TCP. It is used in video and voice streaming.
-TCP Vs UDP –
-1. Session Multiplexing:
-A single host with a single IP address is able to communicate with multiple
-servers. While using TCP, first a connection must be established between
-the server and the receiver and the connection is closed when the transfer is
-completed. TCP also maintains reliability while the transfer is taking place.
-2. Segmentation:
-3. Information sent is first broken into smaller chunks for transmission.
-Maximum Transmission Unit or MTU of a Fastethernet is 1500 bytes whereas the
-theoretical value of TCP is 65495 bytes. Therefore, data has to be broken into smaller
-chunks before being sent to the lower layers. MSS or Maximum Segment Size should be
-set small enough to avoid fragmentation.
-Flow Control: If sender sends data faster than what receiver can process then the
-receiver will drop the data and then request for a retransmission, leading to wastage of
-time and resources. TCP provides end-to-end flow control which is realized using a
-sliding window.
-Connection Oriented:
-TCP is connection oriented, i.e., it creates a connection for the transmission to take
-place, and once the transfer is over that connection is terminated.
-UDP on the other hand is connectionless just like IP (Internet Protocol).
-Reliability:
-TCP sends an acknowledgement when it receives a packet. It requests a retransmission
-in case a packet is lost . UDP relies on the higher layer protocols for the same.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The li type attribute</h1>
+
+<ol>
+  <li>Coffee</li>
+  <li type="a">Tea</li>
+  <li>Milk</li>
+</ol>
+<ul>
+  <li>Coffee</li>
+  <li type="square">Tea</li>
+  <li>Milk</li>
+</ul>
+</body>
+</html>
