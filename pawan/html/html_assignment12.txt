@@ -8,5 +8,5 @@ Would it be reasonable to use the URL of a simple HTML page (eg: http://mywebsit
 
 
 Q 12.2 What is the <fieldset> element and why would you use it?
-	answer:- filedset tag is use to create a box to form.  
+	answer:- fieldset tag is use to create a box to form.  
 
