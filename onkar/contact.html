@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact form</title>
+	<meta name="viewport" content="width-device-width , initial scale=1">
+	<style>
+		body{
+			box-sizing: border-box;
+		}
+		
+		input[type=text], select, textarea{
+			width: 30%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+
+		}
+		.container{
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		input[type=submit]{
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h1><strong>Contact us</strong></h1>
+
+
+	<form method="POST">
+		<lable>First Name:</lable><br>
+		<input type="text" placeholder="Your name"><br>
+		<lable>Last Name:</lable><br>
+		<input type="text" placeholder="Your Last Name.."><br>
+		<label>Email Id:</label><br>
+		<input type="text" placeholder="Enter Your Email"><br>
+		<label for="country"> Country: </label><br>
+		<select id="country" name="country">
+			<option value="India">India</option>
+			<option value="USA">USA</option>
+			<option value="France">France</option>
+			<option value="Japan">Japan</option>
+			<option value="Canada">Canada</option>
+		</select><br>
+		<label>Subject:</label><br>
+		<textarea id="Subject" name="Subject" placeholder="Write something..." style="height: 100px"></textarea><br>
+		<input type="Submit" value="Submit">
+
+	</form>
+    </div>
+
+</body>
+</html>
