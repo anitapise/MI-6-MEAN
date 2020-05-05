@@ -1,0 +1,106 @@
+1.	What did you find most interesting about the history of HTML?
+Ans.The history of hypertext markup language is a strange and interesting tale.The idea behind HTML was a modest one. When Tim Berners-Lee was putting together his first elementary browsing and authoring system for the Web, he created a quick little hypertext language that would serve his purposes. He imagined dozens, or even hundreds, of hypertext formats in the future, and smart clients that could easily negotiate and translate documents from servers across the Net
+
+
+
+
+
+                      BASICS OF HTML
+
+2.	Which is the tag and which is the attribute in the following line?<div id=”footer”>
+Tag <div>
+Attribute id=”footer”
+      
+           
+           
+
+
+3.	Why is HTML called a mark-up language?
+Ans . Markup means to structure it in a specific format.
+
+Hypertext means machine readable text.
+
+So HTML is Structuring of contents using machine readable text. It is just to display static pages. So we should design the contents and area where it should be displayed.
+Markup language is a set of markup tags. HTML uses markup tags to describe web pages.
+Markup language is a text-formatting language designed to transform raw text into structured documents, by inserting procedural and descriptive markup into the raw text.
+Markup is what HTML do to the text inside them. They mark it as a certain type of text(like bold, italic, underline etc).
+HTML is a language as it has its own code words like any other language.
+Due to these reasons HTML is calles Markup language.
+
+
+
+4.	Describe one problem you would likely face if you included presentation (styling) information with HTML instead of separating it in CSS?
+Ans .
+
+
+
+                      The HEAD element
+
+5.	Specify two advantages of adding the ‘lang’ attribute to a web page?
+Ans. 1.Accessibility 
+•	assisting user agents in providing dictionary definitions or helping users benefit from translation tools.
+•	improving search engine ranking
+
+
+
+6.	Why should we add meta elements for description and keywords even though they do not have any impact on the way a web page is displayed?
+
+                 Headings, paragraphs, and line breaks
+
+7.	Is there any best practice related to how often an H1 tag should ideally appear in a single web page? If so, what is the best practice?
+
+
+8.	Sometimes developers who do not understand best practices properly may simply use text of a larger font size to denote headings instead of using one of the H tags. While visually both may appear identical and a casual reader would not even know the difference, such a lapse might cause problems in certain scenarios. Mention at least one scenario where such an incorrect design could create a problem.
+                   
+
+
+
+                           Emphasizing text in HTML
+9.	Web browsers are just one of the ways of rendering HTML pages. HTML content can also be read out by speech readers instead of being displayed visually. Based on what you have read in this section, what – according to you – would be the difference in the way the following two lines of text are read out:
+1.	You need to come here <i>right now</i>.
+2.	You need to come here <em>right now</em>
+
+
+
+10.	When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
+
+                                       Images
+       11.When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
+
+
+                           Hyperlinks
+                                  Lists
+
+
+                    <span> and <div>, the generic containers
+12 . If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
+
+
+                   Block and inline elements
+13.List two inline elements and two block elements.
+
+14.List three differences between block and inline elements.
+
+Tables
+                         Forms
+
+15. 1.The purpose of the ‘action’ attribute of an HTML form is defined as:
+The HTML | action Attribute is used to specify where the formdata is to be sent to the server after submission of the form. It can be used in the <form> element.
+Syntax:
+<form action="URL">
+
+2.‘The action attribute defines the location (an URL) where the form's collected data should be sent.’
+
+The action attribute defines the location URL where the form's collected data should be sent when it is submitted. The method attribute defines which HTTP method to send the data with (should be "post"). All input , select , textarea elements whitin your form should have a name attribute
+3.Would it be reasonable to use the URL of a simple HTML page (eg: http://mywebsite.com/index.html) as the value of the ‘action’ attribute of a form? Please support your answer with good reasons. This question probably goes beyond what you have learned in this section. You may have to do a little bit of independent study and reasoning to answer this question.
+
+16.What is the <fieldset> element and why would you use it?
+Best Practices
+17.	What is ‘quirks mode’ in a browser, when is it activated, and what is the implication of it being activated for a web page?
+
+
+Generally, quirks mode is turned on when there is no correct DOCTYPE declaration, and turned off when there is a DOCTYPE definition. However, invalid HTML - with respect to the chosen DOCTYPE - can also cause the browser to switch to quirks mode.
+
+18.This document (http://alistapart.com/article/doctype) lists several valid DOCTYPES while this document ( https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid ) suggests the use of a DOCTYPE which isn’t even mentioned in the previous link. As a developer which advice would you follow and why?
+Per HTML and XHTML standards, a DOCTYPE (short for “document type declaration”) informs the validator which version of (X)HTML you’re using, and must appear at the very top of every web page. DOCTYPEs are a key component of compliant web pages: your markup and CSS won’t validate without them
+
