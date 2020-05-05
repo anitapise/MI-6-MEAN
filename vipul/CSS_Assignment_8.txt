@@ -1,0 +1,6 @@
+Q 8.1 List at least two advantages of using well known best practices for CSS.
+-> 1) Greater consistency in design.
+2) More formatting options.
+
+Q 8.2 Why should we avoid descendant selectors as much as possible in our stylesheets?
+-> Because they keep your CSS from being as simple and clean as possible.

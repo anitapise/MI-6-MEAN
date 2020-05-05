@@ -1,0 +1,29 @@
+Q 5.1 Sometimes designers mention multiple font families in their styles (eg: font-family: arial, helvetica, serif). How does this help?
+-> font-family: arial, helvetica, serif, will look for the Arial font first and, if the browser can’t find it, it will search for Helvetica, and then a common serif font.
+
+Q 5.2 Mention one place where you have noticed text decoration being used on websites. Also mention the purpose for which text decoration was used in that place.
+-> I noticed text decoration on webiste www.https://www.htmldog.com/guides/css/beginner/text/, where menu bar options available it contains text-decoration:underline is used on website to link to another webpage.
+
+Q 5.3 Replace the rbg values in the styles shown below with an actual colour value, such as red, blue, green, yellow, etc, without changing the colour of the span.
+-> Before 
+<style>
+#s1{
+background:rgb(0,0,255);
+}
+#s2{
+background:rgb(0%,0%,100%);
+}
+</style>
+
+After
+<style>
+#s1{
+background:blue;
+}
+#s2{
+background:blue;
+}
+</style>
+
+
+ 
