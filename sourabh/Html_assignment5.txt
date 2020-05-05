@@ -6,7 +6,7 @@ are read out:
 2. You need to come here<em>right now</em>.
   ANS:- <i> stands for italic while <em> stands for emphasis. While both are typically but not always styled to display as italic, <em> is used when you want to put more stress on a word or phrase.
 
-Q 5.2 As the author of a web page, when would you use &lt;strong&gt; as opposed to &lt;em&gt;?
-   ANS:- While <em> is used to change the meaning of a sentence as spoken emphasis does ("I love carrots" vs. "I love carrots"), <strong> is used to give portions of a sentence added importance.
+Q 5.2 As the author of a web page, when would you use <strong> as opposed to <em>?
+   ANS:- when i have to give more importance to the word i will use strong tag.
 
  
