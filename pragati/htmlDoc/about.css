@@ -9,17 +9,14 @@ h1 {
 .new {
   padding: 8px;
   text-align: left;
-
   color: black;
 }
-
 .about-section {
   padding: 1px;
   text-align: center;
   background-color: gray;
   color: white;
 }
-
 li {
   color: red;
 }
