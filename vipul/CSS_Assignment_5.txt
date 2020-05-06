@@ -7,23 +7,22 @@ Q 5.2 Mention one place where you have noticed text decoration being used on web
 Q 5.3 Replace the rbg values in the styles shown below with an actual colour value, such as red, blue, green, yellow, etc, without changing the colour of the span.
 -> Before 
 <style>
-#s1{
-background:rgb(0,0,255);
-}
-#s2{
-background:rgb(0%,0%,100%);
-}
+        #s1{
+                background:rgb(0,0,255);
+        }
+        #s2{
+                background:rgb(0%,0%,100%);
+        }
 </style>
+
 
 After
 <style>
-#s1{
-background:blue;
-}
-#s2{
-background:blue;
-}
+        #s1{
+                background:blue;
+        }
+        #s2{
+                background:blue;
+        }
 </style>
 
-
- 
