@@ -14,8 +14,6 @@ Styling multiple elements can affect your page’s size and download time.
 After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. 
 Use libraries like Bootstrap that already handles these styling issues.
 
-
-
 Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page
 	Always use a language attribute on the html tag to declare the default language of the text in the page. When the page contains content in another language, add a language attribute to an element surrounding that content.
 
@@ -23,7 +21,6 @@ Q 3.2 Why should we add meta elements for description and keywords even though t
 	Meta tags are essentially little content descriptors that help tell search engines what a web page is about.
 Meta tags are important because they impact how your site appears in the SERPs and how many people will be inclined to click through to your website. They will therefore impact your traffic and engagement rates, which can impact your SEO and rankings.
  Meta tags are an important part of a solid SEO strategy.
-
 
 Programming Exercises
 Ex 3.1 Add the following elements/attributes to your HTML document:
@@ -53,11 +50,9 @@ Q 5.2 As the author of a web page, when would you use <strong> as opposed to <em
 DISPLAYED
 
 
-
 Q 6.1 When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
 We can store the image on same directory as well as can exist anywhere but we have to mention the path where the image is exist
 
- 
 Q 9.1 If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
 Span is used for small chunk and div uses a large chunk of the HTML codes. 
 Div tag is most essentially used for HTML in web development because it helps to separate out data in the web pages and add only particular data to the web pages.
@@ -89,9 +84,3 @@ quirks mode is for the old rules of browsers, they made it so that old websites 
 
 Q 13.2 This document (http://alistapart.com/article/doctype) lists several valid DOCTYPES while this document ( https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid ) suggests the use of a DOCTYPE which isn’t even mentioned in the previous link. As a developer which advice would you follow and why?
 Yes I will follow the 2nd  url because DOCTYPEs are a key component of compliant web pages: your markup and CSS won’t validate without them.
-
-
-
-
-
-
