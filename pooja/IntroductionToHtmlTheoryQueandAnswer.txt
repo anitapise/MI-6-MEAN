@@ -1,0 +1,105 @@
+Q 1.1 What did you find most interesting about the history of HTML?
+HTML5 isn’t a completely new language created from scratch. It’s an evolutionary rather than revolutionary change in the ongoing story of markup. If we are currently creating websites with any version of HTML, we are already using HTML5.
+2.1 Which is the tag and which is the attribute in the following line?
+<div id=”footer”>
+ 	<div> is the tag and Id is the attribute in above line
+Q 2.2 Why is HTML called a mark-up language?
+               This mark up language use interpreter it not required the compiler to compiler the code.
+The term markup language is derived from the marking up of manuscripts, where       handwritten markups were annotated in the form of printer instructions.
+Markup languages are also used in playlists, vector graphics, Web services and user interfaces. HTML is the most widely used markup language.
+
+Q 2.3 Describe one problem you would likely face if you included presentation (styling) information with HTML instead of separating it in CSS?
+Adding CSS rules to every HTML element is time-consuming and makes your HTML structure messy.
+Styling multiple elements can affect your page’s size and download time.
+After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. 
+Use libraries like Bootstrap that already handles these styling issues.
+
+
+Programming Exercises
+Ex 2.1 As mentioned in the introduction, you have to create an ‘About Me’ using HTML, as part of the programming exercises in this course. For this exercise you need to create an HTML file called ‘aboutme.html’ with a basic structure containing DOCTYPE, <html>, <head>, and <body> elements. Add your name anywhere in the body of the document such that it will be displayed when the web page is opened in a browser.
+
+Aboutme.html
+
+
+
+
+
+Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page
+	Always use a language attribute on the html tag to declare the default language of the text in the page. When the page contains content in another language, add a language attribute to an element surrounding that content.
+
+Q 3.2 Why should we add meta elements for description and keywords even though they do not have any impact on the way a web page is displayed?
+	Meta tags are essentially little content descriptors that help tell search engines what a web page is about.
+Meta tags are important because they impact how your site appears in the SERPs and how many people will be inclined to click through to your website. They will therefore impact your traffic and engagement rates, which can impact your SEO and rankings.
+ Meta tags are an important part of a solid SEO strategy.
+
+
+Programming Exercises
+Ex 3.1 Add the following elements/attributes to your HTML document:
+1.	Add a ‘lang’ attribute to the HTML element with the appropriate value.
+2.	Add a ‘title’ element – which will be the title of your web page -- in the appropriate place.
+3.	Add a ‘meta’ element to specify the description of your web page
+4.	Add a ‘meta’ element to specify the keywords of your web page
+
+4.1 Is there any best practice related to how often an H1 tag should ideally appear in a single web page? If so, what is the best practice?
+o	According to SEO standards each individual page of a site should have only one <h1> level heading.
+o	If there are multiple h1 tags on a page, this can confuse Google and it may have a bad impact on the keyword rankings.
+o	Best practice is only one h1 tag per page with the keyword that you are trying to optimize for (and which contain the main title) and you can optimized the rest of your headings on that page in H2, H3, H4.
+o	we can use any number of H2, H3, H4, H5, and H6 Tags on any page in sub Headings. But don’t go overboard.
+
+
+Q 4.2 Sometimes developers who do not understand best practices properly may simply use text of a larger font size to denote headings instead of using one of the H tags. While visually both may appear identical and a casual reader would not even know the difference, such a lapse might cause problems in certain scenarios. Mention at least one scenario where such an incorrect design could create a problem.
+
+Q 5.1 Web browsers are just one of the ways of rendering HTML pages. HTML content can also be read out by speech readers instead of being displayed visually. Based on what you have read in this section, what – according to you – would be the difference in the way the following two lines of text are read out:
+1.	You need to come here <i>right now</i>.
+while the <i> element represents text that is set off from the normal prose , or when the text refers to the definition of a word instead of representing its semantic meaning.
+
+2.	You need to come here <em>right now</em>.
+The <em> element represents stress emphasis of its contents here is we puts some     emphasis on the text <em> right now</em>
+
+Q 5.2 As the author of a web page, when would you use <strong> as opposed to <em>?
+<strong> is semantic - it describes the text it surrounds ("this text should be stronger than the rest of the text you've displayed") as opposed to describing HOW the text it surrounds SHOULD BE 
+DISPLAYED
+
+
+
+Q 6.1 When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
+We can store the image on same directory as well as can exist anywhere but we have to mention the path where the image is exist
+
+ 
+Q 9.1 If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
+Span is used for small chunk and div uses a large chunk of the HTML codes. 
+Div tag is most essentially used for HTML in web development because it helps to separate out data in the web pages and add only particular data to the web pages.
+
+
+Q 10.1 List two inline elements and two block elements.
+Inline Elements:<span><script>
+Block elements:<div><form>
+Q 10.2 List three differences between block and inline elements.
+1.	level elements can be converted to inline and inline elements can just as easily    be converted to block with the display property in CSS. 
+2.	In general, block level elements are usually structural, while inline elements are usually text based.
+3.	A block-level element always starts on a new line and takes up the full width available An inline element does not start on a new line and only takes up as much width as necessary.
+Q 12.1 The purpose of the ‘action’ attribute of an HTML form is defined as: 
+‘The action attribute defines the location (an URL) where the form's collected data should be sent.’ 
+Would it be reasonable to use the URL of a simple HTML page (eg: http://mywebsite.com/index.html) as the value of the ‘action’ attribute of a form? Please support your answer with good reasons. This question probably goes beyond what you have learned in this section. You may have to do a little bit of independent study and reasoning to answer this question.
+
+Answers:
+	Yes we can pass url two types of value such as 	
+•	An absolute URL - points to another web site (like action="http://www.example.com/example.htm")
+•	A relative URL - points to a file within a web site (like action="example.htm")
+
+
+Q 12.2 What is the <fieldset> element and why would you use it?
+	The HTML <fieldset> element is used to group several controls as well as labels ( <label> ) within a web form as it is defined by MDN. 
+The fieldset tag allows you to logically group sets of fields in order that your forms be more descriptive.
+
+Q 13.1 What is ‘quirks mode’ in a browser, when is it activated, and what is the implication of it being activated for a web page?
+quirks mode is for the old rules of browsers, they made it so that old websites that were written before the world wide web came and before HTML5 was invented don't break. so quirks mode is just to support those websites that had incorrect CSS features.
+
+Q 13.2 This document (http://alistapart.com/article/doctype) lists several valid DOCTYPES while this document ( https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid ) suggests the use of a DOCTYPE which isn’t even mentioned in the previous link. As a developer which advice would you follow and why?
+Yes I will follow the 2nd  url because DOCTYPEs are a key component of compliant web pages: your markup and CSS won’t validate without them.
+
+
+
+
+
+
