@@ -1,5 +1,5 @@
 Q1. What is TCP IP ?
-TCP refers to Transmission Control Protocol.TCP/IP has 4 layers.TCP/IP divides the different communications tasks into layers. Each layer has a different function. Data goes through four individual layers before it is received on the other end. TCP/IP then goes through these layers in reverse order to reassemble the data And to present it to the recipient.
+TCP refers to Transmission Control Protocol.TCP/IP has 4 layers.TCP/IP divides the different communications tasks into layers. Each layer has a different function.Data goes through four individual layers before it is received on the other end. TCP/IP then goes through these layers in reverse order to reassemble the data And to present it to the recipient.
 Its model is split into four distinct layers.
 1.Data Link layer-
 datalink layer is what handles the physical parts of sending and receiving data using the Ethernet cable, wireless network, network interface card, device driver in the computer, and so on.
