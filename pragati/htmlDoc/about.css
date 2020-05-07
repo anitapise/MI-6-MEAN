@@ -1,22 +1,22 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: purple;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: purple;
 }
 h1 {
-  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-  color: black;
+  	font-family: Helvetica, Geneva, Arial, SunSans-Regular,sans-serif;
+    color: black;
 }
 .new {
-  padding: 8px;
-  text-align: left;
-  color: black;
+     padding: 8px;
+     text-align: left;
+     color: black;
 }
 .about-section {
-  padding: 1px;
-  text-align: center;
-  background-color: gray;
-  color: white;
-}
+       padding: 1px;
+       text-align: center;
+       background-color: gray;
+       color: white;
+ }
 li {
-  color: red;
+     color: red;
 }
