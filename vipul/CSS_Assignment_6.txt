@@ -14,7 +14,6 @@ Scenario A
         </body>
 </html>
 
-
 Scenario B
 <html>
         <head>
@@ -30,4 +29,4 @@ Scenario B
         </body>
 </html>
 
--> Scenario A before Amber Academy text 20px left margin will be display after that text with background color yello.In scenario B text Amber Academy with padding left 20px with background color yellow will be display.
+-> Scenario A before Amber Academy text 20px left margin will be display after that text with background color yellow. In scenario B text Amber Academy with padding left 20px with background color yellow will be display.
