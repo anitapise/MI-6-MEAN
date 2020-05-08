@@ -1,10 +1,10 @@
 Q 6.1 Show with the help of a proper box diagram, the difference in the way the span element (with id=s1) will be rendered in both the scenarios shown below:
 Scenario A
 <html>
-        <head>
-                <style>
+	<head>
+        	<style>
                         #s1{
-                                margin-left:20px;
+				margin-left:20px;
                                 background:yellow;
                            }    
                 </style>
@@ -20,8 +20,8 @@ Scenario B
         <head>
                 <style>
                         #s1{
-                            padding-left:20px;
-                            background:yellow;
+				padding-left:20px;
+				background:yellow;
                            }
                 </style>
         </head>
