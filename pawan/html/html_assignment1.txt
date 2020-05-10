@@ -1,7 +1,3 @@
 Q 1.1 What did you find most interesting about the history of HTML?
-	HTML is the authoring language used to create documents on the web. It is used to define the structure and layout of a web page, how a page looks, and any special functions. HTML does this by using what are called tags that have attributes.
-	HTML is a very evolving markup language and has evolved with various versions updating. Long before its revised standards and specifications are carried in, each version has allowed its user to create web pages in the much easier and prettier way and make sites very efficient
-
-
-
+	HTML5 isn’t a completely new language created from scratch. It’s an evolutionary rather than revolutionary change in the ongoing story of markup. If we are currently creating websites with any version of HTML, we are already using HTML5.
 	
