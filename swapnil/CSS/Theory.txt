@@ -74,9 +74,9 @@ Q:In which colour will the text “This is the first paragraph.” be printed fo
 <html>
         <head>
                 <style>
-div#section1 span{color:green}
-div p{color:blue}
-p{color:red}
+				div#section1 span{color:green}
+				div p{color:blue}
+				p{color:red}
                 </style>
         </head>
         <body>
@@ -94,12 +94,12 @@ Q:In which colour will the text “This is a heading!” be printed for the HTML
 <html>
         <head>
                 <style>
-#parent{
-        color:green;
-}
-h2{
-        color:purple;
-}
+				#parent{
+        			color:green;
+					}
+				h2{
+        			color:purple;
+					}
                 </style>
         </head>
         <body>
@@ -128,12 +128,12 @@ Q:Replace the rbg values in the styles shown below with an actual colour value, 
 <html>
         <head>
                 <style>
-#s1{
-        background:rgb(0,0,255);
-}
-#s2{
-        background:rgb(0%,0%,100%);
-}
+				#s1{
+       				 background:rgb(0,0,255);
+					}
+				#s2{
+       				 background:rgb(0%,0%,100%);
+					}
                 </style>
         </head>
         <body>
@@ -145,12 +145,12 @@ Q:Replace the rbg values in the styles shown below with an actual colour value, 
 -<html>
         <head>
                 <style>
-#s1{
-        background:red;
-   }
-#s2{
-        background:green;
-   }
+				#s1{
+        			background:red;
+   				}
+				#s2{
+        			background:green;
+   				}
                 </style>
         </head>
         <body>
@@ -166,9 +166,9 @@ Scenario A
 <html>
         <head>
                 <style>
-#s1{
-        margin-left:20px;
-        background:yellow;
+				 #s1{
+       				 margin-left:20px;
+      				 background:yellow;
 }
                 </style>
                 <body>
@@ -181,9 +181,9 @@ Scenario B
 <html>
         <head>
                 <style>
-#s1{
-        padding-left:20px;
-        background:yellow;
+				 #s1{
+       				 padding-left:20px;
+       				 background:yellow;
 }
                 </style>
                 <body>
