@@ -4,26 +4,29 @@
 	    <TITLE>Contact Form</TITLE>
     </HEAD>
     <body>
-        <Form action="/home/pawanjagtap/MI-6-MEAN/pawan/html/practice_assignment/contactformdata.html" target="_blank">
-            <label for="fname">First name:</label><br>
-	    <input type="text" id="fname" name="fname"placeholder="Fisrt Name" ><br>
-	    <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-            <label for="E-mail">E-mail:</label><br>
-            <input type="text" id="E-mail" name="E-mail" placeholder="E-mail address"><br><br>
-            <label for="purpose of contact">Purpose of contact:</label><br>
-            <select id="purpose of contact" name="purpose of contact">
+        <form action="/home/pawanjagtap/MI-6-MEAN/pawan/html/practice_assignment/contactformdata.html" target="_blank">
+            <fieldset>
+                <legend>Contact Form:</legend>   
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"placeholder="Fisrt Name" ><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <label for="E-mail">E-mail:</label><br>
+                <input type="text" id="E-mail" name="E-mail" placeholder="E-mail address"><br><br>
+                <label for="purpose of contact">Purpose of contact:</label><br>
+                <select id="purpose of contact" name="purpose of contact">
                 <option value="official ">official </option>
                 <option value="personal">personal</option>
-            </select><br><br>
-            <label for="message">message:</label><br>
-            <textarea name="message"placeholder="Enter your message" rows="10" cols="30" ></textarea> <br><br>
-            <label for="reciver E-mail updates">reciver E-mail updates:</label><br>
-            <input type="radio" id="yes" name="updates" value="yes">
-	    <label for="yes">Yes</label><br>
-	    <input type="radio" id="no" name="updates" value="no">
-            <label for="no">No</label><br><br>
-            <input type="submit" name="" value="send your message">
+                </select><br><br>
+                <label for="message">message:</label><br>
+                <textarea name="message"placeholder="Enter your message" rows="10" cols="30" ></textarea> <br><br>
+                <label for="reciver E-mail updates">reciver E-mail updates:</label><br>
+                <input type="radio" id="yes" name="updates" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="updates" value="no">
+                <label for="no">No</label><br><br>
+                <input type="submit" name="" value="send your message">
+            </fieldset>        
         </form>    
     </body>
-    </HTML>
+</HTML>

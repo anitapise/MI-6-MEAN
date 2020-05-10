@@ -1,5 +1,5 @@
 Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page
-	1.The lang attribute takes an ISO language code as its value. Typically this is a two letter code such as “en” for English, but it can also be an extended code such as “en-gb” for British English.
+	1.lang attribute helps to screen reader to read the document or html file and To set the primary language for a document
 	2.The lang attribute must also be used to identify chunks of text in a language that is different from the document’s primary language. 
 For example:
 <html lang="en">
