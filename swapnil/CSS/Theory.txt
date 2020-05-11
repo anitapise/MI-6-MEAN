@@ -220,3 +220,4 @@ Q:Mention two ways in which we can apply properties to an element so that it is 
 Q: List at least two advantages of using well known best practices for CSS.
 -1)Lightweight code.
  2)Greater accessibility.
+ 3)More Formatting Options
