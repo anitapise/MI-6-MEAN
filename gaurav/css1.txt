@@ -1,0 +1,5 @@
+Q 1.1 What did you find most interesting about the history of CSS?
+Ans:There is no way to give a name to a CSS rule, which would allow the client-side scripts.Without using CSS, it is very typical thing for web designers to lay out their pages with techniques like HTML tables that obstruct accessibility for the vision-impaired users.
+
+Q 1.2 Briefly describe any three things a developer can style with CSS.
+Ans: We can change font style,change the font color.By using css we can set font background,size.We can add image from our system also from website.We can set image height,width.We can give motion,animate to an image.By using css we can style separate tags.

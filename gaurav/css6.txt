@@ -1,0 +1,48 @@
+Q 6.1 Show with the help of a proper box diagram, the difference in the way the span element (with id=s1) will be rendered in both the scenarios shown below:
+Scenario 1
+<html>
+        <head>
+                <style>
+                        #s1 {
+                                margin-left: 20px ;
+                                background: yellow ;
+                        }
+                </style>
+        </head>
+        <body>
+                <span id="s1">Amber Academy</span>
+        </body>
+</html>
+
+Scenario 2
+<html>
+        <head>
+                <style>
+                        #s1 {
+                                padding-left: 20px ;
+                                background: yellow ;
+                        }
+                </style>
+        </head>
+        <body>
+                <span id="s1">Amber Academy</span>
+        </body>
+</html>
+Ans:In Scenario A before Amber Academy text 20px left margin will be displayafter that text with background color yellow.In scenario B text Amber Academy with [adding left 20px with background color yellow will be display.
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                           
+~                                                                                                            

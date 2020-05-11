@@ -1,0 +1,13 @@
+Q 3.1 The table below contains selector combinatory names in the first column and the way a selector combination is depicted in a style sheet, in the second. However, the values are mismatched. You have to re-create this table with the correct matches.
+Combinator Name                     CSS syntax
+Descendant                          p ~ li {  }  
+Immediate descendant (child)        p + li {  }
+Sibling                             P > li {   }
+Adjacent sibling                    p  li {   }
+Ans:
+Combinator Name                     CSS syntax
+Descendant                          p  li {  }
+Immediate descendant (child)        p > li {  }
+Sibling                             P ~ li {   }
+Adjacent sibling                    p + li {   }
+
