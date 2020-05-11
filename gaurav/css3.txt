@@ -10,4 +10,3 @@ Descendant                          p  li {  }
 Immediate descendant (child)        p > li {  }
 Sibling                             P ~ li {   }
 Adjacent sibling                    p + li {   }
-
