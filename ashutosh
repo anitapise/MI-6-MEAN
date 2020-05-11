@@ -5,18 +5,18 @@
       <title>contact</title>
   </header>
 	<body>
-            <h1>contact form</h1>
-        <form action="file:///C:/Users/gshankar/Documents/new%204.html">
-             Name:<input type="text" name="name" value="Ashutosh"><br/>
-             Email:<input type="email" id="email" pattern="@gmail.com" value="ashu@gmail.com" size="30" required><br/>
- Purpose ofcontact:<input type="radio" name="purpose of contact">Personal 
-                   <input type="radio" name="purpose of contact">Professional <br/>
-           Message:<textarea rows="8" cols="12">
-                      you wish to receive a weekly msg.           
-                   </textarea><br/>                 
-                   <input type="submit" value="send your message">                    
-        </form>
-    </body>
-</html>  			                 
+              <h1>contact form</h1>
+           <form action="file:///C:/Users/gshankar/Documents/new%204.html">
+                 Name:<input type="text" name="name" value="Ashutosh"><br/>
+                 Email:<input type="email" id="email" pattern="@gmail.com" value="ashu@gmail.com" size="30" required><br/>
+     Purpose ofcontact:<input type="radio" name="purpose of contact">Personal 
+                       <input type="radio" name="purpose of contact">Professional <br/>
+               Message:<textarea rows="8" cols="12">
+                           you wish to receive a weekly msg.           
+                      </textarea><br/>                 
+                      <input type="submit" value="send your message">                    
+           </form>
+       </body>
+ </html>  			                 
                              
        
