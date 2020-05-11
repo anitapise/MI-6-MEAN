@@ -1,0 +1,33 @@
+Q 6.1 Show with the help of a proper box diagram, the difference in the way the span element (with id=s1) will be rendered in both the scenarios shown below:
+Scenario A
+<html>
+        <head>
+                <style>
+                        #s1{
+                                margin-left:20px;
+                                background:yellow;
+                           }    
+                </style>
+        </head>
+        <body>
+                <span id="s1">Amber Academy</span>
+        </body>
+</html>
+
+
+Scenario B
+<html>
+        <head>
+                <style>
+                        #s1{
+                            padding-left:20px;
+                            background:yellow;
+                           }
+                </style>
+        </head>
+        <body>
+                <span id="s1">Amber Academy</span>
+        </body>
+</html>
+
+-> Scenario A before Amber Academy text 20px left margin will be display after that text with background color yellow.In scenario B text Amber Academy with padding left 20px with background color yellow will be display.

@@ -1,0 +1,12 @@
+Q 7.1 What is the difference between display:block and display:block-inline
+-> display: block
+1)can have a width, height and margin.
+display:block-inline
+1)can have margin, padding, height, width.
+
+Q 7.2 What is the purpose of using ‘clear’ after floating elements?
+-> A clearfix is a way for an element to automatically clear its child elements, so that you don't need to add additional markup. It's generally used in float layouts where elements are floated to be stacked horizontally.
+
+Q 7.3 Mention two ways in which we can apply properties to an element so that it is taken out of the normal flow.
+-> 1) position:static property
+2) position:absolute property

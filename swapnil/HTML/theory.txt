@@ -1,7 +1,0 @@
-Q:Which is tag and which is attribute in the following line?
-<div id="Footer">
-- Tags are used to mark up start and end of the elelment.
-- Attribute defines property of an element.
-- here <div> is the tag and id is attribute where it defines property footer.
-
-
