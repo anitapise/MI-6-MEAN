@@ -28,21 +28,4 @@ Scenario 2
                 <span id="s1">Amber Academy</span>
         </body>
 </html>
-Ans:In Scenario A before Amber Academy text 20px left margin will be displayafter that text with background color yellow.In scenario B text Amber Academy with [adding left 20px with background color yellow will be display.
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                           
-~                                                                                                            
+Ans:In Scenario A before Amber Academy text 20px left margin will be displayafter that text with background color yellow.In scenario B text Amber Academy with [adding left 20px with background color yellow will be display.                       

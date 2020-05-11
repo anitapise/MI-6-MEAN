@@ -1,7 +1,6 @@
 Q 4.1 Many web authors use a reset CSS. What problems might happen if they don’t use it?
 Ans: After your content has finished altering styles, it may find itself in a situation where it needs to restore them to a known state.If they dont use reset css they cant restore web page to know state.
 
-
 Q 4.2 In which colour will the text “This is the first paragraph.” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
 <html>
 	<head>
@@ -18,7 +17,6 @@ Q 4.2 In which colour will the text “This is the first paragraph.” be printe
 	</body>
 </html>
 Ans: The text "This is the first paragraph." will be printed in blue color.In first css style div#section span { color: green } the selector span is not present in html tag.Next two css style div p { color: blue } And p { color: red } is correct and present in html code. But the second css style has highest specificity than third one. That's why the text is printed in blue color
-
 
 Q 4.3 In which colour will the text “This is a heading!” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
 <html>
