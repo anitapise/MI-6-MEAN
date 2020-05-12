@@ -1,8 +1,4 @@
-/*
-Author       : Dreamguys
-Template Name: Medifab - Health & Medical HTML Template
-Version      : 1.2
-*/
+
 
 $(document).ready(function() {
 	
