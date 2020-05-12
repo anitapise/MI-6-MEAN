@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>contact</title>
+	</head>
+	<body>
+		<h1>contact form</h1>
+		<form action="file:///C:/Users/gshankar/Documents/new%204.html">
+			      <label for="name">name:</label>
+            <input type="text" name="name" value="Ashutosh"><br><br>
+            <label>email:</label>
+            <input type="email" id="email" pattern="@gmail.com" value="ashu@gmail.com" size="30" required><br><br>
+            <label>Purpose ofcontact:</label>
+			      <input type="radio" name="purpose of contact">Personal
+			      <input type="radio" name="purpose of contact">Professional <br><br>
+			      <label>message:</label>
+            <textarea rows="8" cols="12">
+                you wish to receive a weekly msg.
+			      </textarea><br><br>
+            <input type="submit" value="send your message">
+		</form>
+	</body>
+</html>
