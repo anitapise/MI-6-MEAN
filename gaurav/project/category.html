@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Online gallery System</title>
+		<style>
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	background:grey;
+}
+nav{
+	background:#594848;
+	width:100%;
+	overflow:auto;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+li{
+	float:left;
+}
+nav a{
+	width:120px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background:#594848;
+	font-size:17px;
+	color:white;
+	padding:20px 10px;
+	font-family:Arial;
+}
+nav a:hover{
+	background:skyblue;
+	color:black;
+}
+.container{
+	max-width:1200px;
+	margin:auto;
+	background:#f2f2f2;
+	overflow:auto;
+}
+.gallery{
+	margin:5px;
+	background-color:white;
+	float:left;
+	width:390px;
+}
+.gallery >img{
+	width:100%;
+	height:250px;
+
+}
+.desc{
+	padding:15px;
+	text-align:center;
+}
+footer{
+	padding:10px;
+	font-size:17px;
+	font-weight:bold;
+	text-align:center;
+	background:#594848;
+	color:white;
+	font-family:Arial;
+	letter-spacing:1px;
+}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="category.html">Category</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<div class="gallery">
+				<img src="image/cat.jpg">
+				<div class="desc"><a href="https://www.google.com/search?q=cats+image&client=ubuntu&hs=UUr&channel=fs&sxsrf=ALeKk027GMm2aK4t7irRW_kI0stK9Z0waA:1589125429492&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiDtunF0anpAhWhzTgGHduHBYcQ_AUoAXoECBMQAw&biw=1299&bih=639">Cat</a></div>
+			</div>
+			<div class="gallery">
+				<img src="image/car.jpeg">
+				<div class="desc"><a href="https://www.google.com/search?q=cars+images&client=ubuntu&hs=sNB&channel=fs&sxsrf=ALeKk01DQJiVt2Xm72c_PuxhMYqJdtHHog:1589122453156&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjGqMy6xqnpAhUTxjgGHU0nAhIQ_AUoAXoECBMQAw&biw=1299&bih=639">Cars</a></div>
+			</div>
+			<div class="gallery">
+				<img src="image/snow.jpg">
+				<div class="desc"><a href="https://www.google.com/search?q=nature+images&client=ubuntu&hs=Abr&channel=fs&sxsrf=ALeKk004c3rOy16dVPcz0A2hFxGRGQRezw:1589125843690&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiYmKqL06npAhV0yTgGHdq5BPgQ_AUoAXoECBMQAw&biw=1299&bih=639">Nature</a></div>
+			</div>
+			<div class="gallery">
+				<img src="image/bike.jpg">
+				<div class="desc"><a href="https://www.google.com/search?q=bikes+images&tbm=isch&ved=2ahUKEwjz3fGM06npAhVOFXIKHfUlCVUQ2-cCegQIABAA&oq=bikes+images&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BggAEAcQHjoECCMQJzoECAAQQzoFCAAQgwFQhp4CWJWzAmCbtQJoAHAAeACAAa0BiAHRDpIBBDAuMTOYAQCgAQGqAQtnd3Mtd2l6LWltZw&sclient=img&ei=1iK4XvOaOs6qyAP1y6SoBQ&bih=639&biw=1299&client=ubuntu&hs=Abr">Bike</a></div>
+			</div>		
+			<div class="gallery">
+				<img src="image/lion.jpeg">
+				<div class="desc"><a href="https://www.google.com/search?q=+animals+images&tbm=isch&ved=2ahUKEwjNx-6z06npAhUJYSsKHUjkDksQ2-cCegQIABAA&oq=+animals+images&gs_lcp=CgNpbWcQAzIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoGCAAQBxAeUJYnWMErYMwuaABwAHgAgAGgAYgBxASSAQMwLjSYAQCgAQGqAQtnd3Mtd2l6LWltZw&sclient=img&ei=KCO4Xs2TKonCrQHIyLvYBA&bih=639&biw=1299&client=ubuntu&hs=Abr">Animals</a></div>
+			</div>	
+			<div class="gallery">
+				<img src="image/food.jpg">
+				<div class="desc"><a href="https://www.google.com/search?q=food+images&client=ubuntu&hs=8xW&channel=fs&sxsrf=ALeKk03lI4sxmG-0Gya_6HBM3IBZ2V3oKA:1589125984732&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjC1MrO06npAhVKyzgGHbjMAV4Q_AUoAXoECBIQAw&biw=1299&bih=639">Food</a></div>
+			</div>
+			<footer>
+				Copyright All Right Reserved|This devloped by Gaurav Suryawanshi 
+			</footer>
+	</body>
+</html>
+

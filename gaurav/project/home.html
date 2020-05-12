@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<style>
+h1{
+	text-align:center;
+	margin-top:80px;
+	font-size:40px;
+	font-family:Times New Roman;
+	font-weight:bold;
+}
+nav{
+	background:#594848;
+	width:100%;
+	overflow:auto;
+	position:fixed;
+	top:0;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+li{
+	float:left;
+}
+nav a{
+	width:120px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background:#594848;
+	font-size:17px;
+	color:white;
+	padding:20px 10px;
+	font-family:Arial;
+}
+nav a:hover{
+	background:skyblue;
+	color:black;
+}
+.gallery{
+	height:80%;
+	width:100%;
+	display:flex;
+	margin:5% auto 0;
+	box-sizing:border-box;
+}
+.image-box{
+	margin:0 1%;
+	flex-grow:1;
+	flex-basis:0;
+	transition: .5s;
+}
+.image-box img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	transition: .5s;
+}
+.image-box:hover{
+	flex-basis:50%;
+}
+.active{
+	flex-basis:50%;
+}
+.gallery:hover .active{
+	flex-basis:0;
+}
+.image-box:nth-child(1):hover{
+	flex-basis:50%;
+}
+
+
+
+
+		</style>
+	</head>
+	<body>
+		<h1> Photo gallery System</h1>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="category.html">Category</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="gallery">
+			<div class="image-box active">
+				<img src="image/1.jpg">
+			</div>
+			<div class="image-box">
+				<img src="image/2.jpg">
+			</div>
+			<div class="image-box">
+				<img src="image/3.jpg">
+			</div>  
+			<div class="image-box">
+				<img src="image/4.jpg">
+			</div>  
+			<div class="image-box">
+				<img src="image/5.jpg">
+			</div>  
+			<div class="image-box">
+				<img src="image/6.jpg">
+			</div>  
+		</div>
+	</body>
+	<footer>
+		Copyright All Right Reserved|This devloped by Gaurav Suryawanshi 
+	</footer>
+</html>
