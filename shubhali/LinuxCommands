@@ -2,7 +2,7 @@ shubhali@shubhali-VirtualBox:~$ touch example1
 
 shubhali@shubhali-VirtualBox:~$ cat>example1
 hellow this is example1 file. by using touch example1 we create an empty file.
-by using cat>example1 we insert text within that file press ctrl+d to save and exit
+by using cat>example1 we insert text within that file. press ctrl+d to save and exit.
 
 shubhali@shubhali-VirtualBox:~$ cat example1
 hellow this is example1 file. by using touch example1 we create an empty file.
@@ -19,7 +19,8 @@ shubhali@shubhali-VirtualBox:~$ mkdir dir2
 shubhali@shubhali-VirtualBox:~$ cd dir2
 
 shubhali@shubhali-VirtualBox:~/dir2$ cat>dir2_file
-this file is create within dir2 directory.shubhali@shubhali-VirtualBox:~/dir2$ cd
+this file is create within dir2 directory.
+shubhali@shubhali-VirtualBox:~/dir2$ cd
 shubhali@shubhali-VirtualBox:~$ ls
 Desktop     Downloads         HardLinks    MyLink          Templates
 dir2        example1          linuxfile    newdirectories  test.sh
