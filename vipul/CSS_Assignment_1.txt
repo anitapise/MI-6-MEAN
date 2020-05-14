@@ -1,0 +1,5 @@
+Q 1.1 What did you find most interesting about the history of CSS?
+-> The birth of CSS is largely credited to Norwegian Håkon Wium Lie, who back in 1994 sought to create a universal standardised style sheet for the World Wide Web.The first site that Lie trialled CSS on was the Arena web browser. From its first creation, Lie went on to co-create CSS1, CSS2 and RFC 2318 versions with Tim Berners-Lee and Robert Cailliau. In its first decade of existence (1994 – 2004) CSS, in all its specifications, became an established web standard greatly influencing the look and accessibility of the world wide web as we know it today. CSS3 was issued in 1999.
+
+Q 1.2 Briefly describe any three things a developer can style with CSS.
+-> A developer can style fonts, typography, images, icons, icon fonts, animations, transitions by using css. First, Developer can change font size, font colour, font family with css. Second, Developer can set image width,height and can change opacity and also can set transition effects. Third, Developer can set icons and can give animations.   

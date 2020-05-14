@@ -1,0 +1,17 @@
+Q 10.1 List two inline elements and two block elements.
+-> Inline Elements
+1.<a>
+2.<span>
+Block Elements
+1.<p>
+2.<div>
+
+Q 10.2 List three differences between block and inline elements.
+-> Block Elements
+1.Block-level elements begin on new lines.
+2.Block-level elements may contain inline elements and (sometimes) other block-level elements.
+3.Block level elements such as <p>, <div>, <section>, etc. expand to to fill all the horizontal space available.
+Inline Elements
+1.Inline elements do not force a new line to begin in the document flow.
+2.You can't put block elements inside inline elements but may contain only data and other inline elements.
+3.Inline elements take up only the horizontal space that is required based on their contents and applied CSS rules (padding, margin, etc).
