@@ -1,0 +1,15 @@
+Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page
+	1.lang attribute helps to screen reader to read the document or html file and To set the primary language for a document
+	2.The lang attribute must also be used to identify chunks of text in a language that is different from the document’s primary language. 
+For example:
+<html lang="en">
+...
+<body>
+<p>This page is written in English.</p>
+</body>
+</html>	
+
+
+
+Q 3.2 Why should we add meta elements for description and keywords even though they do not have any impact on the way a web page is displayed?
+	Meta tags provide information about the webpage in the HTML of the document. This information is called "metadata" and while it is not displayed on the page itself, it can be read by search engines and web crawlers. A <meta> tag can be used to specify a duration after which your web page will keep refreshing automatically.we can use <meta> tag to redirect your page to any other webpage. we can also specify a duration if you want to redirect the page after a certain number of seconds. we an set an author name in a web page using meta tag. we can use <meta> tag to specify character set used within the webpage.
