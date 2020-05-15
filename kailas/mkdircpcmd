@@ -84,3 +84,87 @@ dir1/
 
 Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir2
 $
+=======
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd ambersoft
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ ls
+dir1/  dir2/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cd dir1
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir1
+$ ls
+dir2/  file1  file2.txt  test1.html  test2.html  test3.html  test4.html  test5.html
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir1
+$ cd
+
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd ambersoft
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cd dir2
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir2
+$ ls
+dir1/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir2
+$ cd
+
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd ambersoft
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ ls
+dir1/  dir2/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ mkdir geca
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ ls
+dir1/  dir2/  geca/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cp -r dir1 geca
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ ls
+dir1/  dir2/  geca/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cd geca
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/geca
+$ ls
+dir1/
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/geca
+$ cd
+
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd ambersoft
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cd dir1
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir1
+$ ls
+dir2/  file1  file2.txt  test1.html  test2.html  test3.html  test4.html  test5.html
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir1
+$ cd
+
+Kailas Patil@SaiGanu MINGW64 ~
+$ cd ambersoft
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft
+$ cd dir2
+
+Kailas Patil@SaiGanu MINGW64 ~/ambersoft/dir2
+$ ls
+dir1/
