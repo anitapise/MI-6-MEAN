@@ -1,0 +1,55 @@
+ACTIVITY1:
+Q1.What did you find most intresting about the history of HTML?
+->Rather than inventing new standard, Sir Tim used alredy existed tag in SGML.
+
+ACTIVITY2:
+Q1.Which is tag and which is attribute in the following line?
+   <div id="footer">
+->tag-div, attribute-id.
+
+Q2.Why is HTML called a mark-up language?
+->Hypertext means machine readable text and Markup means to structure it in a specific format.So, HTML is called hypertext markup language because it is a language that allows users to organize, improve the appearance of, and link text with data on the internet.
+
+Q3.Describe one problem you would likely face if you included presentation information with HTML instead of separationg it in css?
+->If i want to include presentation file in html code then i have to style each and every text of it.Suppose i want make changes in css file then i have to go through each line of code this is time consuming process. Instead of this its better to make one css file for style the code.
+
+ACTIVITY3:
+Q1.Specify two advantages of adding the 'lang' attribute to a web page.
+->lang used for set language for web page and other is it helps search engines return language specific results.
+
+Q2.Why should we add meta elements for description and keywords even though they do not have any imapct on the way a web page is displayed?
+->we should add meta tags because they impact how your site appears in the SERPs and how many people will be inclined to click through to your website.
+
+ACTIVITY4:
+Q1.Is there any best practice related to how often an H1 tag should ideally appear in single web page? If so,what is the best practice?
+->we should have only one page title before any other content.
+
+ACTIVITY5:
+Q1.Web browsers are just one of the ways of rendering HTML pages. HTML content can also be read out by speech readers instead of being displayed visually. Based on what you have read in this section, what according to you  would be the difference in the way the following two lines of text are read out:
+    1. You need to come here <i>right now</i>.
+    2. You need to come here <em>right now</em>.
+->Both are used for italicise text in html and both are correct but different is that <i> don't have any meaning and <em> is meaningful which means emphasized. So <em> is used for emphasizing text in html
+
+Q2. As the author of a web page, when would you use <strong> as opposed to <em>?
+-> To indicate strong importance, seriousness, or urgency i used  <strong> tag, like to indicate key phrases in a text for someone skimming it. The <em> tag used to represent stress emphasis, like when you'd read the emphasized text in a different tone of voice
+
+ACTIVITY6:
+Q1. When we link to an image from an HTML document, does the image have to be in the same directory as the HTML page or can it exist anywhere on the Internet?
+->Not necessary to put image in same directory, Image can exist anywhere on the internet.
+
+ACTIVITY9:
+Q1. If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
+->The <span> element shows the inline portion of a document. The <div> elements show a block-level portion of a document.
+The div should be used to wrap sections of a document, while use spans to wrap small portions of text, images, etc.
+example :<div>Demo Text, with <span>some other</span> text.</div>
+
+ACTIVITY10:
+Q1. List two inline elements and two block elements.
+->Inline elements:<span>, <b>
+Block elements:<div>, <p>.
+
+Q2 List three differences between block and inline elements.
+->1.Example of block elements:<p>, <div>, <form>, <header>, <nav>, <ul>, <li>, and <h1>.
+Example of inline elements:<a>, <span>, <b>, <em>, <i>, <cite>, <mark>, and <code>.
+2.In block elements if no width is set, will expand naturally to fill its parent container where as in inline element Flows along with text content, thus Will not clear previous content to drop to the next line like block elements
+3.Block elements ignores the vertical-align property where as inline elements ignore the width and height properties
