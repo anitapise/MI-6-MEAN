@@ -1,0 +1,32 @@
+<style>
+    head{
+		text-align:center;}
+    body{
+		background-color:powderblue;
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: orange;}
+		
+	li {
+		float: right;}
+		
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 10px 12px;
+		text-decoration: none;}
+		
+	li a:hover:not(.active) {
+		background-color: white;}
+		
+	.active {
+		background-color: #4CAF50;}
+		
+	h1 {
+		text-align:center;}
+</style>
