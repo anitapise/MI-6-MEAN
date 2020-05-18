@@ -1,0 +1,4 @@
+Q 4.1 Is there any best practice related to how often an H1 tag should ideally appear in a single web
+page? If so, what is the best practice?
+     ANS:-we should have only one page title before any other content.
+

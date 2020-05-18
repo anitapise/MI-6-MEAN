@@ -1,0 +1,223 @@
+Q:What did you find most interesting about the history of CSS?
+-"Cascading Style Sheets" wasn't the only proposed style language at the time. -CSS had one feature that distinguished it from all the others: it took into
+ account that on the Web the style of a document couldn't be designed by either the author or the reader on their own, but that their wishes had to be
+ combined, or "cascaded," in some way; and, in fact, not just the reader's and  the author's wishes, but also the capabilities of the display device and the
+ browser. 
+
+Q:Briefly describe any three things a developer can style with CSS.
+1)Fonts properties.
+ -font-style:Identifies the style of the face, normal, italic, or oblique.
+ -font-variant:Identifies another variation on the face either normal or
+  small-caps in CSS1.
+ -font-size:The size of the face. Font size may be specified in absolute units   or relative to the "current" size.
+ -font-weight:The weight or boldness of the font, specified with either a
+   keyword (bold or bolder, for example) or as a member of the ordered series
+   100, 200, 300, . . . , 900, where higher numbers are correspondingly darker.
+
+2)Text properties (word spacing, letter spacing, etc.).
+   -word-spacing:Modifies the default inter-word spacing.
+   -letter-spacing:Modifies the default inter-letter spacing.
+   -text-transform:Shifts text to uppercase or lowercase.
+   -text-align:Specifies left, right, center, or justified alignment.
+
+3)Boxes
+  -margin-top, margin-bottom, margin-left, margin-right, margin
+   Determine the size of the top, bottom, left, and right margins. Setting
+   margin adjusts all of the margins simultaneously.
+
+  -padding-top,padding-bottom, padding-left, padding-right, padding
+   Adjusts the amount of padding on the top, bottom, left, and right sides of
+   the element. Setting padding adjusts all of them simultaneously.
+
+  -width, height
+   Identifies the width and height of the rectangle that contains the formatted   content. Images should be scaled to the specified size, if necessary.
+
+  -float
+   Identifies an element that should float to the left or right of a flow of
+   text, allowing the text to flow around it.
+
+Q:Using inline styles is considered to be horrible by most web designers.
+  What is so bad about it?
+  -It will messed with HTML.and also peoples who are stuck using older browsers   are having issue with using inline css.
+
+Q:What are the benefits of using a linked stylesheet as compared to using
+  embedded styles in the HTML page itself?
+-Everything is stored within single page.
+-once changed/updated, the changes are reflected on all other pages that
+ reference the stylesheet.
+-easier to maintain larger websites.
+
+Q:The table below contains selector combinatory names in the first column and
+  the way a selector combination is depicted in a style sheet, in the second.
+  However, the values are mismatched. You have to re-create this table with the  correct matches.
+  
+  Combinator Name                   CSS syntax
+  Descendant                        p ~ li {  } 
+  Immediate descendant (child)      p + li {  }
+  Sibling                           P > li {   }
+  Adjacent sibling                  p  li {   }
+
+- Combinator Name                   CSS syntax
+  Descendant                        p  li {   }
+  Immediate descendant (child)      P > li {   }
+  Sibling                           p ~ li {  }
+  Adjacent sibling                  p + li {  }
+
+Q:Many web authors use a reset CSS. What problems might happen if they don’t
+  use it?
+-A CSS Reset (or “Reset CSS”) is a short, often compressed (minified) set of
+ CSS rules that resets the styling of all HTML elements to a consistent
+ baseline.this creates a certain amount of headaches for CSS authors, who can’t work out how to make their websites look the same in every browser.
+
+Q:In which colour will the text “This is the first paragraph.” be printed for
+  the HTML and CSS shown below? Also explain the specificity rule by which that  colour is chosen.
+<html>
+        <head>
+                <style>
+			div#section1 span{
+                                             color:green
+                   	}
+			div p{
+				color:blue
+			}
+			p{
+			   color:red
+			}
+                </style>
+        </head>
+        <body>
+                <div id="section1">
+                        <p> this is first paragraph </p>
+                </div>
+        </body>
+</html>
+
+-Blue color there is no selector of span tag.div p<immediate parent> so it will execute first.
+
+Q:In which colour will the text “This is a heading!” be printed for the HTML
+  and CSS shown below? Also explain the specificity rule by which that colour
+  is chosen.
+<html>
+        <head>
+                <style>
+			#parent{
+        			 color:green;
+			}
+			h2{
+        		    color:purple;
+			}
+                </style>
+        </head>
+        <body>
+                <div id="parent">
+                        <h2>This is heading!</h2>
+                </div>
+        </body>
+</html>
+
+-It will in purple color.
+-id=parent is div id.
+-According to rule <h2> is first priority.
+
+Q:Sometimes designers mention multiple font families in their styles
+  (eg: font-family: arial, helvetica, serif). How does this help?
+-It will look first for arial font.if it not found by browser then it will
+ helvetica and then serif.
+
+Q:Mention one place where you have noticed text decoration being used on
+  websites. Also mention the purpose for which text decoration was used in that  place.
+-http://www.htmldog.com/guides/css/beginner/text/ where menu bar options
+ contains text-decoration:underline is used.
+
+Q:Replace the rbg values in the styles shown below with an actual colour value, such as red, blue, green, yellow, etc, without changing the colour of the span
+
+<html>
+        <head>
+                <style>
+			#s1{
+       			     background:rgb(0,0,255);
+			}
+			#s2{
+       			    background:rgb(0%,0%,100%);
+		   	}
+                </style>
+        </head>
+        <body>
+                <span id="s1"> Amber Academy </span>
+                <span id="s2"> Amber Academy </span>
+        </body>
+</html>
+
+-<html>
+        <head>
+                <style>
+			#s1{
+        		    background:red;
+   			}
+			#s2{
+        		    background:green;
+   			}
+                </style>
+        </head>
+        <body>
+                <span id="s1"> Amber Academy </span>
+                <span id="s2"> Amber Academy </span>
+        </body>
+</html>
+
+Q:Show with the help of a proper box diagram, the difference in the way the
+  span element (with id=s1) will be rendered in both the scenarios shown below:
+Scenario A
+
+<html>
+        <head>
+                <style>
+			#s1{
+       			     margin-left:20px;
+      		   	     background:yellow;
+			}
+                </style>
+                <body>
+                        <span id="s1"> Amber Academy </span>
+                </body>
+</html>
+
+Scenario B
+
+<html>
+        <head>
+                <style>
+			#s1{
+       			    padding-left:20px;
+       		   	    background:yellow;
+			}
+                </style>
+                <body>
+                        <span id="s1"> Amber Academy </span>
+                </body>
+</html>
+
+-In Scenario A the text Amber Academy will display with color.keeping margin
+ left20px.In Scenario B first color dispalys in color it keeps padding 20px 
+ and then text displays in it.
+
+Q:What is the difference between display:block and display:block-inline
+-display:block
+ It has height,width and margin.
+
+-display:block-inline
+ It has margin,padding,height and width.
+
+Q:What is the purpose of using ‘clear’ after floating elements?
+-The clear property is directly related to the float property. It specifies if  an element should be next to the floated elements or if it should move below
+ them. This property applies to both floated and non-floated elements. If an
+ element can fit in the horizontal space next to the floated elements, it will.
+
+Q:Mention two ways in which we can apply properties to an element so that it is taken out of the normal flow.
+-1)position:absolute;
+ 2)position:relative;
+
+Q: List at least two advantages of using well known best practices for CSS.
+-1)Lightweight code.
+ 2)Greater accessibility.
+ 3)More Formatting Options

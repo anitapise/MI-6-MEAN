@@ -1,0 +1,5 @@
+Q 2.1 Using inline styles is considered to be horrible by most web designers. What is so bad about it?
+-> Because all the CSS styles are messed in with the HTML.It'll make your code rather hard to read.
+
+Q 2.2 What are the benefits of using a linked stylesheet as compared to using embedded styles in the HTML page itself?
+-> The benefits of using linked style sheets are that we may write all our rules into one file then link that file to as many HTML documents as we like. Then we can make changes to a single file and see those changes across all our HTML files. Write once, affect many. Another benefit for the end user is speed. Once the external style sheet has been downloaded the first time the browser will cache it (keep a copy). Then as you visit other pages it doesn't have to keep re downloading the rules.
