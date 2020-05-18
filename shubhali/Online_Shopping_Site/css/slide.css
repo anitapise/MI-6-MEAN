@@ -13,21 +13,6 @@ body {
     flex-wrap: wrap;
     margin: 0 -16px;
 }
-/* .col-25 {
-    -ms-flex: 25%; 
-    flex: 25%;
-}
-.col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-}
-.col-75 {
-    -ms-flex: 75%; 
-    flex: 75%;
-}
-.col-25, .col-50, .col-75 {
-    padding: 0 16px;
-} */
 .container {
     background: linear-gradient(90deg,#2E151B 2%,#2F4454 12%,#1C3334 15%,rgb(21, 43, 44) 2%,#2F556B 8%,#376E6F 25%,#DA7B93);
     padding: 5px 20px 15px 20px;
@@ -83,3 +68,4 @@ span.price {
       margin-bottom: 20px;
     }
   }
+  

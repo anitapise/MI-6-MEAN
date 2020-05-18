@@ -7,7 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     color: #fff;
 }
-  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -98,7 +97,6 @@ input.email, input.text.w3lpass {
     visibility: visible !important;
 }
 :-webkit-input-placeholder {
-     
     font-weight: 100;
 }
 input[type="submit"] {
@@ -131,7 +129,6 @@ input.checkbox {
     50% {
       border-left-color: #fff;
     }
-  
     100% {
       border-bottom-color: #fff; 
       border-left-color: #fff; 
