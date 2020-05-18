@@ -1,5 +1,44 @@
-Assignments on linux
 
-mkdir
+ajay@ajay-virtual-machine:~$ clear
+ajay@ajay-virtual-machine:~$ ls
+Desktop    Downloads  examples.desktop  Music     Public     Videos
+Documents  example1   gittest           Pictures  Templates
+ajay@ajay-virtual-machine:~$ cd Desktop
+ajay@ajay-virtual-machine:~/Desktop$ ls
+Ambersoft  MI-6-MEAN
+ajay@ajay-virtual-machine:~/Desktop$ mkdir aj
+ajay@ajay-virtual-machine:~/Desktop$ ls
+aj  Ambersoft  MI-6-MEAN
+ajay@ajay-virtual-machine:~/Desktop$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-T timeout] [-u user] file ...
+ajay@ajay-virtual-machine:~/Desktop$ mv
+mv: missing file operand
+Try 'mv --help' for more information.
+ajay@ajay-virtual-machine:~/Desktop$ ping
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+ [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+ajay@ajay-virtual-machine:~/Desktop$ ps
+   PID TTY          TIME CMD
+  5258 pts/1    00:00:00 bash
+  5270 pts/1    00:00:00 cat
+  5313 pts/1    00:00:00 ps
+ajay@ajay-virtual-machine:~/Desktop$ pwd
+/home/ajay/Desktop
+ajay@ajay-virtual-machine:~/Desktop$ 
 
-cp
+
+
