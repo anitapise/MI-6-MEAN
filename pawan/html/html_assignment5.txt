@@ -1,0 +1,14 @@
+Q 5.1 Web browsers are just one of the ways of rendering HTML pages. HTML content can also be read out by speech readers instead of being displayed visually. Based on what you have read in this section, what – according to you – would be the difference in the way the following two lines of text are read out:
+    1. You need to come here <i>right now</i>.
+    2. You need to come here <em>right now</em>.
+Answer
+<i> tag is use for do italic to a simple word
+<em> tag is a phrase tag. It renders as emphasized text.
+i tag looks only italic and screen reader reads like that normal text. when we use the em tag also looks like italic but when screen reader read it with some stress on that word
+
+
+
+
+Q 5.2 As the author of a web page, when would you use <strong> as opposed to <em>?
+Ans
+	when i have to give importance to any world in may page i will use strong tag
