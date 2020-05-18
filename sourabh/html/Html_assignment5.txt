@@ -1,0 +1,12 @@
+Q 5.1 Web browsers are just one of the ways of rendering HTML pages. HTML content can also be
+read out by speech readers instead of being displayed visually. Based on what you have read in this
+section, what – according to you – would be the difference in the way the following two lines of text
+are read out:
+1. You need to come here<i>right now</i>.
+2. You need to come here<em>right now</em>.
+  ANS:- <i> stands for italic while <em> stands for emphasis. While both are typically but not always styled to display as italic, <em> is used when you want to put more stress on a word or phrase.
+
+Q 5.2 As the author of a web page, when would you use <strong> as opposed to <em>?
+   ANS:- when i have to give more importance to the word i will use strong tag.
+
+ 
