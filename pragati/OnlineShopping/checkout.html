@@ -1,113 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Checkout Page</title>
-    <link rel="stylesheet" type="text/css" href="./check.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <div class="checkout">
-      <div class="container">
-        <h2>Place Order</h2>
-        <div class="checkout-inner">
-          <form>
-            <div class="checkout-form-steps">
-              <h4>Personal Detail</h4>
-              <input
-                type="text"
-                class="textfield"
-                placeholder="Your Name"
-                required=""
-              />
-              <input
-                type="email"
-                class="textfield"
-                placeholder="Your Email"
-                required=""
-              />
-              <input
-                type="text"
-                class="textfield"
-                placeholder="Your Phone No."
-              />
+    <head>
+        <title>Checkout Page</title>
+        <link rel="stylesheet" type="text/css" href="./check.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="checkout">
+            <div class="container">
+                <h2>Place Order</h2>
+                <div class="checkout-inner">
+                    <form>
+                        <div class="checkout-form-steps">
+                            <h4>Personal Detail</h4>
+                            <input type="text" class="textfield" placeholder="Your Name" required="" />
+                            <input type="email" class="textfield" placeholder="Your Email" required="" />
+                            <input type="text" class="textfield" placeholder="Your Phone No." />
+                        </div>
+                        <div class="checkout-form-steps">
+                            <h4>Shipping Options</h4>
+                            <label for="radio1">
+                                <input type="radio" name="shippingoptions" id="radio1" />
+                                Delivery by courier - during the day free shipping
+                            </label>
+                            <label for="radio2">
+                                <input type="radio" name="shippingoptions" id="radio2" />
+                                Urgent Delivery - delivery in 1 hour free shipping
+                            </label>
+                            <label for="radio3">
+                                <input type="radio" name="shippingoptions" id="radio3" />
+                                Pickup - you can pickup 9AM to 8PM
+                            </label>
+                        </div>
+                        <div class="checkout-form-steps">
+                            <h4>Billing Options</h4>
+                            <label for="radio4">
+                                <input type="radio" name="billingoptions" id="radio4" />
+                                In Cash
+                            </label>
+                            <label for="radio5">
+                                <input type="radio" name="billingoptions" id="radio5" />
+                                Visa
+                            </label>
+                            <label for="radio6">
+                                <input type="radio" name="billingoptions" id="radio6" />
+                                Mobile Banking
+                            </label>
+                            <label for="radio7">
+                                <input type="radio" name="billingoptions" id="radio7" />
+                                Wallet
+                            </label>
+                        </div>
+                        <input type="submit" class="submitorder-button" value="Submit Order" />
+                    </form>
+                </div>
+                <div class="orderlist">
+                    <h6>My Order</h6>
+                    <img src="images/2_tb.jpg" width="400px" />
+                    <h3>Macbook Pro MQ032 14.5' Inter Core i7 5550U 8GB DDR3</h3>
+                    <p>Quantity : <span>1</span></p>
+                    <p>
+                        Price : <span><i class="fas fa-dollar-sign"></i> 1099</span>
+                    </p>
+                    <input type="text" class="textfield" placeholder="Promo Code : STORE8888" />
+                    <input type="submit" class="applycode-button" value="Apply Promo Code" />
+                    <p>
+                        Order Total : <span><i class="fas fa-dollar-sign"></i> 1099</span>
+                    </p>
+                </div>
             </div>
-            <div class="checkout-form-steps">
-              <h4>Shipping Options</h4>
-              <label for="radio1">
-                <input type="radio" name="shippingoptions" id="radio1" />
-                Delivery by courier - during the day free shipping
-              </label>
-              <label for="radio2">
-                <input type="radio" name="shippingoptions" id="radio2" />
-                Urgent Delivery - delivery in 1 hour free shipping
-              </label>
-              <label for="radio3">
-                <input type="radio" name="shippingoptions" id="radio3" />
-                Pickup - you can pickup 9AM to 8PM
-              </label>
-            </div>
-            <div class="checkout-form-steps">
-              <h4>Billing Options</h4>
-              <label for="radio4">
-                <input type="radio" name="billingoptions" id="radio4" />
-                In Cash
-              </label>
-              <label for="radio5">
-                <input type="radio" name="billingoptions" id="radio5" />
-                Visa
-              </label>
-              <label for="radio6">
-                <input type="radio" name="billingoptions" id="radio6" />
-                Mobile Banking
-              </label>
-              <label for="radio7">
-                <input type="radio" name="billingoptions" id="radio7" />
-                Wallet
-              </label>
-            </div>
-            <input
-              type="submit"
-              class="submitorder-button"
-              value="Submit Order"
-            />
-          </form>
+            <a href="./index.html"><button class="submit-button">Back to shop</button></a>
         </div>
-        <div class="orderlist">
-          <h6>My Order</h6>
-          <img src="images/2_tb.jpg" width="400px" />
-          <h3>Macbook Pro MQ032 14.5' Inter Core i7 5550U 8GB DDR3</h3>
-          <p>Quantity : <span>1</span></p>
-          <p>
-            Price : <span><i class="fas fa-dollar-sign"></i> 1099</span>
-          </p>
-          <input
-            type="text"
-            class="textfield"
-            placeholder="Promo Code : STORE8888"
-          />
-          <input
-            type="submit"
-            class="applycode-button"
-            value="Apply Promo Code"
-          />
-          <p>
-            Order Total : <span><i class="fas fa-dollar-sign"></i> 1099</span>
-          </p>
+        <div class="copyright">
+            <div class="container">
+                <h5>&copy; 2020 aromastore.com | Creator by pragati</h5>
+            </div>
         </div>
-      </div>
-      <a href="./index.html"
-        ><button class="submit-button">Back to shop</button></a
-      >
-    </div>
-    <div class="copyright">
-      <div class="container">
-        <h5>&copy; 2020 aromastore.com | Creator by pragati</h5>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
