@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<title>Document</title>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="mycode.css">
+	    <h2 align="center"><abbr title="Sopport">Online Shopping Project</abbr></h2>
+	    <b><h2 align="center"><abbr title="Welcome To Apna-E-Mart">Apna-E-Mart</abbr></h2></b>
+		
+	<style>	
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: teal;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  background-color: teal;
+}
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+  text-align:left;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+
+.registerbtn {
+  background-color: orange;
+  color: white;
+  padding: 8px 16px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: white;
+  text-align: center;
+}
+</style>	
+	</head>
+	<body bgcolor="teal">
+	    <ul>
+	        <li><a href="index.html">Home</a></li>
+	        <li><a href="services.html">Services</a></li>
+	        <li><a href="about.html">About</a></li>
+	        <li><a href="contact.html">Contact</a></li> 
+			<abbr title="Please Login"><li style="float:right"><a class="active" href="login.html">Sign-in</a></li></abbr>
+			</ul>
+		<form action="registrationres.html">
+			<div class="container">
+				<center><h3>Please Register Yourself</h3></center>
+				<hr><center>
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+				</br>
+			<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				</br>
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required></br>
+				<input type="checkbox">I Agree</br>
+			<button type="submit" class="registerbtn">Register</button>
+			</div>
+			<div class="container signin">
+				<p>Already have an account? <a href="login.html">Login</a>.</p></center>
+			</div>
+		</form>
+	</body>
+</html>

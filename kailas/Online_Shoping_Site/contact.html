@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<title>Document</title>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="mycode.css">
+	    <h2 align="center"><abbr title="Sopport">Online Shopping Project</abbr></h2>
+	    <b><h2 align="center"><abbr title="Welcome To Apna-E-Mart">Apna-E-Mart</abbr></h2></b>
+		
+		<style>
+			body {
+					font-family:sans-serif;}
+			* {
+				box-sizing: border-box;}
+				
+			.container {
+						position: relative;
+						border-radius: 5px;
+						background-color: powderblue;
+						padding: 20px 0 30px 0;} 
+			input,
+				.btn {
+					width: 50%;
+					padding: 12px; 
+					border: none;
+					border-radius: 4px;
+					margin: 5px 0;
+						opacity: 0.85;
+						display: inline-block;
+						font-size: 14px;
+						line-height: 20px;
+						text-decoration: none;}
+
+			
+			.col {
+				float: left;
+				width: 50%;
+				margin: auto;
+				padding: 0 50px;
+				margin-top: 6px;}
+
+			.row:after {
+						content: "";
+						display: table;
+						clear: both;}
+
+			.vl {
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+				border: 2px solid #ddd;
+				height: 200px;}
+								
+			.vl {
+				display: none;}
+
+			.hide-md-lg {
+						display: block;
+						text-align: right;}
+		</style>
+	</head>
+	<body bgcolor="teal">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+			<abbr title="Please Login"><li style="float:right"><a class="active" href="login.html">Sign-in</a></li></abbr>
+			<abbr title="Please Register Yourself"><li style="float:right"><a class="active" href="registration.html">Sign-up</a></li></abbr>
+		</ul>
+		<div class="container">
+			<form action="https://docs.google.com/forms/d/e/1FAIpQLSeYS17g27HpvwEIencycfRp-3cKiui2MdQ7oSIDY6f7AoLkJw/viewform?usp=sf_link">
+		<div class="row">
+      <div class="col">
+        <div class="hide-md-lg">
+        </div>
+		        <label for="fname">First Name:-</label>
+		            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+					</br>
+                <label for="lname">Last Name:-</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					</br>
+                <label for="country">Country:-</label>
+                    <select id="country" name="country">
+						<option value="australia">Select</option>
+                        <option value="australia">India</option>
+                        <option value="canada">Srilanka</option>
+                        <option value="usa">South-Africa</option>
+						<option value="australia">England</option>
+                        <option value="canada">America</option>
+                        <option value="usa">Japan</option>
+						<option value="australia">germani</option>
+                        <option value="canada">Uttar-Koriya</option>
+                        <option value="usa">France</option>
+						<option value="australia">Itelly</option>
+                    </select>
+				<label for="country">State</label>
+					<select id="country" name="country">
+						<option value="select">select</option>
+						<option value="maharastra">Maharastra</option>
+						<option value="gujrat">Gujraat</option>
+						<option value="uttarpradesh">Uttarpradesh</option>
+						<option value="australia">Madhypradesh</option>
+						<option value="rajastan">Rajastan</option>
+						<option value="bihar">Bhihar</option>
+						<option value="channai">channai</option>
+						<option value="bangal">Bangal</option>
+						<option value="zarkhand">Zarkhand</option>
+						<option value="punjab">Punjab</option>
+						<option value="Tamilnadu">Tamilnadu</option>
+						<option value="uttrakhand">Uttrakhand</option>
+						<option value="Kocchi">Kocchi</option>		  
+					</select>
+				<label for="country">District</label>
+					<select id="country" name="country">
+						<option value="select">select</option>
+						<option value="pune">Pune</option>
+						<option value="aurangabad">Aurangabad</option>
+						<option value="ahemadnagar">Ahemadnagar</option>
+						<option value="nashik">Nashik</option>
+						<option value="jalna">Jalna</option>
+						<option value="beed">Beed</option>
+						<option value="satara">Satara</option>
+						<option value="sangali">Sangali</option>
+						<option value="kolhapur">Kolhapur</option>
+						<option value="karad">Karad</option>
+						<option value="baramati">Baramati</option>
+						<option value="shirur">Shirur</option>
+						<option value="">Parbhani</option>		 
+					</select></br>
+                <label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:75px;width:340px"></textarea></br>
+					<input type="submit" value="Submit"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYS17g27HpvwEIencycfRp-3cKiui2MdQ7oSIDY6f7AoLkJw/viewform?usp=sf_link"></a>
+					</div></br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.493871789273!2d73.78985391472122!3d18.55176028739085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf20d25ea6af%3A0xc281a34e648637f0!2sAmber%20SoftTech%20Systems!5e0!3m2!1sen!2sin!4v1590086949637!5m2!1sen!2sin" width="750" height="295" frameborder="1" style="border:5;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</form>
+	</div></br>
+	<footer>
+		<center><b><p><abbr title="This is our company mail address">Support:- sales@ambersoft.in</abbr></p><p>AmbersoftTech System Pvt.Ltd</p><p>2nd Floor, Business Square, Near Regent Plaza, Baner<p> Pashan Link Road, Baner, Pune-411045.</p>India +91 20 46704824 .. http://www.ambersoft.in</p></b> </center>
+	</footer>
+ </body>
+</html>
