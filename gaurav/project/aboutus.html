@@ -1,7 +1,17 @@
 <html>
     <head>
 	<title>About Us</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<style>
+	    *{
+		box-sizing:border-box;
+		padding-left:0;
+		padding-right:0;
+		}
+	    body {
+  		margin: 0;
+  		font-family: Arial;
+		}
 	    nav{
 		background:#594848;
 		width:100%;
@@ -32,55 +42,102 @@
 		background:skyblue;
 		color:black;
 		}
+	    .hilight{
+		background-color:purple;
+		}
+	    .container img{
+		margin-top:60px;
+		height:auto;
+		width:100%;
+		opacity:0.9;
+		}
 	    .container{
 		height:auto;
 		}
 	    .text-block {
-		position:fixed;
+		position:absolute;
 		top:200px;
-		right:150px;
+		right:50px;
+		overflow:visible;
 		background-color: black;
 		color: white;
 		padding-left: 20px;
 		padding-right: 20px;
 		}
-	    footer{
-		padding:10px;
-		font-size:17px;
-		font-weight:bold;
+	    .connect{
+		margin-left:auto;
+		margin-right:auto;
+		width:30%;
+		padding:20px;
+		}
+	    .footer{
+		border-top:1px solid black;
 		text-align:center;
-		background:#594848;
-		color:white;
-		font-family:Arial;
-		letter-spacing:1px;
+		}
+	    .info{
+		padding:20px;
+		}
+	    .copyright{
+		font-size:10px;
+		padding:1px;
+		background-color:#594848;
+		} 
+	    .logo{
+		float:right;
+		padding-right:20px;
+		}
+	    h2{
+		font-family:Arial,Helvetica,sans-serif;
+		text-align:center;
+		}
+	    h3{
+  		font-family:Lucida Console,Courie,monospace;
+		text-align:center;
 		}
 	</style>
     </head>
     <body>
 	<nav>
 	    <ul>
-		<li><a href="home.html">Home</a></li>
-		<li><a href="category.html">Category</a></li>
-		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="home.html"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="services.html">Service</a></li>
+		<li><a class="hilight" href="aboutus.html">About Us</a></li>
 		<li><a href="contact.html">Contact Us</a></li>
 	    </ul>
+	    <div class="logo"><img src="image/l1.png" alt="logo" height="60px" width="90px"></div>
 	</nav>
 	<div class="container">
-	    <img src="image/bg.jpg" alt="Norway" width="100%">
+	    <img src="image/bg.jpg" alt="Norway" >
 	    <div class="text-block">
-		<p>"We’ve designed our</p>
-		<p>collections</p>
-	        <p>management software</p>
-		<p>to support our clients</p>
-		<p>in managing and sharing</p>
-		<p>their collections easily</p>
-		<p>and intuitively, so they</p>
-		<p>can work more efficiently</p>
-		<p>and reach a wider audience.”</p>
+		<h1 style="text-align:center;font-family:serif">ABOUT US</h1>
+		<h2>"You don't make  a photograph</h2>
+		<h2>just with a camera.</h2>
+	        <h3>you bring to the act of photography</h3>
+		<h3>all the pictures you have seen,</h3>
+		<h3>the books you have read,</h3>
+		<h3>the music you have heard,</h3>
+		<h3>the people you have loved."</h3>
 	    </div>
 	</div> 
-	<footer>
-		Copyright All Right Reserved|This devloped by Gaurav Suryawanshi 
-	</footer>
+	<div class="footer">
+	    <div class="connect">
+	    <i class='fab fa-linkedin' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-twitter' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-instagram' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-github' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-facebook' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-google-plus' style='font-size:48px'></i>
+	    </div>
+	    <div class="info">
+	    <p style="text-align:center;font-size=30px;font-weight:bold;font-family:serif">"Photography helps people to see"</p>
+	    <i class='fas fa-envelope' style='font-size:15px;color:grey;padding-right:10px'></i><a href>gaurav.suryawanshi56@gmail.com</a>
+	    <i class='fas fa-mobile-alt' style='font-size:15px;color:grey;padding-left:100px;padding-right:10px'></i>8956409911
+	    <i class="fa fa-map-marker" style="font-size:15px;color:grey;padding-left:100px;padding-right:10px"></i>Pune,Maharashtra
+	    </div>
+	    <div class="copyright">
+		<p style="color:white">&copy;2020.All Right Reserved | Gaurav Suryawanshi<p>
+	    </div>
+	</div>
     </body>
 </html>

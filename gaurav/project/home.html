@@ -1,7 +1,15 @@
 <html>
     <head>
 	<title>Home</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<style>
+	    *{
+		box-sizing:border-box;
+		}
+	    body {
+  		margin: 0;
+  		font-family: Arial;
+		}
 	    h1{
 		text-align:center;
 		margin-top:80px;
@@ -39,12 +47,16 @@
 		background:skyblue;
 		color:black;
 		}
+	    .hilight{
+		background-color:purple;
+		}
 	    .gallery{
 		height:80%;
 		width:100%;
 		display:flex;
 		margin:5% auto 0;
 		box-sizing:border-box;
+		padding-bottom:10px;
 		}
 	    .image-box{
 		margin:0 1%;
@@ -70,17 +82,42 @@
 	    .image-box:nth-child(1):hover{
 		flex-basis:50%;
 		}
+	    .connect{
+		margin-left:auto;
+		margin-right:auto;
+		width:30%;
+		padding:20px;
+		}
+	    .footer{
+		border-top:1px solid black;
+		text-align:center;
+		}
+	    .info{
+		padding:20px;
+		}
+	    .copyright{
+		font-size:10px;
+		margin:auto;
+		padding:1px;
+		background-color:#594848;
+		} 
+	    .logo{
+		float:right;
+		padding-right:20px;
+		}
 	</style>
     </head>
     <body>
 	<h1> Photo gallery System</h1>
 	<nav>
 	    <ul>
-		<li><a href="home.html">Home</a></li>
-		<li><a href="category.html">Category</a></li>
+		<li><a class="hilight" href="home.html"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="services.html">Service</a></li>
 		<li><a href="aboutus.html">About Us</a></li>
 		<li><a href="contact.html">Contact Us</a></li>
 	    </ul>
+	    <div class="logo"><img src="image/l1.png" alt="logo" height="60px" width="90px"></div>
 	</nav>
 	<div class="gallery">
 	    <div class="image-box active">
@@ -102,9 +139,24 @@
 	 	<img src="image/6.jpg" alt="waterfall">
 	    </div>  
 	</div>
-	<footer>
-		Copyright All Right Reserved|This devloped by Gaurav Suryawanshi 
-	</footer>
-    </body>
+	<div class="footer">
+	    <div class="connect">
+	    <i class='fab fa-linkedin' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-twitter' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-instagram' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-github' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-facebook' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-google-plus' style='font-size:48px'></i>
+	    </div>
+	    <div class="info">
+	   <p style="text-align:center;font-size=30px;font-weight:bold;font-family:serif">"Photography helps people to see"</p>
+	    <i class='fas fa-envelope' style='font-size:15px;color:grey;padding-right:10px'></i><a href>gaurav.suryawanshi56@gmail.com</a>
+	    <i class='fas fa-mobile-alt' style='font-size:15px;color:grey;padding-left:100px;padding-right:10px'></i>8956409911
+	    <i class="fa fa-map-marker" style="font-size:15px;color:grey;padding-left:100px;padding-right:10px"></i>Pune,Maharashtra
+	    </div>
+	    <div class="copyright">
+		<p style="color:white">&copy;2020.All Right Reserved | Gaurav Suryawanshi<p>
+	    </div>
+	</div>
+   </body>
 </html>
-
