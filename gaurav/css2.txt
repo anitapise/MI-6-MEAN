@@ -1,0 +1,5 @@
+Q2.1 Using inline styles is considered to be horrible by most web designers. What is so bad about it?
+Ans Browsers translate every web page into simple HTML. Use of inline styles in HTML is a bad practice because browser doesn't understand it well. If your website is small and you don't want to use external style sheets, then you should go for internal styles as browsers can understand them easily.
+
+Q 2.2 What are the benefits of using a linked stylesheet as compared to using embedded styles in the HTML page itself?
+Ans The embedded styles are set in the HEAD section of web page.In linked stylesheet an external style is simply a link placed in the HEAD section of web page to a separate file containing style rules.
