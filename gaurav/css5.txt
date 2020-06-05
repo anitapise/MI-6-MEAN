@@ -1,0 +1,40 @@
+Q 5.1 Sometimes designers mention multiple font families in their styles (eg: font-family: arial, helvetica, serif). How does this help?
+Ans: The purpose of this is that if the user does not have the first font you specify, the browser will go through the list until it finds one it does have. This is useful because different computers sometimes have different fonts installed.
+
+Q 5.2 Mention one place where you have noticed text decoration being used on websites. Also mention the purpose for which text decoration was used in that place.
+Ans: On webiste www.https://www.htmldog.com/guides/css/beginner/text, the menu bar options available it contains text-decoration:underline it is used on website to link to another webpage.
+
+Q 5.3 Replace the rbg values in the styles shown below with an actual colour value, such as red, blue, green, yellow, etc, without changing the colour of the span.
+<html>
+	<head>
+		<style>
+			#s1 {
+				background: rgb(0,0,255) ;
+			}
+			#s2 {
+				background: rgb(0%, 0%, 100%) ;
+			}
+		</style>
+	</head>
+	<body>
+		<span id="s1">Amber Academy</span>
+		<span id="s2">Amber Software</span>
+	</body>
+</html>
+Ans:
+<html>
+        <head>
+                <style>
+                        #s1 {
+                                background: blue ;
+                        }
+                        #s2 {
+                                background: blue ;
+                        }
+                </style>
+        </head>
+        <body>
+                <span id="s1">Amber Academy</span>
+                <span id="s2">Amber Software</span>
+        </body>
+</html>

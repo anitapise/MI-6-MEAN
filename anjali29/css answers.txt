@@ -1,0 +1,64 @@
+Q 1.1 What did you find most interesting about the history of CSS?
+	CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.
+
+Q 1.2 Briefly describe any three things a developer can style with CSS.
+	Developer can style the css 3 ways:
+•	Inline CSS: Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using style attribute.
+•	Internal or Embedded CSS: This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+•	External CSS: External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web pages.
+
+Q 2.1 Using inline styles is considered to be horrible by most web designers. What is so bad about it?
+•	This is about as horrible as you can get as all the CSS styles are messed in with the HTML. You'll probably have to end up repeating code multiple times as well. You'll also make your code rather hard to read.
+•	It does not separate out the style information from content. - The styles for many documents can not be controlled from one source. - Selector grouping methods can not be used to handle complex situations.
+Q 2.2 What are the benefits of using a linked stylesheet as compared to using embedded styles in the HTML page itself?
+Embedded styles are set in the HEAD section of web page. Similar to an inline style rule, embedded styles allow you to override the rules of an external style sheet. An external style is simply a link placed in the HEAD section of your web page to a separate file containing your style rules.
+Embedded styles used for only one web page where it is defined in there head section but link stysheet you can use multiple web pages where the link is specified in particular head section
+Q 4.1 Many web authors use a reset CSS. What problems might happen if they don’t use it?
+	A CSS Reset (or “Reset CSS”) is a short, often compressed (minified) set of CSS rules that resets the styling of all HTML elements to a consistent baseline.
+
+In case you didn’t know, every browser has its own default ‘user agent’ stylesheet, that it uses to make unstyled websites appear more legible. For example, most browsers by default make links blue and visited links purple, give tables a certain amount of border and padding, apply variable font-sizes to H1, H2, H3 etc. and a certain amount of padding to almost everything. Ever wondered why Submit buttons look different in every browser?
+
+Obviously this creates a certain amount of headaches for CSS authors, who can’t work out how to make their websites look the same in every browser. (NB: article coming soon about why this is a false notion!)
+
+Using a CSS Reset, CSS authors can force every browser to have all its styles reset to null, thus avoiding cross-browser differences as much as possible.
+Q 4.2 In which colour will the text “This is the first paragraph.” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
+Blue in there is no slector of span tag?
+P tag which is outside the p the  it will be red
+But div p <immediate parent > so it will execute first
+
+
+Q 4.3 In which colour will the text “This is a heading!” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
+Purple id =prent is a div id
+And h2 is the first priority tag means accordind to rule it will apply
+ 
+
+Q 5.1 Sometimes designers mention multiple font families in their styles (eg: font-family: arial, helvetica, serif). How does this help?
+
+	If the first two are not found installed, the browser will select the best option, but only from monospace fonts. Without the generic family, the font would default to whatever is the default font on the user’s system (likely a serif or sans-serif), which would be undesirable.
+
+
+
+Q 7.1 What is the difference between display:block and display:block-inline
+	A block element always starts on a new line, and fills up the horizontal space left and right on the web page. You can add margins and padding on all four sides of any block element — top, right, left, and bottom.
+	Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides. You’ll have to declare display: inline-block in your CSS code.
+Q 7.2 What is the purpose of using ‘clear’ after floating elements?
+	The clear property is directly related to the float property. It specifies if an element should be next to the floated elements or if it should move below them. This property applies to both floated and non-floated elements. If an element can fit in the horizontal space next to the floated elements, it will.
+Q 7.3 Mention two ways in which we can apply properties to an element so that it is taken out of the normal flow.
+	Position:absolute;
+	Position:relative;
+
+Q 8.1 List at least two advantages of using well known best practices for CSS.
+1.	Make it Readable: The readability of your CSS is incredibly important, though most people overlook why it's important. Great readability of your CSS makes it much easier to maintain in the future, as you'll be able to find elements quicker. Also, you'll never know who might need to look at your code later on.
+2.	Keep it Consistent : Along the lines of keeping your code readable is making sure that the CSS is consistent. We should start to develop your own "sub-language" of CSS that allows you to quickly name things. There are certain classes that I create in nearly every theme, and I use the same name each time. For example, I use ".caption-right" to float images which contain a caption to the right.
+Q 8.2 Why should we avoid descendant selectors as much as possible in our stylesheets?
+	Those of us who have started using modular or object-oriented CSS principles have learned to avoid, as much as possible, the use of the descendant selector (or, more accurately, the descendant combinator).
+A selector that uses the descendant combinator looks like this:
+.sidebar p  {
+    color: hotpink;
+    font-size: 3em;
+}
+Everything you see before the opening curly brace is the selector. The combinator in this case is the space character. There are other combinators, too. But in this case, the selector uses the descendant combinator.
+Now that we have a technical understanding of the selector itself, let’s discuss what to keep in mind when deciding to use this selector.
+Those styles are limited not only to paragraph elements, but on paragraph elements that are children of an element with a class of “sidebar”.
+That’s pretty strict. This limits what you can do with those styles. You can’t reuse those styles, so they’re basically stuck in that context.
