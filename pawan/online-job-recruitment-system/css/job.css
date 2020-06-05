@@ -1,0 +1,245 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+ html ,
+ body
+{
+    background-size: cover;
+    height: 130%;
+    font-family: sans-serif;
+    background-color: #0cdeed; 
+    width: 100%;   
+}
+.menu-bar
+{
+    display: flex;
+    background-color: #0A1A32;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.titlee{
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.active,.menu-bar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.search-box input[type = "text"]{
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.search-box input[type = "text"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.head
+{
+    font-size: 40px;
+}
+.dropdown { 
+    display: inline-flex;
+    background-color: #484794;
+    width: 60%;
+    text-align: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    margin: 20px; 
+}
+.dropdown ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.dropdown ul li
+{
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+.dropdown ul li:hover
+{
+    color: green;
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #484794;   
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    padding: 10px;
+    margin: 10px;
+}
+.dropdown-content a
+{
+    text-decoration: none; 
+    color: #fff;
+}
+
+.dropdown :hover .dropdown-content 
+{
+    display: block;
+    position: absolute;
+    color: #bbbbbb 600px;
+    margin-top: 10px;
+    margin-left: -15px
+}
+.dropdown :hover .dropdown-content ul
+{
+    display: block;
+    margin: 10px;
+    color: #fff;
+}
+.dropdown :hover .dropdown-content ul li
+{
+    width: 100px;
+    font-size: 14px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+.dropdown :hover .dropdown-content ul li:last-child{
+    border-bottom: none;
+}
+.dropdown :hover .dropdown-content ul li a:hover
+{
+    color: green; 
+}
+li
+{
+    list-style: none;
+}
+.row
+{
+    margin: 50px;
+    padding: 40px;
+    position: relative;
+    min-height: 80%;
+}
+.columns
+{ 
+    border: 2px solid black;
+    float: left;
+    padding: 30px;  
+    height: 450px;
+    width: 33%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: sans-serif;
+}
+.btn
+{
+    border: 0;
+    background-color: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    display: inline-flex;
+}
+.btn:hover
+{
+    background: #2ecc71;
+}
+.navbar ul li:hover .submenu ul
+{
+    display: block;
+    margin: 10px;
+}  
+.text
+{
+    background-color: none;
+    margin: 1px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 4px;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.g2
+{
+    width: 100px;
+    display: inline-block;
+}
+#footer_container
+{ 
+    background-color: #0A1A32;
+    color: #ffffff;
+    height: 230px; 
+    padding-top: 20px;
+    display: block;
+    margin-top: 20px; 
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+}
+#footer_container a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footer_container a:hover
+{
+    color: #2bab0d;
+}
+.footer_bottom{
+    background-color: #574d4d;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
