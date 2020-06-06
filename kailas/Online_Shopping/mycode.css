@@ -90,13 +90,14 @@
 		height: 100px;}
 
 	.vl-innertext {
-					position: absolute;
-					top: 25%;
-					transform: translate(-25%, -25%);
-					background-color: #f1f1f1;
-					border: 1px solid #ccc;
-					border-radius: 100%;
-					padding: 8px 10px;}
+		position: absolute;
+		top: 25%;
+		transform: translate(-25%, -25%);
+		background-color: #f1f1f1;
+	        border: 1px solid #ccc;
+		border-radius: 100%;
+		padding: 8px 10px;
+                   }
 
 	.hide-md-lg {
 				display: none;}
