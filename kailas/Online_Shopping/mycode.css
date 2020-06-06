@@ -34,19 +34,25 @@
 		padding: 10px 12px;
 		text-decoration: none;}
 		
-	li a:hover:not(.active){
-							background-color: orange;}
+	li a:hover:not(.active)
+                       {
+		        background-color: orange;
+                       }
 
-	.active:hover{
-					background-color: orange;}
+	.active:hover
+                 {
+		  background-color: orange;
+                 }
 	*{
 		box-sizing: border-box;}
 		
-	.container {
-				position: relative;
-				border-radius: 5px;
-				background-color:skyblue;
-				padding: 20px 0 30px 0;} 
+	.container
+               {
+		position: relative;
+		border-radius: 5px;
+		background-color:skyblue;
+		padding: 20px 0 30px 0;
+              } 
 	input,
 	.btn{
 		width: 25%;
@@ -62,25 +68,28 @@
 
 	input:hover,
 	.btn:hover {
-				opacity: 1;}
+		opacity: 1;
+                 }
 				
 	input[type=submit] {
-						background-color: #4CAF50;
-						color: white;
-						cursor: pointer;}
+		background-color: #4CAF50;
+		color: white;
+		cursor: pointer;
+                }
 
 	input[type=submit]:hover {
-							background-color: #45a049;}
-							float: left;
-							width: 50%;
-							margin: auto;
-							padding: 0 50px;
-							margin-top: 6px;}
+		background-color: #45a049;}
+		float: left;
+		width: 50%;
+		margin: auto;
+		padding: 0 50px;
+		margin-top: 6px;
+              }
 							
 	.row:after {
-				content: "";
-				display: table;
-				clear: both;}
+		content: "";
+		display: table;
+		clear: both;}
 
 	.vl {
 		position: absolute;
