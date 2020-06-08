@@ -1,0 +1,261 @@
+body{
+	margin:10px;
+	position: relative;
+}
+.container{
+	border-bottom:1px solid #909595;
+}
+.active{
+	color:#06D6A0;
+}
+.header{
+	position: absolute;
+	top: 0;
+	padding-left:20px;
+}
+h1 a{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#3a86ff;
+	text-decoration:none;
+}
+.nav {
+	display:inline-block;
+}
+.list{
+	position:relative;
+	top: 0;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+.social{
+	position:static;
+	margin-left:auto;
+	padding:10px;
+	width:20%;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+li{
+	float:left;
+}
+li a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display:block;
+	color:black;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+li a:hover{
+	color:#06D6A0;
+}
+.sublist {
+  display: inline-block;
+}
+.dropdown {
+	display: none;
+	position:absolute;
+	background-color: #f9f9f9;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+}
+.sublist:hover .dropdown{
+	display:block;
+}
+.main-content{
+	overflow-x: scroll; /* Add horizontal scrollbar */
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	margin-top:35px;
+}
+.grid-container {
+	display:grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows:auto;
+}
+.grid-container > div {
+	text-align: center;
+	padding: 10px;
+	font-size: 30px;
+}
+div.gallery {
+	margin: 10px;
+	border: 1px solid #ccc;
+	float: left;
+	width:500px;
+	height:560px;
+	position: relative;
+	text-align: center;
+  
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+}
+.centered:hover{
+	opacity: 1;
+}
+.gallery a{
+	text-decoration: none;
+	color:white;
+}
+div.gallery:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	transition: .5s ease;
+	opacity: 0.6;
+	font-size: 56px;
+}
+div.gallery img {
+	width:500px;
+	height:560px;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	background-color:black;
+}
+.gallery-wild{
+	display:inline-block;
+	margin:5px;
+}
+.gallery-wild img{
+	width:360px;
+	height:230px;
+	padding:8px;
+}
+.gallery-wild img:hover{
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.main-content-services{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+.main-content-services p{
+	text-align:center;
+	font-size:40px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+.services{
+	border:1px solid black;
+	display:inline-block;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:30px;
+	background: rgba(0, 0, 0, 0.3); /* Black background with 0.3 opacity */
+	background-color:#e5e5e5;
+	color: #000000;
+	width: 100%;
+	padding: 20px;
+	position:static;
+	width:280px;
+	height:330px;
+	border:1 solid #000;
+}
+.services>img {
+	width:280px;
+	height:220px;
+	border:3px solid #5a189a;
+}
+.services>h2 {
+	text-transform: uppercase;
+}
+.main-content-about-us>p{
+	text-align:center;
+	font-size:40px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+.main-content-about-us>img{
+	width:450px;
+	height:550px;
+	position:relative;
+	left:540px;
+}
+h3{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:720px;
+}
+.main-content-contact-us>p{
+	text-align:center;
+	font-size:40px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+.main-content-contact-us>.contact-form{
+	margin-right:auto;
+	margin-left:auto;
+	width:50%;
+	padding-bottom:20px;
+}
+.contact-form input[type="text"],input[type="email"]{
+	width:100%;
+	height:30px;
+	margin: 8px 0;
+}
+textarea{
+	width:100%;
+	height:150px;
+}
+.contact-form input[type="submit"]{
+	border-radius:10px;
+	font-size:20px;
+	width:100%;
+	background-color:#4CAF50;
+	color:white;
+}
+input,textarea{
+	margin-top:20px;
+}
+input[type="submit"]:hover{
+	background-color:#06D6A0;
+}
+.contact-form fieldset{
+	font-size:20px;
+	width:320px;
+	margin-right:auto;
+	margin-left:auto;
+	border-color:gray;
+	background-color:#f2f2f2;
+}
+input[placeholder], textarea[placeholder]{
+	font-size:13px;
+	padding-left:5px;
+}
+.contact-us-address{
+	position:absolute;
+	left:100px;
+}
+iframe{
+	border:2px solid #D3D3D3;
+}
+h6{
+	padding-top:273px;
+	text-align:center;
+}
+.contact-us{
+	position:absolute;
+	left:450px;
+}
+.contact-us-social{
+	position:absolute;
+	left:800px;
+}
+.contact-us-logo{
+	position:absolute;
+	left:800px;
+	padding-top:110px;
+}
+.contact-us-image{
+	position:absolute;
+	left:1000px;
+}
+.footer{
+	border-top:1px solid #909595;
+}
