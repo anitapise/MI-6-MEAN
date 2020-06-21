@@ -68,11 +68,10 @@ li>a{
     .logo {
         margin-top: 0;
     }
-   .navbar-toggle {
-       display: none;
+	.navbar-toggle {
+		display: none;
     }
-    .logo:hover,
-    .nav-link:hover, h6>a {
+    .logo:hover,.nav-link:hover, h6>a {
         color:tomato;
     }
 }
@@ -85,6 +84,47 @@ li>a{
 .carousel-caption p{
 	text-shadow:1px 1px 1px #000;
 	padding-bottom:2rem;
+}
+.carousel-item img{
+	width:100%;
+	height:695px;
+}
+@media screen and (max-width: 768px) and (min-width: 405px){
+	.carousel-item img{
+		width:100%;
+		height:495px;
+	}
+	.carousel-caption h1{
+		font-size:300%;
+		text-transform:uppercase;
+		text-shadow:3px 3px 3px #000;
+		font-weight:bold;
+	}
+	.carousel-caption p{
+		text-shadow:1px 1px 1px #000;
+		padding-bottom:2rem;
+	}
+	.card img{
+		width:60%;
+		height:60%;
+		align-self: center;
+	}
+}
+@media screen and (max-width: 405px){
+	.carousel-item img{
+		width:100%;
+		height:295px;
+	}
+	.carousel-caption h1{
+		font-size:150%;
+		text-transform:uppercase;
+		text-shadow:3px 3px 3px #000;
+		font-weight:bold;
+	}
+	.carousel-caption p{
+		text-shadow:1px 1px 1px #000;
+		padding-bottom:2rem;
+	}
 }
 .padding{
 	padding-bottom:2rem;
@@ -119,13 +159,6 @@ li>a{
 }
 .gallery-cards-btn{
 	width:100%;
-}
-
-.main-content-contact-us>.contact-form{
-	margin-right:auto;
-	margin-left:auto;
-	width:40%;
-	padding-bottom:20px;
 }
 .contact-form input[type="text"],input[type="email"]{
 	width:100%;
@@ -175,5 +208,5 @@ input[placeholder], textarea[placeholder]{
 .footer{
 	background-color:#3f3f3f;
 	color:#d5d5d5;
-	padding-top:2rem;
+	padding-top:1.4rem;
 }
