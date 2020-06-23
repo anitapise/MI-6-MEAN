@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var empModel=require('../modules/employee');
 var employee=empModel.find({});
-
 /* GET home page. */
 router.get('/', function(req, res,next) {
   employee.exec(function(err,data){
@@ -19,7 +18,6 @@ router.post('/', function(req, res, next) {
     field: req.body.field,
     city: req.body.city,
   });
- 
   empDetails.save(function(err,req1){
     if(err) throw err;
     employee.exec(function(err,data){
