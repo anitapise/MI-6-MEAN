@@ -5,3 +5,13 @@ body {
 a {
   color: #00B7FF;
 }
+.form-popup{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  border: 3px solid #f1f1f1;
+}
+.form-horizontal{
+  max-width: 300px;
+  padding: 10px;
+}
