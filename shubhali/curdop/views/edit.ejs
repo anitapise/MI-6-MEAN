@@ -5,72 +5,66 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <title><%= title %></title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-          <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-              <div class="panel panel-info">
-                  <div class="panel-heading">
-                      <div class="panel-title"><%= title %></div>
-                       </div>  
-                      <div class="panel-body" >
-                      <form action="/update/" id="EmployeeForm" class="form-horizontal" method="post"  role="form">
-                        <input type="hidden" name="id" value="<%= records._id %>">
-                          <div id="signupalert" style="display:none" class="alert alert-danger">
-                              <p>Error:</p>
-                              <span></span>
-                          </div>
-                          <div class="form-group">
-                            <label for="firstname" class="col-md-3 control-label">Name</label>
-                            <div class="col-md-9">
-                                <input type="text" class="form-control" value="<%= records.name  %>" name="uname" placeholder="Enter Your Name">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="lastname" class="col-md-3 control-label">Email</label>
-                            <div class="col-md-9">
-                                <input type="text" class="form-control" value="<%= records.lastname  %>" name="lastname" placeholder="Enter lastname">
-                            </div>
-                           </div>
-                          <div class="form-group">
-                            <label for="email" class="col-md-3 control-label">Email</label>
-                            <div class="col-md-9">
-                                <input type="text" class="form-control" value="<%= records.email  %>" name="email" placeholder="Email Address">
-                            </div>
-                           </div>
-                      <div class="form-group">
-                          <label for="password" class="col-md-3 control-label">Phone Number</label>
-                          <div class="col-md-9">
-                              <input type="text" class="form-control" value="<%= records.phone  %>" name="phone" placeholder="Enter your phone number">
-                          </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="icode" class="col-md-3 control-label"> Branch</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" value="<%= records.field  %>" name="field" placeholder="Enter your field">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="icode" class="col-md-3 control-label"> City</label>
-                      <div class="col-md-9">
-                          <input type="text" class="form-control" value="<%= records.city  %>" name="city" placeholder="Enter city name">
-                      </div>
-                  </div>
-
-                    <div class="form-group">
-                        <!-- Button -->                                        
-                        <div class="col-md-offset-3 col-md-9">
-                        <input type="submit" name="submit" value="submit" class="btn btn-primary">   
-                        </div>
-                    </div>
-                </form>
+    <div id="signupbox" style="margin-top :50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="panel-title"><%= title %></div>
+        </div>  
+        <div class="panel-body" >
+          <form action="/update/" id="EmployeeForm" class="form-horizontal" method="post"  role="form">
+            <input type="hidden" name="id" value="<%= records._id %>">
+            <div id="signupalert" style="display:none" class="alert alert-danger">
+              <p>Error:</p>
+              <span></span>
+            </div>
+            <div class="form-group">
+              <label for="firstname" class="col-md-3 control-label">Name</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="<%= records.name  %>" name="uname" placeholder="Enter Your Name">
               </div>
             </div>
-        </div> 
-     </div>
-  </div>
+            <div class="form-group">
+              <label for="lastname" class="col-md-3 control-label">Lastname</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="<%= records.lastname  %>" name="lastname" placeholder="Enter lastname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-md-3 control-label">Email</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="<%= records.email  %>" name="email" placeholder="Enter your mail Address">
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-md-3 control-label">Phone Number</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" value="<%= records.phone  %>" name="phone" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="icode" class="col-md-3 control-label"> Branch</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="<%= records.field  %>" name="field" placeholder="Enter your field">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="icode" class="col-md-3 control-label"> City</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="<%= records.city  %>" name="city" placeholder="Enter city name">
+              </div>
+            </div>
+            <div class="form-group">
+              <!-- Button -->                                        
+              <div class="col-md-offset-3 col-md-9">
+                <input type="submit" name="submit" value="submit" class="btn btn-primary">   
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
   </body>
 </html>

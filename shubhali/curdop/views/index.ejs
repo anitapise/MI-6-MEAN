@@ -64,8 +64,8 @@
                   <button type="button" onclick="closeForm()">Close</button>
                 </div>
               </div>
-          </form>
-        </div>
+            </form>
+          </div>
         </div>       
         <div class="table-responsive">
           <table class="table">
@@ -88,8 +88,10 @@
               <td><%= row.phone %></td>
               <td><%= row.field %></td>
               <td><%= row.city %></td>
-              <td><a class="btn btn-primary btn-xs" href="/edit/<%= row._id %>"><i class="fa fa-edit"></i></a>
-                <a class="btn btn-danger btn-xs" href="/delete/<%= row._id %>"><i class="fa fa-trash"></i></a></td>
+              <td>
+                <a class="btn btn-primary btn-xs" href="/edit/<%= row._id %>"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-danger btn-xs" href="/delete/<%= row._id %>"><i class="fa fa-trash"></i></a>
+              </td>
             </tr>
             <% }) %>
           </table>
