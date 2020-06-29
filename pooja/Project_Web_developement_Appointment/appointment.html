@@ -28,8 +28,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="appointment.html" class="nav-link">Appointment</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                         <li class="nav-item"><button class="btn btn-primary" style="margin-top: 20px;" onclick="document.getElementById('id02').style.display='block'">Sign In</button> </li>
@@ -50,15 +50,15 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="password">
+                            <input type="password" class="form-control" placeholder="password" required>
                         </div>
                         <div class="form-group" style="margin-left: 40%;">
-                            <input type="submit"  value="Sign in" class="btn btn-primary py-3 px-5">
+                            <input type="submit"  value="Sign in" class="btn btn-primary py-3 px-5" required>
                         </div>
                         <div class="form-group">
                             <a href="#" style="margin-left: 35%;" class="w3-bar-item w3-button"  onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">New User Please Sign Up</a>
@@ -82,23 +82,23 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone number">
+                            <input type="tel" class="form-control" placeholder="Phone number" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Enter the Password">
+                            <input type="password" class="form-control" placeholder="Enter the Password" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Confirm the Password">
+                            <input type="password" class="form-control" placeholder="Confirm the Password" required>
                         </div>
                         <div class="form-group" style="margin-left: 40%; margin-bottom:50%;">
                             <input type="submit"  value="Sign up"  class="btn btn-primary py-3 px-5">
@@ -148,23 +148,23 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Email">
+                                        <input type="text" class="form-control" placeholder="Your Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Address">
+                                <input type="text" class="form-control" placeholder="Address" required>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Age">
+                                <input type="number" class="form-control" placeholder="Age" required>
                             </div>
                             <div class="form-group">
-                                <select class="form-control">
+                                <select class="form-control" required>
                                     <option>Gender</option>
                                     <option>Female</option>
                                     <option>Male</option>
@@ -172,7 +172,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select class="form-control">
+                                <select class="form-control" required>
                                     <option>Choose Your Plan</option>
                                     <option>Group Lessons</option>
                                     <option>Yoga for Biginners</option>
@@ -183,10 +183,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="date" class="form-control" placeholder="Date">
+                                <input type="date" class="form-control" placeholder="Date" required>
                             </div>
                             <div class="form-group">
-                                <input type="time" class="form-control" placeholder="time">
+                                <input type="time" class="form-control" placeholder="time" required>
                             </div>
                             <div class="form-group">
                                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Appointment Details(Optional)"></textarea>
