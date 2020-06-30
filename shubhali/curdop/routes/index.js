@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var empModel = require('../modules/employee');
 var employee = empModel.find({});
-router.get('/', function(req, res,next) {
+router.get('/', function(req, res, next) {
   employee.exec(function(err, data) {
     if(err) throw err;
     res.render('index', { title: 'Employee Records', records:data });
@@ -21,7 +21,7 @@ router.post('/', function(req, res, next) {
     if(err) throw err;
     employee.exec(function(err, data) {
       if(err) throw err;
-      res.render('index', { title: 'Employee Records', records:data, success:'Record Inserted Successfully' });
+      res.render('index', { title: 'Employee Records', records: data, success:'Record Inserted Successfully' });
     });
   })
 });
@@ -38,7 +38,7 @@ router.get('/edit/:id', function(req, res, next) {
   var updatevalue = empModel.findById(id);
   updatevalue.exec(function(err,data) {
     if(err) throw err;
-    res.render('edit', { title : ' Edit employee Records', records:data, success:'Record Inserted Successfully' });
+    res.render('edit', { title: ' Edit employee Records', records:data, success:'Record Inserted Successfully' });
   });
 })
 router.post('/update/',function(req, res, next) {
