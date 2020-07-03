@@ -1,0 +1,9 @@
+Q 3.1 Specify two advantages of adding the ‘lang’ attribute to a web page?
+   ANS:- 1.The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation.
+         2.The lang global attribute helps define the language of an element: the language that non-editable elements are written in, or the language that the editable elements should be written in by the user.
+
+Q 3.2 Why should we add meta elements for description and keywords even though they do not
+have any impact on the way a web page is displayed?
+   ANS:-1.Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+        2.Metadata can be used by browsers,search engines, and other web services.
+        3.It makes webpage higher appear in relevant searches performed by search engine.

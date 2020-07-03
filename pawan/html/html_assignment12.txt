@@ -1,0 +1,13 @@
+Q 12.1 The purpose of the ‘action’ attribute of an HTML form is defined as: 
+‘The action attribute defines the location (an URL) where the form's collected data should be sent.’ 
+Would it be reasonable to use the URL of a simple HTML page (eg: http://mywebsite.com/index.html) as the value of the ‘action’ attribute of a form? Please support your answer with good reasons. This question probably goes beyond what you have learned in this section. You may have to do a little bit of independent study and reasoning to answer this question.
+	answer:-if we have to send particular data to a particular page of specific domain it will be helpful
+		The action attribute defines the location (an URL) where the form's collected data should be sent.
+		syntx:-
+		<form action="URL">
+
+
+Q 12.2 What is the <fieldset> element and why would you use it?
+	answer:- fieldset tag is use to create a box to form.
+		to get separated from the other contant it shows that the it is something different
+		it is easy to understand the user

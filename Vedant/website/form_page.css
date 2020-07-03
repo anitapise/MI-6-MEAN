@@ -1,0 +1,32 @@
+.title1 {
+    padding-top: 9px;
+}
+
+
+
+.rightmenu_container {
+    width: 99%;
+    height: 800px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 15px;
+    position: relative;
+}
+
+
+  .form_1 {
+      font-size: 20px;
+      margin-left: 20px;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    border: 4px solid white;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+  }

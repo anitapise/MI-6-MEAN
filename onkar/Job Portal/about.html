@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta name="viewport" content="width-device-width , initial scale=1">
+        <link rel="stylesheet" type="text/css" href="css/my.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script src="css/jquery-3.4.1.slim.min.js"></script>
+        <script src="css/bootstrap.min.js"></script>
+        <script src="css/jquery.min.js"></script>
+        <script src="css/popper.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruiter.html">Recruiters</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="walkin.html">Walkin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#basicModal">Jobseeker Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Login Here</h3>
+                                    <br>
+                                    <form class="container">
+                                        <label  for="email"><b>Email-Id:</b></label><br>
+                                        <input type="text" name="email" placeholder="Enter Email"><br>
+                                        <label for="pass"><b>Password:</b></label><br>
+                                        <input type="password" name="pass" placeholder="Enter your password"><br>
+                                        <button class="btn btn-outline-danger">Login</button>
+                                        <br>
+                                        <p>Don't have register?</p>
+                                        <a href="reg.html"class="btn btn-primary" role="button">Register Here</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </nav>
+        </header>
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <b>
+                        <h3>About Us</h3>
+                    </b>
+                    <p>Jobox.in is the most innovative and second largest online job portal in India. over the past decade, Jobox.in has become a prominent name in the recruitment industry. The popularity of the portal is evident from the fact that it has crossed the 3.4 crore candidate landmark and has more than 3 lakh latest job vacancies from leading companies on the site.</p>
+                    <p>Jobox.in connects jobseekers and recruiters by accurately matching candidate profiles to the relevant job openings through an advanced 2-way matching technology. While most job portals only focus on getting candidates the next job, Jobs.net focuses on the entire career growth of candidates.</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="css/about-us.png">
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container" id="web">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                    <img src="css/job.jpg">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h4>JobBoard For Web Developers</h4>
+                    <p >Get a jump on the rush for developer talent with these great resources.</p>
+                    <p >An increased demand for software means increased demand for the creative minds behind it. Companies need people with programming skills to be the architects of these digital worlds.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container" id="look">
+            <h2>Looking For Job?</h2>
+            <a href="reg.html" class="btn btn-danger">Sign Up</a>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h4 id="quick">Quick Links</h4>
+                        <ul class="list-unstyled" id="link">
+                            <li>
+                                <a href="index.html">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="recruiter.html">Recruiers</a>
+                            </li>
+                            <li>
+                                <a href="walkin.html">Walkin</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a> 
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb md-0 mb-3">
+                        <h4>Subscribe here</h4>
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                                aria-label="Your email" aria-describedby="basic-addon2"><br><br>
+                            <button type="button" class="btn btn-outline-success" style="margin-left: 20px;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

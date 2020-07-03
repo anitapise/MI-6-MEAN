@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+		<style>
+			.contact-form input[type="text"],input[type="email"],textarea{
+				width:100%;
+			}		
+			.contact-form input[type="submit"]{
+				border-radius:15px;
+				font-size:20px;
+			}
+			.contact-form fieldset{
+				width:450px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contact-form">
+			<form>
+				<fieldset> 
+					<legend>Contact</legend>
+					<p>Name : <input type="text" name="name"></p>
+					<p>Email : <input type="email" name="user_email"></p>
+					<p>Message : <textarea rows="5"></textarea></p>
+					Purpose of contact : <input type="radio" name="purpose" value="offi">Official <input type="radio" name="purpose" value="personal">Personal
+					<p><input type="checkbox" name="newsletter">Weekly Newletter</p>
+					<center><input type="submit" value="Send Your Message"></center>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
