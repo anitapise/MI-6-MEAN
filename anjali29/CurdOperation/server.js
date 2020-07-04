@@ -5,7 +5,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
 
-const employeeController = require('./controllers/employeeController');
+const studentController = require('./controllers/studentController');
 
 var app = express();
 app.use(bodyparser.urlencoded({
@@ -20,4 +20,5 @@ app.listen(3000, () => {
     console.log('Express server started at port : 3000');
 });
 
-app.use('/employee', employeeController);
+app.use('/student', studentController); 
+ 
