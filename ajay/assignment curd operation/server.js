@@ -1,7 +1,6 @@
 require('./models/db');
 
 const express = require('express');
-
 const path = require('path');
 const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
@@ -21,4 +20,4 @@ app.listen(3000, () => {
     console.log('Express server started at port : 3000');
 });
 
-app.use('/employee', employeeController);
+app.use('/', employeeController);

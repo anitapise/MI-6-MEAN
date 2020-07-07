@@ -3,8 +3,8 @@ var router = express.Router();
 const mongoose = require('mongoose');
 const Employee = mongoose.model('Employee');
 
-router.get('/', (req, res) => {
-    res.render("employee/addOrEdit", {
+router.get('/', (req, res ) => {
+    res.render("addOrEdit", {
         viewTitle: "Insert Employee"
     });
 });
@@ -25,11 +25,11 @@ function insertRecord(req, res) {
     employee.city = req.body.city;
     employee.save((err, doc) => {
         if (!err)
-            res.redirect('employee/list');
+            res.redirect('/list');
         else {
             if (err.name == 'ValidationError') {
                 handleValidationError(err, req.body);
-                res.render("employee/addOrEdit", {
+                res.render("addOrEdit", {
                     viewTitle: "Insert Employee",
                     employee: req.body
                 });
@@ -42,11 +42,11 @@ function insertRecord(req, res) {
 
 function updateRecord(req, res) {
     Employee.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
-        if (!err) { res.redirect('employee/list'); }
+        if (!err) { res.redirect('/list'); }
         else {
             if (err.name == 'ValidationError') {
                 handleValidationError(err, req.body);
-                res.render("employee/addOrEdit", {
+                res.render("/addOrEdit", {
                     viewTitle: 'Update Employee',
                     employee: req.body
                 });
@@ -61,7 +61,7 @@ function updateRecord(req, res) {
 router.get('/list', (req, res) => {
     Employee.find((err, docs) => {
         if (!err) {
-            res.render("employee/list", {
+            res.render("list", {
                 list: docs
             });
         }
@@ -90,7 +90,7 @@ function handleValidationError(err, body) {
 router.get('/:id', (req, res) => {
     Employee.findById(req.params.id, (err, doc) => {
         if (!err) {
-            res.render("employee/addOrEdit", {
+            res.render("addOrEdit", {
                 viewTitle: "Update Employee",
                 employee: doc
             });
@@ -101,7 +101,7 @@ router.get('/:id', (req, res) => {
 router.get('/delete/:id', (req, res) => {
     Employee.findByIdAndRemove(req.params.id, (err, doc) => {
         if (!err) {
-            res.redirect('/employee/list');
+            res.redirect('/list');
         }
         else { console.log('Error in employee delete :' + err); }
     });
