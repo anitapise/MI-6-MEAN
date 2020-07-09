@@ -20,4 +20,4 @@ app.listen(3000, () => {
     console.log('Express server started at port : 3000');
 });
 
-app.use('/person', employeeController);
+app.use('/', employeeController);

@@ -96,7 +96,7 @@
                <td>{{this.dateOfBirth}}</td>
                <td>
                   <button  class="btn btn-primary editbtn">Edit</button>
-                  <a href="/person/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');" class="btn btn-danger"><i class="fa fa-trash fa-lg" aria-hidden="true"></i>Delete.
+                  <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');" class="btn btn-danger"><i class="fa fa-trash fa-lg" aria-hidden="true"></i>Delete.
                   </a>
                </td>
             </tr>
@@ -108,10 +108,10 @@
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">{{viewTitle}}</h4>
+                  <h4 class="modal-title">Add new Person</h4>
                </div>
                <div class="modal-body">
-                  <form action="/person" method="POST" autocomplete="off">
+                  <form action="/" method="POST" autocomplete="off">
                      <input type="hidden" name="_id" value="{{person._id}}">
                      <div class="form-group">
                         <label>first name</label>
@@ -168,11 +168,10 @@
             <span class="close" aria-hidden="true">+</span>
             </button>
          </div>
-         <form action="/person/list" method="post" autocomplete="off">
-            <input   id="_id" name="_id"  class="form-control" >
+         <form action="/" method="post" autocomplete="off">
+            <input type="hidden"  id="_id" name="_id"  class="form-control" >
             <div class="modal-body">
                <div class="modal-body">
-                  <input type="hidden" name="_id" value="{{person._id}}">
                   <div class="form-group">
                      <label>first name</label>
                      <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" value="{{person.first_name}}">
@@ -182,7 +181,7 @@
                   </div>
                   <div class="form-group">
                      <label>Last name</label>
-                     <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" value="{{person.last_name}}">
+                     <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" >
                      <div class="text-danger">
                         {{person.lastnameError}}
                      </div>
@@ -204,8 +203,8 @@
                         </select>
                      </div>
                      <div class="form-group col-md-6">
-                        <label>Date of Birth</label>
-                        <input type="date" class="form-control" id="dob" name="dob"  value="{{person.dateofbirth}}">
+                        <label> Date of Birth:</label>
+                        <input type="text" class="form-control" id="dateOfBirth" name="dateOfBirth"  value="{{person.dateOfBirth}}">
                      </div>
                      <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -235,7 +234,8 @@
                  $('#last_name').val(data[2]);
                  $('#gender').val(data[3]);
                  $('#address').val(data[4]);
-                 $('#dob').val(data[5]);
+                 $('#dateOfBirth').val(data[5]);
+               
          });
          });
       </script>

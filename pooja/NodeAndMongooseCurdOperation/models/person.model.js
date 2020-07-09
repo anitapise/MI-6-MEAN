@@ -15,7 +15,7 @@ var userSchema = new mongoose.Schema({
     },
     dateOfBirth:
     {
-        type:Date
+        type:String
     }
 });
 mongoose.model('Person', userSchema);
