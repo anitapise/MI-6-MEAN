@@ -13,9 +13,9 @@
       <div class="row">
         <h1><%= title %></h1>
         <button class="btn btn-primary" onclick="openForm()">Add employee</button>
-        <div id="signupbox" style="margin-top: 50px" class="mainbox form-popup col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div id="signupbox" style="margin-top: 50px" class="mainbox form-popup col-md-12 col-sm-12 ">
           <div class="panel-heading">
-            <div class="panel-title">Employee Details Form</div>
+            <div class="panel-title" style="text-align: center;">Employee Details Form</div>
           </div>  
           <div class="panel-body" >
             <form action="/" id="EmployeeForm" class="form-horizontal" method="post"  role="form">
@@ -68,7 +68,7 @@
             </form>
           </div>
         </div>       
-        <div class="table-responsive">
+        <div class="table-responsive col-md-12 col-sm-12">
           <table class="table">
             <thead>
               <tr>
@@ -90,8 +90,8 @@
               <td><%= row.field %></td>
               <td><%= row.city %></td>
               <td>
-                <a class="btn btn-primary btn-xs" href="/edit/<%= row._id %>"><i class="fa fa-edit"></i></a>
-                <a class="btn btn-danger btn-xs" href="/delete/<%= row._id %>"><i class="fa fa-trash"></i></a>
+                <a class="btn btn-primary btn-sm" href="/edit/<%= row._id %>"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a class="btn btn-danger btn-sm" href="/delete/<%= row._id %>"><span class="glyphicon glyphicon-remove"></span></a>
               </td>
             </tr>
             <% }) %>
