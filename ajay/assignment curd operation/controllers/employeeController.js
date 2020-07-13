@@ -22,8 +22,10 @@ function insertRecord(req, res) {
     employee.lastName = req.body.lastName;
     employee.address = req.body.address;
     employee.gender = req.body.gender;
-    var dateNew=new Date(req.body.dob);
-    employee.dateOfBirth=dateNew.getDate()+"/"+dateNew.getMonth()+"/"+dateNew.getFullYear();
+    employee.dateOfBirth=req.body.dateOfBirth;
+   // var date1 = new Date(req.body.dateOfBirth);
+//employee.dateOfBirth = date1.getDate()+"/"+date1.getMonth()+"/"+date1.getFullYear();
+
     employee.save((err, doc) => {
         if (!err)
             res.redirect('/list');
