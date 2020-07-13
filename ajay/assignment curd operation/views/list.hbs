@@ -2,22 +2,24 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Full Name</th>
-            <th>Email</th>
-            <th>Mobile</th>
-            <th>City</th>
+        <th>First Name</th>
+         <th>Last Name</th>
+         <th>Address</th>
+         <th>Gender</th>
+         <th>Date of Birth</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         {{#each list}}
         <tr>
-            <td>{{this.fullName}}</td>
-            <td>{{this.email}}</td>
-            <td>{{this.mobile}}</td>
-            <td>{{this.city}}</td>
+        <td>{{this.firstName}}</td>
+         <td>{{this.lastName}}</td>
+         <td>{{this.address}}</td>
+         <td>{{this.gender}}</td>
+         <td>{{this.dateOfBirth}}</td>
             <td>
-                <a href="/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+               <a href="/{{this._id}}" onclick="return confirm('Are you sure to update this record ?');"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
                 <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
             </td>
         </tr>
