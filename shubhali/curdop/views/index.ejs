@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1><%= title %></h1>
+        <button class="btn btn-primary" onclick="openForm()">Add employee</button>
+        <div id="signupbox" style="margin-top: 50px" class="mainbox form-popup col-md-12 col-sm-12 ">
+          <div class="panel-heading">
+            <div class="panel-title" style="text-align: center;">Employee Details Form</div>
+          </div>  
+          <div class="panel-body" >
+            <form action="/" id="EmployeeForm" class="form-horizontal" method="post"  role="form">
+              <div id="signupalert" style="display:none" class="alert alert-danger">
+                <p>Error:</p>
+                <span></span>
+              </div>
+              <div class="form-group">
+                <label for="firstname" class="col-md-3 control-label">Name</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="uname" placeholder="Enter Your Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="lastname" placeholder="Lastname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-md-3 control-label">Email</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="email" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="password" class="col-md-3 control-label">Phone Number</label>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control" name="phone" placeholder="Enter phone number">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="icode" class="col-md-3 control-label"> Branch</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="field" placeholder="Enter your field">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="city" class="col-md-3 control-label"> City</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="city" placeholder="Enter your city name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                  <input type="submit" name="submit" value="submit" class="btn btn-primary">   
+                  <button type="button" onclick="closeForm()">Close</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>       
+        <div class="table-responsive col-md-12 col-sm-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email ID</th>
+                <th>Phone Number</th>
+                <th>Branch</th>
+                <th>City</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <% records.forEach(function(row){ %>
+            <tr>
+              <td><%= row.name %></td>
+              <td><%= row.lastname  %></td>
+              <td><%= row.email %></td>
+              <td><%= row.phone %></td>
+              <td><%= row.field %></td>
+              <td><%= row.city %></td>
+              <td>
+                <a class="btn btn-primary btn-sm" href="/edit/<%= row._id %>"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a class="btn btn-danger btn-sm" href="/delete/<%= row._id %>"><span class="glyphicon glyphicon-remove"></span></a>
+              </td>
+            </tr>
+            <% }) %>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("signupbox").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("signupbox").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
