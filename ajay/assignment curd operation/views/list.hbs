@@ -7,7 +7,7 @@
          <th>Address</th>
          <th>Gender</th>
          <th>Date of Birth</th>
-            <th></th>
+         <th> Action</th>
         </tr>
     </thead>
     <tbody>
@@ -19,8 +19,8 @@
          <td>{{this.gender}}</td>
          <td>{{this.dateOfBirth}}</td>
             <td>
-               <a href="/{{this._id}}" onclick="return confirm('Are you sure to update this record ?');"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
-                <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+               <a href="/{{this._id}}" onclick="return confirm('Are you sure to update this record ?');"><i class="btn btn-secondary" aria-hidden="true">Edit</i></a>
+                <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="btn btn-secondary" aria-hidden="true">Delete</i></a>
             </td>
         </tr>
         {{/each}}
