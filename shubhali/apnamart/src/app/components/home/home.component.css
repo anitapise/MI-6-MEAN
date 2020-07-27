@@ -1,0 +1,18 @@
+.sliderimg img {
+  width: 350px;
+  height: 400px;
+}
+.text-banner-title {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px;
+  max-height: 5em;
+  font-weight: 500;
+}
+.slids {
+  width: 300px;
+  height: 100px;
+}
+
