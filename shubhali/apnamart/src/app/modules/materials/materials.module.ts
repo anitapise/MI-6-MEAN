@@ -42,15 +42,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
-//ngbootstrap
-
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     MatAutocompleteModule,
     MatBadgeModule,
-    // MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
@@ -58,7 +55,6 @@ import { MatTreeModule } from '@angular/material/tree';
     MatChipsModule,
     MatDatepickerModule,
     MatDialogModule,
-    // MatDividerModule,
     MatExpansionModule,
     MatGridListModule,
     MatIconModule,
@@ -87,7 +83,6 @@ import { MatTreeModule } from '@angular/material/tree';
   exports: [
     MatAutocompleteModule,
     MatBadgeModule,
-    // MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
@@ -95,7 +90,6 @@ import { MatTreeModule } from '@angular/material/tree';
     MatChipsModule,
     MatDatepickerModule,
     MatDialogModule,
-    // MatDividerModule,
     MatExpansionModule,
     MatGridListModule,
     MatIconModule,

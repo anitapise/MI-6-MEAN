@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-footer',
   template: `
@@ -53,10 +52,8 @@ import { Component, OnInit } from '@angular/core';
               <a href="#!">Help</a>
             </p>
           </div>
-
           <!-- Grid column -->
           <hr class="w-100 clearfix d-md-none" />
-
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
@@ -122,6 +119,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   constructor() {}
-
   ngOnInit(): void {}
 }
