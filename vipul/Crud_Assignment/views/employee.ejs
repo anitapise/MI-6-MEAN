@@ -4,106 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .btn {
-            background-color: #4CAF50;
-            border-radius:5px;
-            border:none;
-            color: white;
-            padding: 12px 16px;
-            font-size: 16px;
-            cursor: pointer;
-            }
-            .btn1 {
-            float: inline;
-            border:none;
-            background-color: white;
-            padding: 12px 16px;
-            color :grey;
-            font-size: 16px;
-            cursor: pointer;
-            }
-            .btn2 {
-            background-color:dodgerblue;
-            border-radius:5px;
-            border:none;
-            color: white;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            }
-            .btn3 {
-            background-color:rgb(252, 112, 107);
-            border-radius:5px;
-            border:none;
-            color: white;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            }
-            /* Darker background on mouse-over */
-            .btn:hover {
-            background-color:#4da350;
-            }
-            .btn1:hover {
-            color: black;
-            }
-            .btn2:hover {
-            background-color: RoyalBlue;
-            }
-            .btn3:hover {
-            background-color: tomato;
-            }
-            .fa-pencil, .fa-trash{
-                display: inline-block;
-            }
-            table.scrolldown {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 85%;
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid #ddd;
-            }
-            /* To display the block as level element */ 
-            table.scrolldown tbody, table.scrolldown thead { 
-            display: block; 
-            }
-            tbody td { 
-            width : 200px;  
-            }
-            thead th { 
-            width : 200px; 
-            } 
-            thead tr th { 
-            height: 40px;  
-            line-height: 40px; 
-            }
-            table.scrolldown tbody {   
-            /* Set the height of table body */ 
-            height: 590px;  
-            /* Set vertical scroll */ 
-            overflow-y: auto; 
-            /* Hide the horizontal scroll */ 
-            overflow-x: hidden;  
-            }   
-            th, td {
-            text-align: center;
-            padding: 5px;
-            }
-            tr:nth-child(even) {
-            background-color: #f2f2f2;
-            }
-            a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 8px 16px;
-            }
-            a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-        </style>
+        <link href="/public/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <a href="/addEmployee" style="width:auto;" class="btn"><i class="fa fa-plus"></i> Add Person</a>
@@ -131,12 +32,22 @@
                         <td><%= item.dob%></td>
                         <td>
                             <a href="/editEmployee/<%= item._id%>" class="btn2"><i class="fa fa-pencil"></i>Edit</a>
-                            <a href="/delete/<%= item._id%>" onclick="alert('Do you want to delete record')" class="btn3"><i class="fa fa-trash"></i> Delete</a>
+                            <a href="/delete/<%= item._id%>" onclick="return ConfirmDelete();" class="btn3"><i class="fa fa-trash"></i> Delete</a>
                         </td>
                     </tr>
                     <%});%>
             </tbody>
             </table>
         </div>
+        <script>
+            function ConfirmDelete()
+            {
+              var x = confirm("Are you sure you want to delete?");
+              if (x)
+                  return true;
+              else
+                return false;
+            }
+        </script> 
     </body>
 </html>
