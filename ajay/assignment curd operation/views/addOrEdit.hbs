@@ -1,0 +1,49 @@
+<h3>{{viewTitle}}</h3>
+<form action="/" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="firstName" placeholder="First Name" value="{{employee.firstName}}">
+        <div class="text-danger">
+            {{employee.firstNameError}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Last Name" value="{{employee.lastName}}">
+        <div class="text-danger">
+            {{employee.lastNameError}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Address</label>
+        <input type="text" class="form-control" name="address" placeholder="Address" value="{{employee.address}}">
+        <div class="text-danger">
+            {{employee.addressError}}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Gender</label>
+            <select class="form-control" name="gender" placeholder="Address" value="{{employee.gender}}">
+                <option>Male</option>
+                <option>Female</option>
+                <option>other</option>
+            </select>
+            <div class="text-danger">
+                {{employee.genderError}}
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Date of Birth</label>
+            <input type="date" class="form-control" name="dateOfBirth" placeholder="Date of Birth" value="{{employee.dateOfBirth}}"> 
+            <div class="text-danger">
+                {{employee.dateOfBirthError}}
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit </button>
+        <a class="btn btn-secondary" href="/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
