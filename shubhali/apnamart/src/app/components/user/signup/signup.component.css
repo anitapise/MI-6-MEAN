@@ -1,0 +1,13 @@
+.mat-label,.mat-radio-button{
+margin: 4px;
+padding: 10px;
+}
+mat-card {
+  max-width: 450px;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 110%;
+}
+mat-form-field {
+  display: block;
+}

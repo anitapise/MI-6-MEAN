@@ -1,0 +1,106 @@
+<mat-card class=" col-sm-12 col-12">
+    <mat-card-content>
+        <form [formGroup]="regiForm" (ngSubmit)="onFormSubmit(regiForm.value)">
+            <h2>Sign Up</h2>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="FirstName" matInput placeholder="First Name" />
+                        </mat-form-field>
+                        <mat-error *ngIf="!regiForm.get('FirstName').valid && regiForm.get('FirstName').touched">
+                            Please enter First Name !!!
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="LastName" matInput placeholder="Last Name" />
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('LastName').valid && regiForm.get('LastName').touched">
+                                Please enter Last Name !!!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="City" matInput placeholder="City Name" />
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('City').valid && regiForm.get('City').touched">
+                                Please enter proper city !!!
+                            </span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="DOB" matInput [matDatepicker]="picker"
+                            placeholder="Date of birth" />
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker touchUi="true" #picker></mat-datepicker>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('DOB').valid && regiForm.get('DOB').touched">
+                                 Please select any Date!!!
+                            </span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-label>Gender :</mat-label>
+                        <mat-radio-group formControlName="Gender" color="primary">
+                            <mat-radio-button value="Male"> Male </mat-radio-button>
+                            <mat-radio-button value="Female"> Female</mat-radio-button>
+                        </mat-radio-group>
+                        <mat-error *ngIf="!regiForm.get('Gender').valid && regiForm.get('Gender').touched">
+                            Please select any gender !!!
+                         </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Email" matInput placeholder="Email" />
+                            <mat-error>
+                                <span *ngIf="!regiForm.get('Email').valid && regiForm.get('Email').touched">Enter proper Email !!!</span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Pass" type="password" matInput placeholder="Password" />
+                            <mat-error>
+                                <span *ngIf="
+                    !regiForm.get('Pass').valid && regiForm.get('Pass').touched
+                  ">Enter proper Pass !!!</span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-slide-toggle color="primary" formControlName="IsAccepted" (change)="onChange($event)">Accept Terms &
+                            Conditions
+                        </mat-slide-toggle>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content-center">
+                        <button mat-raised-button color="primary" [disabled]="!regiForm.valid || IsAccepted == 0">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </mat-card-content>
+</mat-card>
