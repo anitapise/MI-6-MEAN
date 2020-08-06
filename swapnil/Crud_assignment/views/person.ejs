@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .btn {
+            background-color: #4CAF50;
+            border-radius:5px;
+            border:none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+            .btn1 {
+            float: inline;
+            border:none;
+            background-color: white;
+            padding: 12px 16px;
+            color :grey;
+            font-size: 16px;
+            cursor: pointer;
+            }
+            .btn2 {
+                border: none;
+                background-color: inherit;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                 display: inline-block;
+                 color: black;
+            }
+            .btn3 {
+                border: none;
+                background-color: inherit;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+                color: black;
+            }
+            /* Darker background on mouse-over */
+            .btn:hover {
+            background-color:#4da350;
+;
+            }
+            .btn1:hover {
+            color: black;
+            }
+            
+            .fa-pencil, .fa-trash{
+                display: inline-block;
+            }
+            table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            }
+            th, td {
+            text-align: left;
+            padding: 5px;
+            }
+            tr:nth-child(even) {
+            background-color: #f2f2f2;
+            }
+            a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            }
+            a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+            .previous {
+            background-color: #f1f1f1;
+            color: black;
+            }
+            .next {
+            background-color: #f1f1f1;
+            color: black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <a href="/addPerson" style="width:auto;" class="btn" data-toggle="collapse"><i class="fa fa-plus"></i> Add Person</a>
+        <!-- Table -->
+        <table border=1 bordercolor="#ddd" class="table">
+            <tr>
+                <th>First Name <button class="btn1"><i class="fa fa-sort-amount-asc"></i></button></th>
+                <th>Last Name</th>
+                <th>Phone No</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+            <% values.forEach((item)=>{%>
+            <tr>
+                <td><%= item.firstName%></td>
+                        <td><%= item.lastName%></td>
+                        <td><%= item.phoneNo%></td>
+                        <td><%= item.address%></td>
+                        <td>
+                    <button class="btn2"><a href="/editPerson/<%= item._id%>" class="btn2"><i class="fa fa-pencil"></i>Edit</a></button>
+                    <button class="btn3"><a href="/delete/<%= item._id%>"  class="btn3"><i class="fa fa-trash"></i> Delete</a></button>
+                </td>
+            </tr>
+            <%});%>
+    </table>
+</div>
+</body>
+</html> 
