@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="/public/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <a href="/addStudent" style="width:auto;margin-top:50px;" class="btn"><i class="fa fa-plus"></i> Add Person</a>
+        <!-- Table -->
+        <div class="container-fluid">
+            <table  class="scrolldown">
+                <thead>
+                    <tr>
+                        <th>First Name </th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Date of Birth</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% values.forEach((item)=>{%>
+                    <tr>
+                        <td><%= item.firstName%></td>
+                        <td><%= item.lastName%></td>
+                        <td><%= item.gender%></td>
+                        <td><%= item.address%></td>
+                        <td><%= item.dob%></td>
+                        <td>
+                            <a href="/editStudent/<%= item._id%>" class="btn2"><i class="fa fa-pencil"></i>Edit</a>
+                            <a href="/delete/<%= item._id%>" onclick="return ConfirmDelete();" class="btn3"><i class="fa fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                    <%});%>
+            </tbody>
+            </table>
+        </div>
+        <script>
+            function ConfirmDelete()
+            {
+              var x = confirm("Are you sure you want to delete this value?");
+              if (x)
+                  return true;
+              else
+                return false;
+            }
+        </script> 
+    </body>
+</html>
