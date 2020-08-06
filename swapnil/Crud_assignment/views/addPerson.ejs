@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Add pop up */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type=text],input[type=date]{
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+label[for=address]{
+width: 100%;
+padding-top:15px;
+margin: 5px 0 0 0;
+display: inline-block;
+border: none;
+}
+
+label[for=dob]{
+width: 100%;
+display: inline-block;
+border: none;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for all buttons */
+.btn4 {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+opacity: 0.9;
+}
+btn4:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: initial;
+padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #151515;
+margin: 1% auto 1% auto; /* 1% from the top, 1% from the bottom and centered */
+border: 1px solid #151515;
+width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 3px solid grey;
+margin-bottom: 25px;
+} 
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #ff7777;
+}
+.close:hover,
+.close:focus {
+color: #f44336;
+cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+    width: 100%;
+}
+}
+</style>
+<body style="background-color:#151515;">
+<form class="modal-content" action="/add" method="POST">
+    <div class="container collapse1">
+        <h1 style="font-family: cursive;
+        color: #ffcc80;">Add Employee details</h1>
+        <h3 style="font-family: cursive;
+        color: #ddff80;">Fill Below Employee form....</h3>
+        <hr>
+        <label for="fname" style="font-family: cursive;
+        color: #FF7F50;" class="form-control"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" required> 
+
+        <label for="lname" style="font-family: cursive;
+        color: #FF7F50;"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+        <label for="phone" style="font-family: cursive;
+        color: #FF7F50;"><b>Phone No.</b></label>
+        <input type="text" placeholder="Enter Phone No" name="phone" required>
+
+        <label for="address" style="font-family: cursive;
+        color: #FF7F50;"><b>Address</b></label>
+        <input type="text" placeholder="Enter your address" name="address" required>
+        
+        <div class="clearfix">
+            <a href="/" style="width:auto;text-decoration:none;" class="btn4" class="cancelbtn"></i> Cancel</a>
+            <button class="btn4" type="submit" class="signupbtn">Add Employee</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
