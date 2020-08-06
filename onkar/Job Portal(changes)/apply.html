@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apply</title>
+        <meta name="viewport" content="width-device-width , initial scale=1">
+        <link rel="stylesheet" type="text/css" href="css/my.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+        <script src="css/jquery-3.4.1.slim.min.js"></script>
+        <script src="css/bootstrap.min.js"></script>
+        <script src="css/jquery.min.js"></script>
+        <script src="css/popper.min.js"></script>
+        <style>
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0;
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruiter.html">Recruiters</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="walkin.html">Walkin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#basicModal">Jobseeker Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Login Here</h3>
+                                    <br>
+                                    <form class="container">
+                                        <label  for="email"><b>Email-Id:</b></label><br>
+                                        <input type="text" name="email" placeholder="Enter Email" required><br>
+                                        <label for="pass"><b>Password:</b></label><br>
+                                        <input type="password" name="pass" placeholder="Enter your password" required><br>
+                                        <button type="submit" class="btn btn-outline-danger">Login</button>
+                                        <br>
+                                        <p>Don't have register?</p>
+                                        <a href="reg.html"class="btn btn-primary" role="button">Register Here</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </nav>
+        </header>
+        <div class="baner-text-center" id="img">
+            <h3 align="center">Apply Now</h3>
+        </div>
+        <form action="#">
+        <div class="container" id="dark">
+            <h3><b>Apply Here</b></h3>
+            <br>
+            <label>First name: </label><br>
+            <input type="text" name="name" placeholder="Enter your name" value required autofocus><br>
+            <label>Last Name:</label><br>
+            <input type="text" name="name" placeholder="Enter your Last name" value required><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Enter Your Email" value required><br>
+            <label>Phone: </label><br>
+            <input type="number" min="1" max="10" name="phone" placeholder="Enter your phone" value required><br>
+            <label>Current city: </label><br>
+            <input type="text" name="city" placeholder="Enter your city" value required><br>
+            <label>Experience:</label><br>
+            <select id="exp" name="exp">
+                <option value="fresher">fresher</option>
+                <option value="1-2yr">1-2yr</option>
+                <option value="2-3yr">2-3yr</option>
+                <option value="3-4yr">3-4yr</option>
+                <option value="4-5yr">4-5yr</option>
+                <option value="5-6yr">5-6yr</option>
+            </select>
+            <br><br>
+            <label>Highest Degree:</label><br>
+            <input type="text" name="dig" placeholder="Enter your digree" style="width: 270px;" value required><br>
+            <label>Year Of Passing:</label><br>
+            <select id="yop" name="yop">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+            <br><br>
+            <label>Attach Resume: </label>
+            <input type="file" name="file" value required><br><br>
+            <label>Skill Summary:</label><br>
+            <textarea id="summary" placeholder="Write something..." style="height: 100px; width: 400px;" value required></textarea>
+            <br><br>
+            <input type="checkbox" id="check">
+            <label for="check">I Agree that information provided is correct. I agree with terms and condition.</label><br>
+            <button type="submit" class="btn btn-outline-danger">Apply Now</button>
+        </div>
+        </form>
+        <footer class="footer">
+            <div class="container-fluid text-center text-md-left height-set-50">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h4 id="quick">Quick Links</h4>
+                        <ul class="list-unstyled" id="link">
+                            <li>
+                                <a href="index.html">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="recruiter.html">Recruiters</a>
+                            </li>
+                            <li>
+                                <a href="walkin.html">Walkin</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a> 
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb md-0 mb-3">
+                        <h4>Subscribe here</h4>
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                                aria-label="Your email" aria-describedby="basic-addon2"><br><br>
+                            <button type="button" class="btn btn-outline-success" style="margin-left: 20px;">Subscribe</button>
+                        </form><br>
+                    </div>
+                        <div class="col-md-2">
+                            <div class="social-grid">
+                               <ul class="list-unstyled text-right">
+                                  <li><a><i class="fa fa-facebook"></i></a></li>
+                                  <li><a><i class="fa fa-twitter"></i></a></li>
+                                  <li><a><i class="fa fa-instagram"></i></a></li>
+                                  <li><a><i class="fa fa-whatsapp"></i></a></li>
+                                  <li><a><i class="fa fa-linkedin"></i></a></li>
+                               </ul>
+                           </div>
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

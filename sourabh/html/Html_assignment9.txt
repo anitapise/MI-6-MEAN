@@ -1,0 +1,5 @@
+Q 9.1 If &lt;span&gt; and &lt;div&gt; are semantically neutral (that is, they do not confer any meaning to the
+content they envelop), then why would you even use them? What possible benefit could we get
+from using these elements in our web page?
+   ANS:- <span> is an inline non-semantic element, which you should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning.
+         <div> is a block level non-semantic element, which you should only use if you can't think of a better semantic block element to use, or don't want to add any specific meaning. For example, imagine a shopping cart widget that you could choose to pull up at any point during your time on an e-commerce site.

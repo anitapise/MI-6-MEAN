@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact form</title>
+        <meta name="viewport" content="width-device-width , initial scale=1">
+        <link rel="stylesheet" type="text/css" href="css/my.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script src="css/jquery-3.4.1.slim.min.js"></script>
+        <script src="css/bootstrap.min.js"></script>
+        <script src="css/jquery.min.js"></script>
+        <script src="css/popper.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu-bar">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recruiter.html">Recruiters</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="walkin.html">Walkin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#basicModal">Jobseeker Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Login Here</h3>
+                                    <br>
+                                    <form class="container">
+                                        <label  for="email"><b>Email-Id:</b></label><br>
+                                        <input type="text" name="email" placeholder="Enter Email" required><br>
+                                        <label for="pass"><b>Password:</b></label><br>
+                                        <input type="password" name="pass" placeholder="Enter your password" required><br>
+                                        <button type="submit" class="btn btn-outline-danger">Login</button>
+                                        <br>
+                                        <p>Don't have register?</p>
+                                        <a href="reg.html"class="btn btn-primary" role="button">Register Here</a>                
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </nav>
+        </header>
+        <div class="container" id="dark">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h1><strong>Contact us</strong></h1>
+                    <lable>First Name:</lable>
+                    <br>
+                    <input type="text" placeholder="Your name"><br>
+                    <lable>Last Name:</lable>
+                    <br>
+                    <input type="text" placeholder="Your Last Name.."><br>
+                    <label>Email Id:</label><br>
+                    <input type="text" placeholder="Enter Your Email"><br>
+                    <label for="country"> Country: </label><br>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <br><br>
+                    <label>Subject:</label><br>
+                    <textarea id="Subject" name="Subject" placeholder="Write something..." style="height: 100px"></textarea>
+                    <br>
+                    <input type="Submit" value="Submit">
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h5>
+                        <p style="margin-top: 100px;">Contact Address:</p>
+                    </h5>
+                    <b>Jobox (india) Ltd.</b>
+                    <p>Mumbai:</p>
+                    <p>216-222, 2nd Floor,<br>
+                        Chintamani Plaza,<br>
+                        Andheri-Kurla Road, Chakala,<br>
+                        Opp. CineMagic Theatre,<br>
+                        Andheri-East, Mumbai- 400099
+                    </p>
+                    <p>Ahemdabad:</p>
+                    <p>106, Iscon Elegance,<br>
+                        Near Shapath 5, Off S G Highway,<br>
+                        Ahmedabad-380015.
+                    </p>
+                    <br>
+                    <p>Email Us: info@jobox.in</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h4 id="quick">Quick Links</h4>
+                        <ul class="list-unstyled" id="link">
+                            <li>
+                                <a href="index.html">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="recruiter.html">Recruiers</a>
+                            </li>
+                            <li>
+                                <a href="walkin.html">Walkin</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a> 
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb md-0 mb-3">
+                        <h4>Subscribe here</h4>
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                                aria-label="Your email" aria-describedby="basic-addon2"><br><br>
+                            <button type="button" class="btn btn-outline-success" style="margin-left: 20px;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+Q 2.1 Which is the tag and which is the attribute in the following line?
+      <div id=”footer”>
+     ANS:-div=tag and id=attribute
+
+Q 2.2 Why is HTML called a mark-up language?
+     ANS:-Hypertext means machine readable text and Markup means to structure it in a specific format.So,HTML is called hypertext markup language because it is a language that allows users to organize, improve the appearance of, and link text with data on the internet.
+
+Q 2.3 Describe one problem you would likely face if you included presentation (styling) information
+with HTML instead of separating it in CSS?
+     ANS:-we have to add attribute for each tag.time consuming process.
+      

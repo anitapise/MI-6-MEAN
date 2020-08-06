@@ -1,0 +1,8 @@
+Q 4.1 Many web authors use a reset CSS. What problems might happen if they don’t use it?
+-> After your content has finished altering styles, it may find itself in a situation where it needs to restore them to a known state. This may happen in cases of animations, theme changes, and so forth. Because all browsers have presentation defaults, but no browsers have the same defaults. This is the reason behind using reset css.
+
+Q 4.2 In which colour will the text “This is the first paragraph.” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
+-> In blue color "This is the first paragraph" text will be printed. Because in css style first div#section1 span{color:green} selector span is not present in html. so it will not print the green color. second css style div p{color:blue} selector div tag is present and inside div tag <p> element is also present. So it will print blue. third css style is also correct p{color:red} but second is highest specificity as compared to third css stlye.
+
+Q 4.3 In which colour will the text “This is a heading!” be printed for the HTML and CSS shown below? Also explain the specificity rule by which that colour is chosen.
+-> In purple color "This is a heading!" text will be printed. Because Type selectors (e.g. h2) have highest spcificity than id selectors (e.g. #parent).

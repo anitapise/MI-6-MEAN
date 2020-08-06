@@ -1,0 +1,61 @@
+.nav-link {
+    font-weight: bolder;
+}
+.navbar-text a {
+    font-weight: bolder;
+}
+.text-center {
+    margin-top: 40px;
+}
+.offer-card {
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.abc a {
+    margin-left: 1150px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer {
+    width: 100%;
+    display: inline-block;
+    padding: 13px 0;
+    background-color: #ffa80020;
+}
+.footer .col-3 {
+    width: 24%;
+    float: left;
+    margin-top: 40px;
+}
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+}
+.footer p big {
+    font-weight: 700;
+}
+.footer .col-3 ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.copyright {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffa80080;
+    padding: 20px 0;
+    columns: #333;
+}

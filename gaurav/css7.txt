@@ -1,0 +1,8 @@
+Q 7.1 What is the difference between display:block and display:block-inline
+Ans: The display:block can have  width,height and margin.The display:block-inline can have width,height,margin and padding.Compared to display: block , the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+ 
+Q 7.2 What is the purpose of using ‘clear’ after floating elements?
+Ans: This is an immensely powerful property, it helps bring our non-floated elements back into the normal flow, a behavior that we tend to expect by default. 
+
+Q 7.3 Mention two ways in which we can apply properties to an element so that it is taken out of the normal flow.
+Ans: 1.Position:static property And 2.Position:absolute property

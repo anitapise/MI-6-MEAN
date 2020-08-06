@@ -1,0 +1,142 @@
+<html>
+    <head>
+	<title>Contact</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+	    *{
+		
+		box-sizing:border-box;	
+		}
+	    body {
+  		margin: 0;
+  		font-family: Arial;
+		}
+	    h1{
+		text-align:center;
+		margin-top:80px;
+		font-size:40px;
+		font-family:Arial;
+		font-weight:bold;
+		}
+	    nav{
+		background:#594848;
+		width:100%;
+		overflow:auto;
+		position:fixed;
+		top:0;
+		}
+	    ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	    li a:hover{
+		color:green;
+		}
+	    li{
+		float:left;
+		}
+	    nav a{
+		width:120px;
+		display:block;
+		text-decoration:none;
+		text-align:center;
+		background:#594848;
+		font-size:17px;
+		color:white;
+		padding:20px 10px;
+		font-family:Arial;
+		}
+	    nav a:hover{
+		background:skyblue;
+		color:black;
+		}
+	    .hilight{
+		background-color:purple;
+		}
+	    fieldset{
+		width:50px;
+		margin-left:auto;
+		margin-right:auto;
+		background-color: rgba(201, 100, 76, 0.3);
+		box-shadow:5px 10px #888888;
+		}
+	    input[type=submit] {
+  		background-color:grey;
+  		color: white;
+  		padding: 12px 20px;
+  		border: none;
+  		cursor: pointer;
+		}
+	    input[type=submit]:hover {
+ 		background-color: #45a049;
+		} 
+	    .connect{
+		margin-left:auto;
+		margin-right:auto;
+		width:30%;
+		padding:20px;
+		}
+	    .footer{
+		border-top:1px solid black;
+		text-align:center;
+		}
+	    .info{
+		padding:20px;
+		}
+	    .copyright{
+		font-size:10px;
+		margin:auto;
+		padding:1px;
+		background-color:#594848;
+		} 
+    	     .logo{
+		float:right;
+		padding-right:20px;
+		}
+	</style>
+    </head>
+    <body>
+	<nav>
+	    <ul>
+		<li><a href="home.html"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="services.html">Service</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a class="hilight" href="contact.html">Contact Us</a></li>
+	    </ul>
+	    <div class="logo"><img src="image/l1.png" alt="logo" height="60px" width="90px"></div>
+	</nav>
+	<h1>Contact Us</h1>
+	<p style="text-align:center;font-style:italic">"Email us with any question or inquiries.We would be happy</p>
+	<p style="text-align:center;font-style:italic">to answer your questions and set up a meeting with you".</p> 
+	<form>
+	    <fieldset>
+		<legend>Contact</legend>
+		<p>Name: <input type="text" name="user_name"></p>
+		<p>E-mail:<input type="email"  name="user_email"></p>
+		<p>Message:</p><textarea rows="5" cols="32"></textarea>
+		<p><input type="submit" value="Send Your Message"></p>
+	    </fieldset>
+	</form>
+	<div class="footer">
+	    <div class="connect">
+	    <i class='fab fa-linkedin' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-twitter' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-instagram' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-github' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-facebook' style='font-size:48px;padding-right:10px'></i>
+	    <i class='fab fa-google-plus' style='font-size:48px'></i>
+	    </div>
+	    <div class="info">
+	    <p style="text-align:center;font-size=30px;font-weight:bold;font-family:serif">"Photography helps people to see"</p>
+	    <i class='fas fa-envelope' style='font-size:15px;color:grey;padding-right:10px'></i><a href>gaurav.suryawanshi56@gmail.com</a>
+	    <i class='fas fa-mobile-alt' style='font-size:15px;color:grey;padding-left:100px;padding-right:10px'></i>8956409911
+	    <i class="fa fa-map-marker" style="font-size:15px;color:grey;padding-left:100px;padding-right:10px"></i>Pune,Maharashtra
+	    </div>
+	    <div class="copyright">
+	    	<p style="color:white">&copy;2020.All Right Reserved | Gaurav Suryawanshi<p>
+	    </div>
+	</div>
+    </body>
+</html>

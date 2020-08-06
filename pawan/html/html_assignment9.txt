@@ -1,0 +1,3 @@
+Q 9.1 If <span> and <div> are semantically neutral (that is, they do not confer any meaning to the content they envelop), then why would you even use them? What possible benefit could we get from using these elements in our web page?
+	answer:-The DIV and SPAN elements, in conjunction with the id and class attributes, offer a generic mechanism for adding structure to documents. These elements define content to be inline (SPAN) or block-level (DIV) but impose no other presentational idioms on the content. Thus, authors may use these elements in conjunction with style sheets, the lang attribute, etc., to tailor HTML to their own needs and tastes.
+	
