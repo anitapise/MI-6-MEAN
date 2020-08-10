@@ -1,0 +1,212 @@
+html,body{
+	height:100%;
+	width:100%;
+	font-family:'Poppins','Josefin Sans',sans-sarif;
+	color:#222;
+}
+* {
+    box-sizing: border-box;
+}
+.navbar{
+    font-size: 18px;
+	background-color:#3f3f3f;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-link,.logo, .dropdown-menu {
+    text-decoration: none;
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+li>a{
+	color:white;
+}
+.logo {
+	text-decoration: none;
+    color:white;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    font-size: 24px;
+	color:white;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.active {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-link {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+	.navbar-toggle {
+		display: none;
+    }
+    .logo:hover,.nav-link:hover, h6>a {
+        color:tomato;
+    }
+}
+.carousel-caption h1{
+	font-size:500%;
+	text-transform:uppercase;
+	text-shadow:3px 3px 3px #000;
+	font-weight:bold;
+}
+.carousel-caption p{
+	text-shadow:1px 1px 1px #000;
+	padding-bottom:2rem;
+}
+.carousel-item img{
+	width:100%;
+	height:695px;
+}
+@media screen and (max-width: 768px) and (min-width: 405px){
+	.carousel-item img{
+		width:100%;
+		height:495px;
+	}
+	.carousel-caption h1{
+		font-size:300%;
+		text-transform:uppercase;
+		text-shadow:3px 3px 3px #000;
+		font-weight:bold;
+	}
+	.carousel-caption p{
+		text-shadow:1px 1px 1px #000;
+		padding-bottom:2rem;
+	}
+	.card img{
+		width:60%;
+		height:60%;
+		align-self: center;
+	}
+}
+@media screen and (max-width: 405px){
+	.carousel-item img{
+		width:100%;
+		height:295px;
+	}
+	.carousel-caption h1{
+		font-size:150%;
+		text-transform:uppercase;
+		text-shadow:3px 3px 3px #000;
+		font-weight:bold;
+	}
+	.carousel-caption p{
+		text-shadow:1px 1px 1px #000;
+		padding-bottom:2rem;
+	}
+}
+.padding{
+	padding-bottom:2rem;
+}
+.welcome{
+	margin:0 auto;
+	padding-top:2rem;
+}
+.welcome hr{
+	border-top:2px solid #b4b4b4;
+	width:38%;	
+	margin-top:.3rem;
+	margin-bottom:1rem;
+}
+.gallery img {
+	width:100%;
+	height:230px;
+	padding:10px 10px; 
+	padding:inhereit;
+}
+.gallery img:hover{
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.galllery-cards{
+	padding:10px 0; 
+	padding:inhereit;
+}
+.about-us img{
+	padding-top:10px;	
+	width:250px;
+	height:200px;
+}
+.gallery-cards-btn{
+	width:100%;
+}
+.contact-form input[type="text"],input[type="email"]{
+	width:100%;
+	height:30px;
+	margin: 8px 0;
+}
+textarea{
+	width:100%;
+	height:150px;
+}
+.contact-form input[type="submit"]{
+	border-radius:10px;
+	font-size:20px;
+	width:100%;
+	background-color:#4CAF50;
+	color:white;
+}
+input,textarea{
+	margin-top:20px;
+}
+input[type="submit"]:hover{
+	background-color:#06D6A0;
+}
+.contact-form{
+	font-size:20px;	
+}
+input[placeholder], textarea[placeholder]{
+	font-size:13px;
+	padding-left:5px;
+}
+.fa-facebook-square{
+	color:#3b5998;
+}
+.fa-github{
+	color:#222;
+}
+.fa-linkedin{
+	color:#0e76a8
+}
+.fa-whatsapp{
+	color:#4FCE5D;
+}
+.fa-facebook-square,.fa-github,.fa-linkedin,.fa-whatsapp{
+	font-size:3em;
+	margin:1rem;
+}
+.footer{
+	background-color:#3f3f3f;
+	color:#d5d5d5;
+	padding-top:1.4rem;
+}
