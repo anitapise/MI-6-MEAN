@@ -1,110 +1,94 @@
 const express = require('express');
 var router = express.Router();
 const mongoose = require('mongoose');
-const Employee = mongoose.model('Employee');
+const Person = mongoose.model('Person');
 
+/*
 router.get('/', (req, res) => {
-    res.render("employee/addOrEdit", {
-        viewTitle: "Insert Employee"
+    res.render("layouts/mainLayout", {
+        viewTitle: "Insert Person"
     });
-});
-
+});*/
 router.post('/', (req, res) => {
-    if (req.body._id == '')
+    if (req.body._id == ''){     
         insertRecord(req, res);
-        else
+    }
+    else{
+       // console.log(req.body._id);
         updateRecord(req, res);
+    }
+ });
+router.post('/list', (req, res) => {
+    if (req.body._id == ''){
+        insertRecord(req, res);
+    }
+    else
+    {
+        console.log(req.body._id);
+        updateRecord(req, res);
+    }
 });
-
-
 function insertRecord(req, res) {
-    var employee = new Employee();
-    employee.fullName = req.body.fullName;
-    employee.email = req.body.email;
-    employee.mobile = req.body.mobile;
-    employee.city = req.body.city;
-    employee.save((err, doc) => {
+    var person = new Person();
+    person.first_name = req.body.first_name;
+    person.last_name = req.body.last_name;
+    person.address = req.body.address;
+    person.gender = req.body.gender;
+    var dateNew=new Date(req.body.dob);
+    person.dateOfBirth=dateNew.getDate()+"/"+dateNew.getMonth()+"/"+dateNew.getFullYear();
+    //console.log(person.dateOfBirth.getDate()+"/"+person.dateOfBirth.getMonth()+"/"+person.dateOfBirth.getFullYear());
+
+       // console.log(dateNew.getDate());
+
+    person.save((err, doc) => {
         if (!err)
-            res.redirect('employee/list');
+            res.redirect('/');
         else {
-            if (err.name == 'ValidationError') {
-                handleValidationError(err, req.body);
-                res.render("employee/addOrEdit", {
-                    viewTitle: "Insert Employee",
-                    employee: req.body
+                res.render("/", {
+                    viewTitle: "Insert Person",
+                    person: req.body
                 });
             }
-            else
-                console.log('Error during record insertion : ' + err);
-        }
+            
     });
 }
+function updateRecord(req, res) {  
+    var str=req.body._id;
 
-function updateRecord(req, res) {
-    Employee.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
-        if (!err) { res.redirect('employee/list'); }
-        else {
-            if (err.name == 'ValidationError') {
-                handleValidationError(err, req.body);
-                res.render("employee/addOrEdit", {
-                    viewTitle: 'Update Employee',
-                    employee: req.body
-                });
-            }
-            else
-                console.log('Error during record update : ' + err);
-        }
-    });
-}
-
-
-router.get('/list', (req, res) => {
-    Employee.find((err, docs) => {
+    Person.updateOne({ '_id': str }, req.body, { new: true }, (err, doc) => {
         if (!err) {
-            res.render("employee/list", {
+                res.redirect('/'); 
+                console.log(req.body);         
+           }
+        else {
+               console.log(err);
+                res.render("", {
+                    person: req.body
+                });
+            } 
+    }); 
+}
+router.get('/', (req, res) => {
+    Person.find((err, docs) => {
+       
+        if (!err) {
+            res.render("person/list", {
                 list: docs
             });
         }
-        else {
-            console.log('Error in retrieving employee list :' + err);
+        else {  
+               console.log('Error in retrieving Person list :' + err);
         }
     });
 });
-
-
-function handleValidationError(err, body) {
-    for (field in err.errors) {
-        switch (err.errors[field].path) {
-            case 'fullName':
-                body['fullNameError'] = err.errors[field].message;
-                break;
-            case 'email':
-                body['emailError'] = err.errors[field].message;
-                break;
-            default:
-                break;
-        }
-    }
-}
-
-router.get('/:id', (req, res) => {
-    Employee.findById(req.params.id, (err, doc) => {
+router.get('/delete/:id',(req, res) => {
+    Person.findByIdAndRemove(req.params.id, (err, doc) => {
         if (!err) {
-            res.render("employee/addOrEdit", {
-                viewTitle: "Update Employee",
-                employee: doc
-            });
+            res.redirect('/');
         }
+        else { 
+            console.log('Error in Person delete :' + err);
+         }
     });
 });
-
-router.get('/delete/:id', (req, res) => {
-    Employee.findByIdAndRemove(req.params.id, (err, doc) => {
-        if (!err) {
-            res.redirect('/employee/list');
-        }
-        else { console.log('Error in employee delete :' + err); }
-    });
-});
-
 module.exports = router;
