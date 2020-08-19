@@ -7,6 +7,12 @@
 {
 	z-index: 1;
 	max-width: auto;
+    
+}
+.nav-item
+{
+    right: 0px ;  
+    
 }
 .cptw 
 {
