@@ -21,3 +21,4 @@ app.listen(3000, () => {
 });
 
 app.use('/employee', employeeController);
+

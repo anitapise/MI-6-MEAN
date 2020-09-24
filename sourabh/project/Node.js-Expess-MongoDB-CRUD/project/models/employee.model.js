@@ -23,3 +23,4 @@ employeeSchema.path('email').validate((val) => {
 }, 'Invalid e-mail.');
 
 mongoose.model('Employee', employeeSchema);
+
