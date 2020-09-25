@@ -1,0 +1,141 @@
+body {
+	background: #151515;
+}
+
+.card {
+	background: #151515;
+}
+
+.cpryt {
+	color: #f7d00a;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.sci {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sci li {
+	list-style: none;
+	margin: 0 20px;
+}
+
+.sci li a {
+	color: #f7d00a;
+	font-size: 2em;
+	transition: 0.5s;
+}
+
+.sci li a:hover {
+	color: #fff;
+}
+
+.gallery img {
+	width: 100%;
+	height: 230px;
+	padding: 10px 10px;
+	padding: inhereit;
+}
+
+.gallery img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.galllery-cards {
+	padding: 10px 0;
+	padding: inhereit;
+}
+
+.card-title {
+	text-decoration: none;
+}
+
+.img-wrap {
+	width: 100%
+}
+
+.img-wrap img {
+	width: 100%;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #999999
+}
+
+.content{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutus h2{margin-bottom: 25px;}
+
+.aboutus {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact {
+	position: relative;
+	padding: 100px 0;
+	background: url(https://wallpaperplay.com/walls/full/7/f/3/179482.jpg);
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.contact .form-control {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, .2);
+	height: 50px;
+	color:  #f7d00a;
+	font-size: 1.25rem;
+}
+
+.contact .textarea {
+	min-height: 100px;
+}
+
+.contact label {
+	color: #ff5c33;
+	font-size: 1.25rem;
+}
+
+.contact form {
+	z-index: 1000;
+	position: relative;
+}
+
+.btnD1 {
+	border: 2px solid #fff;
+	font-weight: 500;
+	background: transparent;
+	border-radius: 50px;
+	padding: 15px 50px;
+	font-size: 1.15rem;
+	outline: none;
+	margin-top: 20px;
+	color: #d9ff66;
+}
+
+.aa img:hover {
+	box-shadow: 0 0 12px 1px rgba(255, 140, 186, 0.5);
+}
+
+.bb {
+	color: #e6ac00;
+}
+
+@media screen and (min-width: 768px) {
+
+	img{
+		height: 200;
+		width:200;
+	}
+	}
