@@ -1,0 +1,13 @@
+div{
+    flex: 1;
+}
+li{
+    list-style: none;
+    padding: 0px;
+}
+#table{
+    align-items: center;
+}
+h5{
+    background-color: rgb(102, 161, 42);
+}
